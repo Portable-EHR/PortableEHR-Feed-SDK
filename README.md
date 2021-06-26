@@ -3,7 +3,7 @@
 If you want to integrate your project to Portable EHR, then you can use our Java SDK to jump start the integration. 
 This project provides the model POJOs, request and response objects in a Jackson flavor. If you don't use Jackson/Spring in your project, we hope you can use this code as an inspiration.
 
-To see how to use this SDK you can check the demo project [Portable EHR Java Feed Example](http://someurl.com).
+To see how to use this SDK you can check the demo project [Portable EHR Java Feed Demo](https://github.com/Portable-EHR/PortableEHR-Java-Feed-Demo).
 
 To integrate with Portable EHR FeedHub, your project must:
  - Implement the [Feed API](https://feed.portableehr.io:4004/docs). FeedHub will consume this API once is correctly configured.
