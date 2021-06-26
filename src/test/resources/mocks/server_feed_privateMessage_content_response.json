@@ -1,0 +1,20 @@
+{
+  "requestStatus": {
+    "status": "OK",
+    "message": "Returning Private Message [X] Content from Dispensary [fiktivDP]."
+  },
+  "responseContent": {
+    "messageContext": "Telemedicine note",
+    "subject": "Results of exam 777",
+    "text": "Please find in attachment the result of your last month exam.",
+    "attachments": [
+      {
+        "name": "QRCode",
+        "date": "2021-02-12",
+        "mimeType": "application/pdf",
+        "ext": "pdf",
+        "docAsB64": "JVBER..."
+      }
+    ]
+  }
+}

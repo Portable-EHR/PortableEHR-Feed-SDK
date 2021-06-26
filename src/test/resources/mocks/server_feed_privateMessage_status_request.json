@@ -1,0 +1,9 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "messageId": "1ef9bda0-e67f-11ea-a057-fdaac99f1414",
+    "status": "received",
+    "statusDate": "2021-01-14T23:41:21.050Z"
+  }
+}

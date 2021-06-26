@@ -1,0 +1,9 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pullBundle",
+  "parameters": {
+    "since": "2020-11-13T22:46:55.313Z",
+    "offset" : 1,
+    "maxItems" : 20
+  }
+}

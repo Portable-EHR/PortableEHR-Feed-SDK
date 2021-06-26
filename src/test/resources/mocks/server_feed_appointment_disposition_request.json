@@ -1,0 +1,9 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "id": "1ef9bdaa-e67f-11ea-a057-fdaac99f1414",
+    "status": "patientConfirmed",
+    "lastUpdated": "2021-01-14T23:41:21.050Z"
+  }
+}

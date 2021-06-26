@@ -1,0 +1,23 @@
+{
+  "requestStatus": {
+    "status": "OK",
+    "message": "Returning Appointment [X] from Dispensary [fiktivDP]."
+  },
+  "responseContent": {
+    "feedAlias": "fiktivDP",
+    "feedItemId": "74565c7a-bc16-4d6f-9d7c-4140861e5cf4",
+    "lastUpdated": "2021-06-03T15:22:41.383Z",
+    "feedItemVersion": 1,
+    "id": "74565c7a-bc16-4d6f-9d7c-4140861e5cf4",
+    "patientId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
+    "practitionerId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
+    "location": "clinic",
+    "with": "Quinn, Michaela, Anne",
+    "startTime": "2021-06-05T15:22:41.378Z",
+    "endTime": "2021-06-05T16:22:41.378Z",
+    "description": "Covid-19 vaccine appointment",
+    "notes": "Must be alive. #app",
+    "patientMustConfirm": true,
+    "confirmationStatus": "confirmed"
+  }
+}
