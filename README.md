@@ -5,17 +5,28 @@ This project provides the model POJOs, request and response objects in a Jackson
 
 To see how to use this SDK you can check the demo project [Portable EHR Java Feed Demo](https://github.com/Portable-EHR/PortableEHR-Java-Feed-Demo).
 
+# Integrating with Portable EHR FeedHub
 To integrate with Portable EHR FeedHub, your project must:
  - Implement the [Feed API](https://feed.portableehr.io:4004/docs). FeedHub will consume this API once is correctly configured.
  - Consume the [FeedHub API](https://feed.portableehr.io:3004/docs).
 
+# Adding this SDK to your project
+```xml
+<dependency>
+    <groupId>org.portableehr</groupId>
+    <artifactId>portableehr-feed-sdk</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+
+# SDK's structure
 This SDK is divided in 2 main packages: *model* and *network*. 
 Each package in its root contains common classes and subpackages *client* and *server* with specifics classes for each API.  
 
-## com.portableehr.model
+### com.portableehr.model
 In this package you have the model entities
 
-## com.portableehr.network
+### com.portableehr.network
 In this package you have mostly POJOs, and some deserializers where needed:
 - com.portableehr.network: Containing common network entities
 - com.portableehr.network.client.request.[endpoint]: All the entities needed to send the requests your Feed will send to FeedHub
