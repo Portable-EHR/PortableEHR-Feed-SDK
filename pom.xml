@@ -9,7 +9,7 @@
 
     <groupId>com.portableehr</groupId>
     <artifactId>portableehr-feed-sdk</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Portable EHR Java Feed SDK</name>
@@ -35,7 +35,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:Portable-EHR/PortableEHR-Feed-SDK.git</developerConnection>
         <url>https://github.com/Portable-EHR/PortableEHR-Feed-SDK</url>
-        <tag>HEAD</tag>
+        <tag>v1.0.1</tag>
     </scm>
 
     <properties>
