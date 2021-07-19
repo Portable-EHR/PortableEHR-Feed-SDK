@@ -6,6 +6,7 @@
 package com.portableehr.model.server;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.model.CountryEnum;
 
 /**
  * BirthPlace
@@ -16,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  *    "city": "Montreal",
  *    "state": "QC",
  *    "zip": "H0H 0H0",
- *    "country": {@link Country}
+ *    "country": {@link CountryEnum}
  * }
  * </code></pre>
  */
@@ -37,13 +38,13 @@ public class BirthPlace   {
   private String zip = null;
 
   @JsonProperty("country")
-  private Country country = null;
+  private CountryEnum country = null;
 
   public BirthPlace() {
 
   }
 
-  public BirthPlace(String street1, String street2, String city, String state, String zip, Country country) {
+  public BirthPlace(String street1, String street2, String city, String state, String zip, CountryEnum country) {
     this.street1 = street1;
     this.street2 = street2;
     this.city = city;
@@ -92,11 +93,11 @@ public class BirthPlace   {
     this.zip = zip;
   }
 
-  public Country getCountry() {
+  public CountryEnum getCountry() {
     return country;
   }
 
-  public void setCountry(Country country) {
+  public void setCountry(CountryEnum country) {
     this.country = country;
   }
 }

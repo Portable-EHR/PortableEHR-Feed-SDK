@@ -3,7 +3,7 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.model.client;
+package com.portableehr.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

@@ -6,6 +6,7 @@
 package com.portableehr.model.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.model.CountryEnum;
 import com.portableehr.model.IdIssuerKindEnum;
 
 import java.util.UUID;
