@@ -6,7 +6,7 @@
 package com.portableehr.network.server.request.privateMessage;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.server.request.practitioner.PractitionerPullParameters;
+import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 /**
  * Parameters sent by FeedHub in the {@link PrivateMessageContentRequest}
@@ -16,7 +16,7 @@ import com.portableehr.network.server.request.practitioner.PractitionerPullParam
  * }
  * </code></pre>
  */
-public class PrivateMessageContentParameters extends PractitionerPullParameters {
+public class PrivateMessageContentParameters extends FeedHubRequestParameters {
 
     @JsonProperty("feedItemId")
     private String feedItemId = null;
