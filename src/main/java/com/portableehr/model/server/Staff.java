@@ -7,7 +7,6 @@ package com.portableehr.model.server;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.server.response.FeedApiResponseContent;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,7 +14,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Practitioner
+ * Staff
  * <pre><code>
  * {
  *     "feedAlias": "fiktivDP",
@@ -27,6 +26,7 @@ import java.util.UUID;
  *     "firstName": "John",
  *     "lastName": "Smith",
  *     "middleName": "Edward",
+ *     "role": "staff",
  *     "practices": [
  *       {@link Practice}1,
  *       {@link Practice}2,
@@ -36,7 +36,7 @@ import java.util.UUID;
  *   }
  * </code></pre>
  */
-public class Practitioner {
+public class Staff {
 
   @JsonProperty("feedAlias")
   private String feedAlias = null;
@@ -66,14 +66,17 @@ public class Practitioner {
   @JsonProperty("middleName")
   private String middleName = null;
 
+  @JsonProperty("role")
+  private StaffRole role = null;
+
   @JsonProperty("practices")
   private List<Practice> practices = new ArrayList<Practice>();
 
-  public Practitioner() {
+  public Staff() {
   }
 
-  public Practitioner(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion,
-                      UUID id, String firstName, String lastName, String middleName, List<Practice> practices) {
+  public Staff(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion,
+               UUID id, String firstName, String lastName, String middleName, StaffRole role, List<Practice> practices) {
     this.feedAlias = feedAlias;
     this.feedItemId = feedItemId;
     this.backendItemId = backendItemId;
@@ -83,6 +86,7 @@ public class Practitioner {
     this.firstName = firstName;
     this.lastName = lastName;
     this.middleName = middleName;
+    this.role = role;
     this.practices = practices;
   }
 
@@ -156,6 +160,14 @@ public class Practitioner {
 
   public void setMiddleName(String middleName) {
     this.middleName = middleName;
+  }
+
+  public StaffRole getRole() {
+    return role;
+  }
+
+  public void setRole(StaffRole role) {
+    this.role = role;
   }
 
   public List<Practice> getPractices() {

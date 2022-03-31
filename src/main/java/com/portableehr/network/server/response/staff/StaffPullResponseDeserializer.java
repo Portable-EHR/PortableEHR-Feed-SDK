@@ -3,7 +3,7 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.response.practitioner;
+package com.portableehr.network.server.response.staff;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -12,21 +12,19 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.portableehr.network.ApiStatus;
-import com.portableehr.network.server.response.appointment.AppointmentPullBundleResponseContent;
-import com.portableehr.network.server.response.appointment.AppointmentPullSingleResponseContent;
 
 import java.io.IOException;
 
 /**
- * Jackson deserializer to choose between {@link PractitionerPullSingleResponseContent} and {@link PractitionerPullBundleResponseContent}
+ * Jackson deserializer to choose between {@link StaffPullSingleResponseContent} and {@link StaffPullBundleResponseContent}
  */
-public class PractitionerPullResponseDeserializer extends JsonDeserializer<PractitionerPullResponse> {
+public class StaffPullResponseDeserializer extends JsonDeserializer<StaffPullResponse> {
 
     @Override
-    public PractitionerPullResponse deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JsonProcessingException {
-        PractitionerPullResponse practitionerPullResponse = new PractitionerPullResponse();
+    public StaffPullResponse deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JsonProcessingException {
+        StaffPullResponse staffPullResponse = new StaffPullResponse();
         ApiStatus apiStatus = null;
-        PractitionerPullResponseContent patientPullResponseContent = null;
+        StaffPullResponseContent patientPullResponseContent = null;
 
         while (!jsonParser.isClosed()) {
             JsonToken jsonToken = jsonParser.nextToken();
@@ -47,17 +45,17 @@ public class PractitionerPullResponseDeserializer extends JsonDeserializer<Pract
                     JsonParser responseParser = responseContentJson.traverse();
                     responseParser.nextToken();
                     if (responseContentJson.findValue("offset") == null) {
-                        patientPullResponseContent = deserializationContext.readValue(responseParser, PractitionerPullSingleResponseContent.class);
+                        patientPullResponseContent = deserializationContext.readValue(responseParser, StaffPullSingleResponseContent.class);
                     } else {
-                        patientPullResponseContent = deserializationContext.readValue(responseParser, PractitionerPullBundleResponseContent.class);
+                        patientPullResponseContent = deserializationContext.readValue(responseParser, StaffPullBundleResponseContent.class);
                     }
                 }
 
             }
         }
 
-        practitionerPullResponse.setRequestStatus(apiStatus);
-        practitionerPullResponse.setResponseContent(patientPullResponseContent);
-        return practitionerPullResponse;
+        staffPullResponse.setRequestStatus(apiStatus);
+        staffPullResponse.setResponseContent(patientPullResponseContent);
+        return staffPullResponse;
     }
 }

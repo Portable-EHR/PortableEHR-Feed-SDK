@@ -12,17 +12,6 @@
     "firstName": "Michaela",
     "lastName": "Quinn",
     "middleName": "Anne",
-    "practices": [
-      {
-        "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
-        "issuerKind": "practiceLicense",
-        "issuerAlias": "CA_QC_CMQ",
-        "issuer": "CMQ",
-        "number": "112477",
-        "version": "2",
-        "expiresOn": "2021-01-28",
-        "isActive": true
-      }
-    ]
+    "role": "staff"
   }
 }

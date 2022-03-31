@@ -3,7 +3,7 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.request.practitioner;
+package com.portableehr.network.server.request.staff;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Date;
 
 /**
- * The parameters for the {@link PractitionerPullRequest} with "command": "pullBundle"
+ * The parameters for the {@link StaffPullRequest} with "command": "pullBundle"
  * <pre><code>
  * {
  *     "since": "2020-11-13T22:46:55.313Z",
@@ -20,7 +20,7 @@ import java.util.Date;
  * }
  * </code></pre>
  */
-public class PractitionerPullBundleParameters extends PractitionerPullParameters {
+public class StaffPullBundleParameters extends StaffPullParameters {
 
     @JsonProperty("since")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
@@ -32,10 +32,10 @@ public class PractitionerPullBundleParameters extends PractitionerPullParameters
     @JsonProperty("maxItems")
     private int maxItems;
 
-    public PractitionerPullBundleParameters() {
+    public StaffPullBundleParameters() {
     }
 
-    public PractitionerPullBundleParameters(Date since, int offset, int maxItems) {
+    public StaffPullBundleParameters(Date since, int offset, int maxItems) {
         this.since = since;
         this.offset = offset;
         this.maxItems = maxItems;

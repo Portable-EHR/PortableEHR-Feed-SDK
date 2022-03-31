@@ -6,6 +6,7 @@
 package com.portableehr.network.server.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.network.server.request.staff.StaffPullRequest;
 
 /**
  * Superclass containing the common attributes sent by most of FeedHub's requests
@@ -21,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * {@link com.portableehr.network.server.request.appointment.AppointmentPullRequest}
  * {@link com.portableehr.network.server.request.patient.PatientPullRequest}
  * {@link com.portableehr.network.server.request.patient.PatientReachabilityRequest}
- * {@link com.portableehr.network.server.request.practitioner.PractitionerPullRequest}
+ * {@link com.portableehr.network.server.request.staff.StaffPullRequest}
  * {@link com.portableehr.network.server.request.privateMessage.PrivateMessageStatusRequest}
  * {@link com.portableehr.network.server.request.privateMessage.PrivateMessageContentRequest}
  */

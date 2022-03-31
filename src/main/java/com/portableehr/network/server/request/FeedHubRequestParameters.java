@@ -5,6 +5,8 @@
 
 package com.portableehr.network.server.request;
 
+import com.portableehr.network.server.request.staff.StaffPullParameters;
+
 /**
  * Superclass for the parameters in the {@link FeedHubRequest}<br>
  * Subclasses:<br>
@@ -12,7 +14,7 @@ package com.portableehr.network.server.request;
  * {@link com.portableehr.network.server.request.patient.PatientReachabilityParameters}
  * {@link com.portableehr.network.server.request.appointment.AppointmentPullRequest}
  * {@link com.portableehr.network.server.request.appointment.AppointmentDispositionRequest}
- * {@link com.portableehr.network.server.request.practitioner.PractitionerPullParameters}
+ * {@link StaffPullParameters}
  * {@link com.portableehr.network.server.request.privateMessage.PrivateMessageStatusParameters}
  */
 public abstract class FeedHubRequestParameters {

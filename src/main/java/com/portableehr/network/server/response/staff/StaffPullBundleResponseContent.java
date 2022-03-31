@@ -3,30 +3,30 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.response.practitioner;
+package com.portableehr.network.server.response.staff;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.server.Practitioner;
+import com.portableehr.model.server.Staff;
 
 import java.util.List;
 
 /**
- * The responseContent attribute for the ${@link PractitionerPullResponse} to the /practitioner
+ * The responseContent attribute for the ${@link StaffPullResponse} to the /staff
  * FeedHub request with "command": "pullBundle"
  * <pre><code>
  * {
  *     "offset": 0,
  *     "hasMore": false,
  *     "results": [
- *       {@link Practitioner}1,
- *       {@link Practitioner}2,
+ *       {@link Staff}1,
+ *       {@link Staff}2,
  *       ...
- *       {@link Practitioner}N,
+ *       {@link Staff}N,
  *     ]
  *   }
  * </code></pre>
  */
-public class PractitionerPullBundleResponseContent extends PractitionerPullResponseContent {
+public class StaffPullBundleResponseContent extends StaffPullResponseContent {
 
     @JsonProperty("offset")
     private int offset;
@@ -35,12 +35,12 @@ public class PractitionerPullBundleResponseContent extends PractitionerPullRespo
     private boolean hasMore;
 
     @JsonProperty("results")
-    private List<Practitioner> results = null;
+    private List<Staff> results = null;
 
-    public PractitionerPullBundleResponseContent() {
+    public StaffPullBundleResponseContent() {
     }
 
-    public PractitionerPullBundleResponseContent(int offset, boolean hasMore, List<Practitioner> results) {
+    public StaffPullBundleResponseContent(int offset, boolean hasMore, List<Staff> results) {
         this.offset = offset;
         this.hasMore = hasMore;
         this.results = results;
@@ -62,11 +62,11 @@ public class PractitionerPullBundleResponseContent extends PractitionerPullRespo
         this.hasMore = hasMore;
     }
 
-    public List<Practitioner> getResults() {
+    public List<Staff> getResults() {
         return results;
     }
 
-    public void setResults(List<Practitioner> results) {
+    public void setResults(List<Staff> results) {
         this.results = results;
     }
 }

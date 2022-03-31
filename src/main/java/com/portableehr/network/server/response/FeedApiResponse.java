@@ -7,6 +7,7 @@ package com.portableehr.network.server.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.ApiStatus;
+import com.portableehr.network.server.response.staff.StaffPullResponse;
 
 /**
  * Class containing the minimum attributes in the responses to FeedHub.
@@ -22,7 +23,7 @@ import com.portableehr.network.ApiStatus;
  * {@link com.portableehr.network.server.response.appointment.AppointmentPullResponse}
  * {@link com.portableehr.network.server.response.login.LoginResponse}
  * {@link com.portableehr.network.server.response.patient.PatientPullResponse}
- * {@link com.portableehr.network.server.response.practitioner.PractitionerPullResponse}
+ * {@link StaffPullResponse}
  * {@link com.portableehr.network.server.response.privateMessage.PrivateMessageContentResponse}
  * {@link com.portableehr.network.server.response.privateMessage.PrivateMessageStatusResponse}
  */
