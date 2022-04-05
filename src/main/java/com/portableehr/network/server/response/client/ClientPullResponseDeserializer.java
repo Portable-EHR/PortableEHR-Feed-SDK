@@ -3,7 +3,7 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.response.patient;
+package com.portableehr.network.server.response.client;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -16,15 +16,15 @@ import com.portableehr.network.ApiStatus;
 import java.io.IOException;
 
 /**
- * Jackson deserializer to choose between {@link PatientPullSingleResponseContent} and {@link PatientPullBundleResponseContent}
+ * Jackson deserializer to choose between {@link ClientPullSingleResponseContent} and {@link ClientPullBundleResponseContent}
  */
-public class PatientPullResponseDeserializer extends JsonDeserializer<PatientPullResponse> {
+public class ClientPullResponseDeserializer extends JsonDeserializer<ClientPullResponse> {
 
     @Override
-    public PatientPullResponse deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JsonProcessingException {
-        PatientPullResponse patientPullResponse = new PatientPullResponse();
+    public ClientPullResponse deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JsonProcessingException {
+        ClientPullResponse clientPullResponse = new ClientPullResponse();
         ApiStatus apiStatus = null;
-        PatientPullResponseContent patientPullResponseContent = null;
+        ClientPullResponseContent clientPullResponseContent = null;
 
         while (!jsonParser.isClosed()) {
             JsonToken jsonToken = jsonParser.nextToken();
@@ -45,17 +45,17 @@ public class PatientPullResponseDeserializer extends JsonDeserializer<PatientPul
                     JsonParser responseParser = responseContentJson.traverse();
                     responseParser.nextToken();
                     if (responseContentJson.findValue("offset") == null) {
-                        patientPullResponseContent = deserializationContext.readValue(responseParser, PatientPullSingleResponseContent.class);
+                        clientPullResponseContent = deserializationContext.readValue(responseParser, ClientPullSingleResponseContent.class);
                     } else {
-                        patientPullResponseContent = deserializationContext.readValue(responseParser, PatientPullBundleResponseContent.class);
+                        clientPullResponseContent = deserializationContext.readValue(responseParser, ClientPullBundleResponseContent.class);
                     }
                 }
 
             }
         }
 
-        patientPullResponse.setRequestStatus(apiStatus);
-        patientPullResponse.setResponseContent(patientPullResponseContent);
-        return patientPullResponse;
+        clientPullResponse.setRequestStatus(apiStatus);
+        clientPullResponse.setResponseContent(clientPullResponseContent);
+        return clientPullResponse;
     }
 }

@@ -3,27 +3,27 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.response.patient;
+package com.portableehr.network.server.response.client;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.portableehr.model.server.Client;
 
 /**
- * The responseContent attribute for the ${@link PatientPullResponse} to the /patient
+ * The responseContent attribute for the ${@link ClientPullResponse} to the /client
  * FeedHub request with "command": "pullSingle"
  * <pre><code>
  * Serializes as {@link Client}
  * </code></pre>
  */
-public class PatientPullSingleResponseContent extends PatientPullResponseContent {
+public class ClientPullSingleResponseContent extends ClientPullResponseContent {
 
     @JsonUnwrapped
     Client result = null;
 
-    public PatientPullSingleResponseContent() {
+    public ClientPullSingleResponseContent() {
     }
 
-    public PatientPullSingleResponseContent(Client client) {
+    public ClientPullSingleResponseContent(Client client) {
         this.result = client;
     }
 

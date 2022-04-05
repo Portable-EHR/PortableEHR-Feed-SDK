@@ -5,6 +5,7 @@
 
 package com.portableehr.network.server.response;
 
+import com.portableehr.network.server.response.client.ClientPullResponseContent;
 import com.portableehr.network.server.response.staff.StaffPullResponseContent;
 
 /**
@@ -12,7 +13,7 @@ import com.portableehr.network.server.response.staff.StaffPullResponseContent;
  * Subclasses:<br>
  * {@link com.portableehr.network.server.response.appointment.AppointmentPullResponseContent}
  * {@link com.portableehr.network.server.response.login.LoginResponseContent}
- * {@link com.portableehr.network.server.response.patient.PatientPullResponseContent}
+ * {@link ClientPullResponseContent}
  * {@link StaffPullResponseContent}
  * {@link com.portableehr.network.server.response.privateMessage.PrivateMessageContentResponseContent}
  * {@link }

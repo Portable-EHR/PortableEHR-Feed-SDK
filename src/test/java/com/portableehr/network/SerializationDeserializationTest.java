@@ -14,14 +14,14 @@ import com.portableehr.network.client.request.privateMessage.PrivateMessageNotif
 import com.portableehr.network.client.request.privateMessage.PrivateMessageNotificationParametersDeserializer;
 import com.portableehr.network.server.request.appointment.AppointmentPullParameters;
 import com.portableehr.network.server.request.appointment.AppointmentPullParametersDeserializer;
-import com.portableehr.network.server.request.patient.PatientPullParameters;
-import com.portableehr.network.server.request.patient.PatientPullParametersDeserializer;
+import com.portableehr.network.server.request.client.ClientPullParameters;
+import com.portableehr.network.server.request.client.ClientPullParametersDeserializer;
 import com.portableehr.network.server.request.staff.StaffPullParameters;
 import com.portableehr.network.server.request.staff.StaffPullParametersDeserializer;
 import com.portableehr.network.server.response.appointment.AppointmentPullResponse;
 import com.portableehr.network.server.response.appointment.AppointmentPullResponseDeserializer;
-import com.portableehr.network.server.response.patient.PatientPullResponse;
-import com.portableehr.network.server.response.patient.PatientPullResponseDeserializer;
+import com.portableehr.network.server.response.client.ClientPullResponse;
+import com.portableehr.network.server.response.client.ClientPullResponseDeserializer;
 import com.portableehr.network.server.response.staff.StaffPullResponse;
 import com.portableehr.network.server.response.staff.StaffPullResponseDeserializer;
 import org.junit.Before;
@@ -46,8 +46,8 @@ public abstract class SerializationDeserializationTest {
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         SimpleModule module = new SimpleModule();
-        module.addDeserializer(PatientPullParameters.class, new PatientPullParametersDeserializer());
-        module.addDeserializer(PatientPullResponse.class, new PatientPullResponseDeserializer());
+        module.addDeserializer(ClientPullParameters.class, new ClientPullParametersDeserializer());
+        module.addDeserializer(ClientPullResponse.class, new ClientPullResponseDeserializer());
 
         module.addDeserializer(StaffPullParameters.class, new StaffPullParametersDeserializer());
         module.addDeserializer(StaffPullResponse.class, new StaffPullResponseDeserializer());

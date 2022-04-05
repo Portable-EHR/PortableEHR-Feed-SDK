@@ -6,6 +6,7 @@
 package com.portableehr.network.client.request.privateMessage;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.network.RequestCommand;
 import com.portableehr.network.client.request.FeedBackendRequest;
 
 /**
@@ -25,7 +26,7 @@ public class PrivateMessageNotificationRequest extends FeedBackendRequest {
 
     public PrivateMessageNotificationRequest() {}
 
-    public PrivateMessageNotificationRequest(String feedAlias, String command, PrivateMessageNotificationParameters parameters) {
+    public PrivateMessageNotificationRequest(String feedAlias, RequestCommand command, PrivateMessageNotificationParameters parameters) {
         super(feedAlias, command);
         this.parameters = parameters;
     }

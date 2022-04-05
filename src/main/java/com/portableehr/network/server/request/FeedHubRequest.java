@@ -6,7 +6,9 @@
 package com.portableehr.network.server.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.server.request.staff.StaffPullRequest;
+import com.portableehr.network.RequestCommand;
+import com.portableehr.network.server.request.client.ClientPullRequest;
+import com.portableehr.network.server.request.client.ClientReachabilityRequest;
 
 /**
  * Superclass containing the common attributes sent by most of FeedHub's requests
@@ -20,8 +22,8 @@ import com.portableehr.network.server.request.staff.StaffPullRequest;
  * Subclasses:<br>
  * {@link com.portableehr.network.server.request.appointment.AppointmentDispositionRequest}
  * {@link com.portableehr.network.server.request.appointment.AppointmentPullRequest}
- * {@link com.portableehr.network.server.request.patient.PatientPullRequest}
- * {@link com.portableehr.network.server.request.patient.PatientReachabilityRequest}
+ * {@link ClientPullRequest}
+ * {@link ClientReachabilityRequest}
  * {@link com.portableehr.network.server.request.staff.StaffPullRequest}
  * {@link com.portableehr.network.server.request.privateMessage.PrivateMessageStatusRequest}
  * {@link com.portableehr.network.server.request.privateMessage.PrivateMessageContentRequest}
@@ -32,7 +34,7 @@ public abstract class FeedHubRequest {
     private String feedAlias = null;
 
     @JsonProperty("command")
-    private String command = null;
+    private RequestCommand command = null;
 
     @JsonProperty("parameters")
     private FeedHubRequestParameters parameters = null;
@@ -40,12 +42,12 @@ public abstract class FeedHubRequest {
     public FeedHubRequest() {
     }
 
-    public FeedHubRequest(String feedAlias, String command) {
+    public FeedHubRequest(String feedAlias, RequestCommand command) {
         this.feedAlias = feedAlias;
         this.command = command;
     }
 
-    public FeedHubRequest(String feedAlias, String command, FeedHubRequestParameters parameters) {
+    public FeedHubRequest(String feedAlias, RequestCommand command, FeedHubRequestParameters parameters) {
         this.feedAlias = feedAlias;
         this.command = command;
         this.parameters = parameters;
@@ -59,11 +61,11 @@ public abstract class FeedHubRequest {
         this.feedAlias = feedAlias;
     }
 
-    public String getCommand() {
+    public RequestCommand getCommand() {
         return command;
     }
 
-    public void setCommand(String command) {
+    public void setCommand(RequestCommand command) {
         this.command = command;
     }
 

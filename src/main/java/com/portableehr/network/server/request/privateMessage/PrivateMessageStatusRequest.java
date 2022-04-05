@@ -6,6 +6,7 @@
 package com.portableehr.network.server.request.privateMessage;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.network.RequestCommand;
 import com.portableehr.network.server.request.FeedHubRequest;
 
 /**
@@ -25,7 +26,7 @@ public class PrivateMessageStatusRequest extends FeedHubRequest {
 
     public PrivateMessageStatusRequest() {}
 
-    public PrivateMessageStatusRequest(String feedAlias, String command, PrivateMessageStatusParameters parameters) {
+    public PrivateMessageStatusRequest(String feedAlias, RequestCommand command, PrivateMessageStatusParameters parameters) {
         super(feedAlias, command);
         this.parameters = parameters;
     }

@@ -7,6 +7,7 @@ package com.portableehr.network.server.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.ApiStatus;
+import com.portableehr.network.server.response.client.ClientPullResponse;
 import com.portableehr.network.server.response.staff.StaffPullResponse;
 
 /**
@@ -22,7 +23,7 @@ import com.portableehr.network.server.response.staff.StaffPullResponse;
  * {@link com.portableehr.network.server.response.appointment.AppointmentDispositionResponse}
  * {@link com.portableehr.network.server.response.appointment.AppointmentPullResponse}
  * {@link com.portableehr.network.server.response.login.LoginResponse}
- * {@link com.portableehr.network.server.response.patient.PatientPullResponse}
+ * {@link ClientPullResponse}
  * {@link StaffPullResponse}
  * {@link com.portableehr.network.server.response.privateMessage.PrivateMessageContentResponse}
  * {@link com.portableehr.network.server.response.privateMessage.PrivateMessageStatusResponse}

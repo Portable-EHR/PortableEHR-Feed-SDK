@@ -3,39 +3,40 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.request.staff;
+package com.portableehr.network.server.request.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.RequestCommand;
 import com.portableehr.network.server.request.FeedHubRequest;
 
 /**
- * The request sent by FeedHub to obtain the staff members
+ * Request send by FeedHub to obtain clients
  * <pre><code>
  * {
  *   "feedAlias": "fiktivDP",
  *   "command": "pullSingle",
- *   "parameters": {@link StaffPullParameters}
+ *   "parameters": {@link ClientPullParameters}
  * }
  * </code></pre>
  */
-public class StaffPullRequest extends FeedHubRequest {
+public class ClientPullRequest extends FeedHubRequest {
 
     @JsonProperty("parameters")
-    private StaffPullParameters parameters = null;
+    private ClientPullParameters parameters = null;
 
-    public StaffPullRequest() {}
+    public ClientPullRequest() {}
 
-    public StaffPullRequest(String feedAlias, RequestCommand command, StaffPullParameters parameters) {
+    public ClientPullRequest(String feedAlias, RequestCommand command, ClientPullParameters parameters) {
         super(feedAlias, command);
         this.parameters = parameters;
     }
 
-    public StaffPullParameters getParameters() {
+    public ClientPullParameters getParameters() {
         return parameters;
     }
 
-    public void setParameters(StaffPullParameters parameters) {
+    public void setParameters(ClientPullParameters parameters) {
         this.parameters = parameters;
     }
+
 }

@@ -6,6 +6,7 @@
 package com.portableehr.network.server.request.appointment;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.network.RequestCommand;
 import com.portableehr.network.server.request.FeedHubRequest;
 
 /**
@@ -25,7 +26,7 @@ public class AppointmentPullRequest extends FeedHubRequest {
 
     public AppointmentPullRequest() {}
 
-    public AppointmentPullRequest(String feedAlias, String command, AppointmentPullParameters parameters) {
+    public AppointmentPullRequest(String feedAlias, RequestCommand command, AppointmentPullParameters parameters) {
         super(feedAlias, command);
         this.parameters = parameters;
     }

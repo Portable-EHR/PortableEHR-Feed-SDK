@@ -6,6 +6,7 @@
 package com.portableehr.network.client.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.network.RequestCommand;
 
 /**
  * Class containing the minimum information sent on every request to FeedHub. Most request extend this class
@@ -23,7 +24,7 @@ public class FeedBackendRequest implements RequestToFeedHub {
     private String feedAlias = null;
 
     @JsonProperty("command")
-    private String command = null;
+    private RequestCommand command = null;
 
     @JsonProperty("parameters")
     private FeedBackendRequestParameters parameters = null;
@@ -31,12 +32,12 @@ public class FeedBackendRequest implements RequestToFeedHub {
     public FeedBackendRequest() {
     }
 
-    public FeedBackendRequest(String feedAlias, String command) {
+    public FeedBackendRequest(String feedAlias, RequestCommand command) {
         this.feedAlias = feedAlias;
         this.command = command;
     }
 
-    public FeedBackendRequest(String feedAlias, String command, FeedBackendRequestParameters parameters) {
+    public FeedBackendRequest(String feedAlias, RequestCommand command, FeedBackendRequestParameters parameters) {
         this.feedAlias = feedAlias;
         this.command = command;
         this.parameters = parameters;
@@ -50,11 +51,11 @@ public class FeedBackendRequest implements RequestToFeedHub {
         this.feedAlias = feedAlias;
     }
 
-    public String getCommand() {
+    public RequestCommand getCommand() {
         return command;
     }
 
-    public void setCommand(String command) {
+    public void setCommand(RequestCommand command) {
         this.command = command;
     }
 

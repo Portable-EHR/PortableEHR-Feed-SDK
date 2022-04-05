@@ -3,7 +3,7 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.client.request.patient;
+package com.portableehr.network.server.request.client;
 
 import com.portableehr.network.SerializationDeserializationTest;
 import org.junit.Test;
@@ -12,7 +12,7 @@ public class ClientReachabilityRequestTest extends SerializationDeserializationT
 
     @Test
     public void testPatientReachabilityRequest() throws Exception {
-        test("mocks/client_backend_patient_reachability_request.json", PatientReachabilityRequest.class);
+        test("mocks/server_feed_client_pehrReachability_request.json", ClientReachabilityRequest.class);
     }
 
 }
