@@ -6,7 +6,7 @@
 package com.portableehr.network.server.response.patient;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.server.Patient;
+import com.portableehr.model.server.Client;
 
 import java.util.List;
 
@@ -18,10 +18,10 @@ import java.util.List;
  *     "offset": 0,
  *     "hasMore": false,
  *     "results": [
- *       {@link Patient}1,
- *       {@link Patient}2,
+ *       {@link Client}1,
+ *       {@link Client}2,
  *       ...
- *       {@link Patient}N,
+ *       {@link Client}N,
  *     ]
  *   }
  * </code></pre>
@@ -35,12 +35,12 @@ public class PatientPullBundleResponseContent extends PatientPullResponseContent
     private boolean hasMore;
 
     @JsonProperty("results")
-    private List<Patient> results = null;
+    private List<Client> results = null;
 
     public PatientPullBundleResponseContent() {
     }
 
-    public PatientPullBundleResponseContent(int offset, boolean hasMore, List<Patient> results) {
+    public PatientPullBundleResponseContent(int offset, boolean hasMore, List<Client> results) {
         this.offset = offset;
         this.hasMore = hasMore;
         this.results = results;
@@ -62,11 +62,11 @@ public class PatientPullBundleResponseContent extends PatientPullResponseContent
         this.hasMore = hasMore;
     }
 
-    public List<Patient> getResults() {
+    public List<Client> getResults() {
         return results;
     }
 
-    public void setResults(List<Patient> results) {
+    public void setResults(List<Client> results) {
         this.results = results;
     }
 }

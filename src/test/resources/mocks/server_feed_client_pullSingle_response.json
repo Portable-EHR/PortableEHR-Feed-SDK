@@ -8,8 +8,7 @@
     "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
     "lastUpdated": "2021-06-02T20:20:19.865Z",
     "feedItemVersion": 1,
-    "chartNumber": "H008",
-    "primaryFeedPractitionerId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
+    "profileNumber": "H008",
     "demographics": {
       "dateOfBirth": "1955-04-15",
       "gender": "F",
@@ -59,6 +58,7 @@
     "locatedWith": {
       "contact": {
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
+        "type" : "self",
         "lastName": "Joe",
         "firstName": "Jane",
         "middleName": "",

@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * PatientLegitId
+ * ClientLegitId
  * <pre><code>
  * {
  *    "feedItemId": "00000000-0000-0000-0000-000000000000",
@@ -26,7 +26,7 @@ import java.util.UUID;
  * }
  * </code></pre>
  */
-public class PatientLegitId   {
+public class ClientLegitId {
 
   @JsonProperty("feedItemId")
   private UUID feedItemId = null;
@@ -50,10 +50,10 @@ public class PatientLegitId   {
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   private Date expiresOn = null;
 
-  public PatientLegitId() {
+  public ClientLegitId() {
   }
 
-  public PatientLegitId(UUID feedItemId, UUID backendItemId, IdIssuerKindEnum issuerKind, String issuerAlias, String number, String version, Date expiresOn) {
+  public ClientLegitId(UUID feedItemId, UUID backendItemId, IdIssuerKindEnum issuerKind, String issuerAlias, String number, String version, Date expiresOn) {
     this.feedItemId = feedItemId;
     this.backendItemId = backendItemId;
     this.issuerKind = issuerKind;

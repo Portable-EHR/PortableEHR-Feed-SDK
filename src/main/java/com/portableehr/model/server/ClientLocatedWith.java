@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * }
  * </code></pre>
  */
-public class PatientLocatedWith   {
+public class ClientLocatedWith {
   @JsonProperty("contact")
   private Contact contact = null;
 
@@ -25,12 +25,12 @@ public class PatientLocatedWith   {
   private CivicAddress address = null;
 
   @JsonProperty("emergencyContact")
-  private Contact emergencyContact = null;
+  private EmergencyContact emergencyContact = null;
 
-  public PatientLocatedWith() {
+  public ClientLocatedWith() {
   }
 
-  public PatientLocatedWith(Contact contact, CivicAddress address, Contact emergencyContact) {
+  public ClientLocatedWith(Contact contact, CivicAddress address, EmergencyContact emergencyContact) {
     this.contact = contact;
     this.address = address;
     this.emergencyContact = emergencyContact;
@@ -52,11 +52,11 @@ public class PatientLocatedWith   {
     this.address = address;
   }
 
-  public Contact getEmergencyContact() {
+  public EmergencyContact getEmergencyContact() {
     return emergencyContact;
   }
 
-  public void setEmergencyContact(Contact emergencyContact) {
+  public void setEmergencyContact(EmergencyContact emergencyContact) {
     this.emergencyContact = emergencyContact;
   }
 }

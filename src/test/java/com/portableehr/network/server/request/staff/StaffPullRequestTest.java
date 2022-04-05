@@ -12,8 +12,8 @@ public class StaffPullRequestTest extends SerializationDeserializationTest {
 
     @Test
     public void testStaffPullRequest() throws Exception {
-        test("mocks/server_feed_practitioner_pullSingle_request.json", StaffPullRequest.class);
-        test("mocks/server_feed_practitioner_pullBundle_request.json", StaffPullRequest.class);
+        test("mocks/server_feed_staff_pullSingle_request.json", StaffPullRequest.class);
+        test("mocks/server_feed_staff_pullBundle_request.json", StaffPullRequest.class);
     }
 
 }

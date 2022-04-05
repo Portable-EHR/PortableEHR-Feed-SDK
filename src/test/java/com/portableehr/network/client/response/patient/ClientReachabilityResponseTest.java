@@ -8,7 +8,7 @@ package com.portableehr.network.client.response.patient;
 import com.portableehr.network.SerializationDeserializationTest;
 import org.junit.Test;
 
-public class PatientReachabilityResponseTest extends SerializationDeserializationTest {
+public class ClientReachabilityResponseTest extends SerializationDeserializationTest {
 
     @Test
     public void testPatientReachabilityResponse() throws Exception {

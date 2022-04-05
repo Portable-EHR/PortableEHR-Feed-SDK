@@ -12,8 +12,7 @@
       "feedItemId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1411",
       "lastUpdated" : "2021-06-03T15:20:59.694Z",
       "feedItemVersion" : 1,
-      "chartNumber" : "H009",
-      "primaryFeedPractitionerId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1421",
+      "profileNumber" : "H009",
       "demographics" : {
         "dateOfBirth" : "1955-04-15",
         "gender" : "M",
@@ -63,6 +62,7 @@
       "locatedWith" : {
         "contact" : {
           "feedItemId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1411",
+          "type" : "self",
           "lastName" : "Doe",
           "firstName" : "John",
           "middleName" : "",
@@ -102,8 +102,7 @@
       "feedItemId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1414",
       "lastUpdated" : "2021-06-03T15:20:59.694Z",
       "feedItemVersion" : 1,
-      "chartNumber" : "H008",
-      "primaryFeedPractitionerId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1420",
+      "profileNumber" : "H008",
       "demographics" : {
         "dateOfBirth" : "1955-04-15",
         "gender" : "M",
@@ -153,6 +152,7 @@
       "locatedWith" : {
         "contact" : {
           "feedItemId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1414",
+          "type" : "self",
           "lastName" : "Clark",
           "firstName" : "Adam",
           "middleName" : "Edward",
@@ -191,8 +191,7 @@
       "feedItemId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
       "lastUpdated" : "2021-06-03T15:20:59.694Z",
       "feedItemVersion" : 1,
-      "chartNumber" : "H008",
-      "primaryFeedPractitionerId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
+      "profileNumber" : "H008",
       "demographics" : {
         "dateOfBirth" : "1955-04-15",
         "gender" : "F",
@@ -242,6 +241,7 @@
       "locatedWith" : {
         "contact" : {
           "feedItemId" : "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
+          "type" : "self",
           "lastName" : "Joe",
           "firstName" : "Jane",
           "preferredGender" : "F",
