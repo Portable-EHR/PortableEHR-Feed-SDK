@@ -19,10 +19,10 @@ import java.util.Date;
  *       "genderAtBirth": {@link GenderEnum},
  *       "name": {@link DemographicsName},
  *       "nameAtBirth": {@link DemographicsName},
- *       "placeOfBirth": {@link BirthPlace},
+ *       "placeOfBirth": {@link CivicAddress},
  *       "motherNameAtBirth": {@link DemographicsName},,
  *       "motherDateOfBirth": "1930-09-26",
- *       "motherPlaceOfBirth": {@link BirthPlace},,
+ *       "motherPlaceOfBirth": {@link CivicAddress},,
  *       "dateOfDeath": "1955-04-15"
  *     }
  * </code></pre>
@@ -45,7 +45,7 @@ public class Demographics {
   private DemographicsName nameAtBirth = null;
 
   @JsonProperty("placeOfBirth")
-  private BirthPlace placeOfBirth = null;
+  private CivicAddress placeOfBirth = null;
 
   @JsonProperty("motherNameAtBirth")
   private DemographicsName motherNameAtBirth = null;
@@ -55,7 +55,7 @@ public class Demographics {
   private Date motherDateOfBirth = null;
 
   @JsonProperty("motherPlaceOfBirth")
-  private BirthPlace motherPlaceOfBirth = null;
+  private CivicAddress motherPlaceOfBirth = null;
 
   @JsonProperty("dateOfDeath")
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -64,7 +64,7 @@ public class Demographics {
   public Demographics() {
   }
 
-  public Demographics(Date dateOfBirth, GenderEnum gender, GenderEnum genderAtBirth, DemographicsName name, DemographicsName nameAtBirth, BirthPlace placeOfBirth, DemographicsName motherNameAtBirth, Date motherDateOfBirth, BirthPlace motherPlaceOfBirth, Date dateOfDeath) {
+  public Demographics(Date dateOfBirth, GenderEnum gender, GenderEnum genderAtBirth, DemographicsName name, DemographicsName nameAtBirth, CivicAddress placeOfBirth, DemographicsName motherNameAtBirth, Date motherDateOfBirth, CivicAddress motherPlaceOfBirth, Date dateOfDeath) {
     this.dateOfBirth = dateOfBirth;
     this.gender = gender;
     this.genderAtBirth = genderAtBirth;
@@ -117,11 +117,11 @@ public class Demographics {
     this.nameAtBirth = nameAtBirth;
   }
 
-  public BirthPlace getPlaceOfBirth() {
+  public CivicAddress getPlaceOfBirth() {
     return placeOfBirth;
   }
 
-  public void setPlaceOfBirth(BirthPlace placeOfBirth) {
+  public void setPlaceOfBirth(CivicAddress placeOfBirth) {
     this.placeOfBirth = placeOfBirth;
   }
 
@@ -141,11 +141,11 @@ public class Demographics {
     this.motherDateOfBirth = motherDateOfBirth;
   }
 
-  public BirthPlace getMotherPlaceOfBirth() {
+  public CivicAddress getMotherPlaceOfBirth() {
     return motherPlaceOfBirth;
   }
 
-  public void setMotherPlaceOfBirth(BirthPlace motherPlaceOfBirth) {
+  public void setMotherPlaceOfBirth(CivicAddress motherPlaceOfBirth) {
     this.motherPlaceOfBirth = motherPlaceOfBirth;
   }
 
