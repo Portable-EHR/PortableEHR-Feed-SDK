@@ -7,7 +7,7 @@ package com.portableehr.network.server.request.appointment;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.server.AppointmentDispositionEnum;
+import com.portableehr.model.AppointmentDispositionEnum;
 import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 import java.util.Date;

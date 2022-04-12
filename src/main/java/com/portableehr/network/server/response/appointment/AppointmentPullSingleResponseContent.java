@@ -6,7 +6,7 @@
 package com.portableehr.network.server.response.appointment;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import com.portableehr.model.server.Appointment;
+import com.portableehr.model.Appointment;
 
 /**
  * The responseContent attribute for the ${@link AppointmentPullResponse} to the /appointment

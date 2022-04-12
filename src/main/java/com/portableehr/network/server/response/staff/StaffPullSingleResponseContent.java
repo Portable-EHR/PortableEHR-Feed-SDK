@@ -6,7 +6,7 @@
 package com.portableehr.network.server.response.staff;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import com.portableehr.model.server.Staff;
+import com.portableehr.model.Staff;
 
 /**
  * The responseContent attribute for the ${@link StaffPullResponse} to the /staff

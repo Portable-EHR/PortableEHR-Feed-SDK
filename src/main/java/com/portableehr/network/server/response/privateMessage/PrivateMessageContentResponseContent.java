@@ -6,7 +6,7 @@
 package com.portableehr.network.server.response.privateMessage;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import com.portableehr.model.server.PrivateMessageContent;
+import com.portableehr.model.PrivateMessageContent;
 import com.portableehr.network.server.response.FeedApiResponseContent;
 
 /**

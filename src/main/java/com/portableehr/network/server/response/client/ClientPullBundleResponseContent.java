@@ -6,7 +6,7 @@
 package com.portableehr.network.server.response.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.server.Client;
+import com.portableehr.model.Client;
 
 import java.util.List;
 

@@ -6,7 +6,7 @@
 package com.portableehr.network.client.response.patient;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import com.portableehr.model.client.PatientReachability;
+import com.portableehr.model.PatientReachability;
 import com.portableehr.network.client.response.FeedHubApiResponseContent;
 
 /**

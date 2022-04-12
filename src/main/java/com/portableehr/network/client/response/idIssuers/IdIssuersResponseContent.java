@@ -6,7 +6,7 @@
 package com.portableehr.network.client.response.idIssuers;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.client.JurisdictionIdIssuer;
+import com.portableehr.model.JurisdictionIdIssuer;
 import com.portableehr.network.client.response.FeedHubApiResponseContent;
 
 import java.util.List;

@@ -7,7 +7,7 @@ package com.portableehr.network.server.request.privateMessage;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.server.PrivateMessageStatusEnum;
+import com.portableehr.model.PrivateMessageStatusEnum;
 import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 import java.util.Date;

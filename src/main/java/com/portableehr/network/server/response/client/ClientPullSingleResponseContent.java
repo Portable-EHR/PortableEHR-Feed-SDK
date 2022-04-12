@@ -6,7 +6,7 @@
 package com.portableehr.network.server.response.client;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import com.portableehr.model.server.Client;
+import com.portableehr.model.Client;
 
 /**
  * The responseContent attribute for the ${@link ClientPullResponse} to the /client
