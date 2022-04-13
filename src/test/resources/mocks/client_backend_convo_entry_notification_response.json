@@ -1,0 +1,26 @@
+{
+  "requestStatus" : {
+    "status" : "OK",
+    "message" : "Conversation entry notification accepted"
+  },
+  "responseContent" : {
+    "entry" : {
+      "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+      "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+      "statusList" : [
+        {
+          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "status": "SENT",
+          "date": "2021-03-03T14:51:43.622Z"
+        },
+        {
+          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "status": "READ",
+          "date": "2021-03-03T14:51:43.622Z"
+        }
+      ]
+    }
+  }
+}

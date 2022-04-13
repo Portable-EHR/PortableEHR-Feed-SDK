@@ -61,8 +61,11 @@ public abstract class SerializationDeserializationTest {
     }
 
     protected <T> void test(String src, Class<T> clazz) throws java.io.IOException {
+        // Deserialize file
         T object = objectMapper.readValue(this.getClass().getClassLoader().getResourceAsStream(src), clazz);
+        // Serialize object
         String json = objectMapper.writeValueAsString(object);
+        // Deserialize object
         T objectResult = objectMapper.readValue(json, clazz);
 
         Map<String, Object> options = new HashMap<>();

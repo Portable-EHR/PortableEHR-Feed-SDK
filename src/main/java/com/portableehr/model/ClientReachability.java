@@ -16,24 +16,24 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * }
  * </code></pre>
  */
-public class PatientReachability {
-  @JsonProperty("patientId")
-  private String patientId = null;
+public class ClientReachability {
+  @JsonProperty("clientId")
+  private String clientId = null;
 
   @JsonProperty("isReachable")
   private Boolean isReachable = null;
 
-  public PatientReachability patientId(String patientId) {
-    this.patientId = patientId;
+  public ClientReachability patientId(String patientId) {
+    this.clientId = patientId;
     return this;
   }
 
-  public String getPatientId() {
-    return patientId;
+  public String getClientId() {
+    return clientId;
   }
 
-  public void setPatientId(String patientId) {
-    this.patientId = patientId;
+  public void setClientId(String clientId) {
+    this.clientId = clientId;
   }
 
   public Boolean getIsReachable() {
