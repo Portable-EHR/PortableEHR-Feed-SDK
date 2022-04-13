@@ -6,22 +6,22 @@ import java.util.List;
 import java.util.UUID;
 
 public class Entry extends EntryEnvelop {
-    private List<EntryPayload> entries = new LinkedList<>();
+    private EntryPayload payload;
 
     public Entry() {
         super();
     }
 
-    public Entry(UUID id, UUID from, List<EntryMemberStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn, List<EntryPayload> entries) {
+    public Entry(UUID id, UUID from, List<EntryMemberStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn, EntryPayload payload) {
         super(id, from, statusList, type, audience, attachmentCount, createdOn);
-        this.entries = entries;
+        this.payload = payload;
     }
 
-    public List<EntryPayload> getEntries() {
-        return entries;
+    public EntryPayload getPayload() {
+        return payload;
     }
 
-    public void setEntries(List<EntryPayload> entries) {
-        this.entries = entries;
+    public void setPayload(EntryPayload payload) {
+        this.payload = payload;
     }
 }

@@ -1,0 +1,31 @@
+{
+  "requestStatus": {
+    "status": "OK",
+    "message": "Returning conversation 00000000-0000-0000-0000-000000000000"
+  },
+  "responseContent": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "status": "OPEN",
+    "location": "Reception",
+    "staffTitle": "Client X - Case XYZ",
+    "clientTitle": "Requested documents for my claim",
+    "createdOn": "2021-03-03T14:51:43.622Z",
+    "updatedOn": "2021-03-03T14:51:43.622Z",
+    "participants": [
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "participantId": "10000000-0000-0000-0000-000000000001",
+        "type": "CLIENT",
+        "role": "PARTICIPANT",
+        "addedOn": "2021-03-03T14:51:43.622Z"
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "participantId": "20000000-0000-0000-0000-000000000002",
+        "type": "STAFF",
+        "role": "ADMIN",
+        "addedOn": "2021-03-03T14:51:43.622Z"
+      }
+    ]
+  }
+}

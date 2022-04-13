@@ -1,0 +1,42 @@
+{
+  "requestStatus": {
+    "status": "OK",
+    "message": "Created conversation 00000000-0000-0000-0000-000000000000"
+  },
+  "responseContent": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "status": "OPEN",
+    "location": "Reception",
+    "staffTitle": "Requested documents for my claim",
+    "clientTitle": "Requested documents for my claim",
+    "createdOn": "2021-03-03T14:51:43.622Z",
+    "participants": [
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "participantId": "10000000-0000-0000-0000-000000000001",
+        "type": "CLIENT",
+        "role": "PARTICIPANT",
+        "addedOn": "2021-03-03T14:51:43.622Z"
+      }
+    ],
+    "entries": [
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "type": "MESSAGE",
+        "audience": "ALL",
+        "attachmentCount" : 1,
+        "createdOn": "2021-03-03T14:51:43.622Z",
+        "payload": {
+          "text": "Hello, here is the requested document",
+          "attachments": [
+            {
+              "id": "00000000-0000-0000-0000-000000000000",
+              "name":  "the-document.pdf",
+              "mimeType": "application/pdf"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

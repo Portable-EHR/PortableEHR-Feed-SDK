@@ -7,7 +7,7 @@ import org.junit.Test;
 public class ConversationEntryNotificationResponseTest extends SerializationDeserializationTest {
 
     @Test
-    public void testPatientReachabilityRequest() throws Exception {
+    public void testConversationEntryNotificationResponse() throws Exception {
         test("mocks/client_backend_convo_entry_notification_response.json", ConversationEntryNotificationRequest.class);
     }
 }
