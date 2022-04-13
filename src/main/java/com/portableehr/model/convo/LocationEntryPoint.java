@@ -6,12 +6,12 @@ public class LocationEntryPoint {
     private UUID id;
     private String name;
     private String description;
-    private char[] icon;
+    private String icon;
 
     public LocationEntryPoint() {
     }
 
-    public LocationEntryPoint(UUID id, String name, String description, char[] icon) {
+    public LocationEntryPoint(UUID id, String name, String description, String icon) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -42,11 +42,11 @@ public class LocationEntryPoint {
         this.description = description;
     }
 
-    public char[] getIcon() {
+    public String getIcon() {
         return icon;
     }
 
-    public void setIcon(char[] icon) {
+    public void setIcon(String icon) {
         this.icon = icon;
     }
 }

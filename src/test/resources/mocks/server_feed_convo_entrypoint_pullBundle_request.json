@@ -1,0 +1,7 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushBundle",
+  "parameters": {
+    "lang": "en"
+  }
+}

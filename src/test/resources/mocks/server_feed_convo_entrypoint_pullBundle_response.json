@@ -1,0 +1,24 @@
+{
+  "requestStatus" : {
+    "status" : "OK",
+    "message" : "Returning a Bundle of [3] Conversations Location Entry Point from [fiktivDP]"
+  },
+  "responseContent" : {
+    "offset" : 0,
+    "hasMore" : false,
+    "results" : [
+      {
+        "id": "1ef9bda1-e67f-11ea-a057-fdaac99f1414",
+        "name": "Reception",
+        "description": "This is the reception",
+        "icon": "some b64 encoded image"
+      },
+      {
+        "id": "1ef9bda1-e67f-11ea-a057-fdaac99f1414",
+        "name": "Complains",
+        "description": "This is the complains department",
+        "icon": "some b64 encoded image"
+      }
+    ]
+  }
+}
