@@ -1,7 +1,7 @@
 {
   "requestStatus": {
     "status": "OK",
-    "message": "Created conversation 00000000-0000-0000-0000-000000000000"
+    "message": "Created conversation entry 00000000-0000-0000-0000-000000000000"
   },
   "responseContent": {
     "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
@@ -15,7 +15,8 @@
         {
           "id": "00000000-0000-0000-0000-000000000000",
           "name":  "the-document.pdf",
-          "mimeType": "application/pdf"
+          "mimeType": "application/pdf",
+          "b64": "JVBER..."
         }
       ]
     }

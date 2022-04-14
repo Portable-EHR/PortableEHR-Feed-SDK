@@ -1,0 +1,12 @@
+{
+  "requestStatus": {
+    "status": "OK",
+    "message": "Returning attachment 00000000-0000-0000-0000-000000000000"
+  },
+  "responseContent": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "name":  "the-document.pdf",
+    "mimeType": "application/pdf",
+    "b64": "JVBER..."
+  }
+}

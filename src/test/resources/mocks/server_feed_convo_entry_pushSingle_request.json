@@ -13,9 +13,9 @@
         "text": "Hello, here is the requested document",
         "attachments": [
           {
-            "id": "00000000-0000-0000-0000-000000000000",
             "name":  "the-document.pdf",
-            "mimeType": "application/pdf"
+            "mimeType": "application/pdf",
+            "b64": "JVBER..."
           }
         ]
       }
