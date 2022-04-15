@@ -8,6 +8,6 @@ public class ConversationEntryNotificationResponseTest extends SerializationDese
 
     @Test
     public void testConversationEntryNotificationResponse() throws Exception {
-        test("mocks/client_backend_convo_entry_notification_response.json", ConversationEntryNotificationRequest.class);
+        test("mocks/client_backend_convo_entry_notification_response.json", ConversationEntryNotificationResponse.class);
     }
 }

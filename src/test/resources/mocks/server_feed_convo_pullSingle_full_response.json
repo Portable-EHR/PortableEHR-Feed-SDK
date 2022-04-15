@@ -34,6 +34,20 @@
         "audience": "ALL",
         "attachmentCount" : 1,
         "createdOn": "2021-03-03T14:51:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "RECEIVED",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "RECEIVED",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
         "payload": {
           "text": "Hello, here is the requested document",
           "attachments": [
@@ -51,6 +65,20 @@
         "audience": "ALL",
         "attachmentCount" : 0,
         "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "RECEIVED",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "RECEIVED",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
         "payload": {
           "text": "Thank you"
         }
@@ -61,6 +89,20 @@
         "audience": "CLIENT",
         "attachmentCount" : 0,
         "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "RECEIVED",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "RECEIVED",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
         "payload": {
           "fromStatus": "OPEN",
           "toStatus": "CLOSED"

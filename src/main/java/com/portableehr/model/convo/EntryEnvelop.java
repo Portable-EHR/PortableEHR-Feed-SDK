@@ -9,7 +9,7 @@ public class EntryEnvelop {
 
     private UUID id;
     private UUID from;
-    private List<EntryMemberStatus> statusList = new ArrayList<>();
+    private List<EntryParticipantStatus> status = new ArrayList<>();
     private EntryTypeEnum type;
     private EntryAudienceEnum audience;
     private int attachmentCount;
@@ -18,10 +18,10 @@ public class EntryEnvelop {
     public EntryEnvelop() {
     }
 
-    public EntryEnvelop(UUID id, UUID from, List<EntryMemberStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn) {
+    public EntryEnvelop(UUID id, UUID from, List<EntryParticipantStatus> status, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn) {
         this.id = id;
         this.from = from;
-        this.statusList = statusList;
+        this.status = status;
         this.type = type;
         this.audience = audience;
         this.attachmentCount = attachmentCount;
@@ -44,12 +44,12 @@ public class EntryEnvelop {
         this.from = from;
     }
 
-    public List<EntryMemberStatus> getStatusList() {
-        return statusList;
+    public List<EntryParticipantStatus> getStatus() {
+        return status;
     }
 
-    public void setStatusList(List<EntryMemberStatus> statusList) {
-        this.statusList = statusList;
+    public void setStatus(List<EntryParticipantStatus> status) {
+        this.status = status;
     }
 
     public EntryTypeEnum getType() {

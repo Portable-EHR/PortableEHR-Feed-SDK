@@ -6,8 +6,13 @@ import org.junit.Test;
 public class EntryPushSingleRequestTest extends SerializationDeserializationTest {
 
     @Test
-    public void testEntryPushSingleRequest() throws Exception {
-        test("mocks/server_feed_convo_entry_pushSingle_request.json", EntryPushSingleRequest.class);
+    public void testEntryPushSingleNewRequest() throws Exception {
+        test("mocks/server_feed_convo_entry_pushSingle_new_request.json", EntryPushSingleRequest.class);
+    }
+
+    @Test
+    public void testEntryPushSingleAddRequest() throws Exception {
+        test("mocks/server_feed_convo_entry_pushSingle_add_request.json", EntryPushSingleRequest.class);
     }
 
 }

@@ -3,17 +3,17 @@ package com.portableehr.model.convo;
 import java.util.Date;
 import java.util.UUID;
 
-public class EntryMemberStatus {
+public class EntryParticipantStatus {
 
     private UUID participantId;
     private UUID entryId;
-    private EntryMemberStatusEnum status;
+    private EntryParticipantStatusEnum status;
     private Date date;
 
-    public EntryMemberStatus() {
+    public EntryParticipantStatus() {
     }
 
-    public EntryMemberStatus(UUID participantId, UUID entryId, EntryMemberStatusEnum status, Date date) {
+    public EntryParticipantStatus(UUID participantId, UUID entryId, EntryParticipantStatusEnum status, Date date) {
         this.participantId = participantId;
         this.entryId = entryId;
         this.status = status;
@@ -36,11 +36,11 @@ public class EntryMemberStatus {
         this.entryId = entryId;
     }
 
-    public EntryMemberStatusEnum getStatus() {
+    public EntryParticipantStatusEnum getStatus() {
         return status;
     }
 
-    public void setStatus(EntryMemberStatusEnum status) {
+    public void setStatus(EntryParticipantStatusEnum status) {
         this.status = status;
     }
 

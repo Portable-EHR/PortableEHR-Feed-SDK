@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>read</b> : The entry was read by the participant<br>
  * <b>akn</b> : The entry was acknowledged by the participant<br>
  */
-public enum EntryMemberStatusEnum {
+public enum EntryParticipantStatusEnum {
   SENT("sent"),
   RECEIVED("received"),
   READ("read"),
@@ -23,7 +23,7 @@ public enum EntryMemberStatusEnum {
 
   private String value;
 
-  EntryMemberStatusEnum(String value) {
+  EntryParticipantStatusEnum(String value) {
     this.value = value;
   }
 
@@ -34,8 +34,8 @@ public enum EntryMemberStatusEnum {
   }
 
   @JsonCreator
-  public static EntryMemberStatusEnum fromValue(String text) {
-    for (EntryMemberStatusEnum b : EntryMemberStatusEnum.values()) {
+  public static EntryParticipantStatusEnum fromValue(String text) {
+    for (EntryParticipantStatusEnum b : EntryParticipantStatusEnum.values()) {
       if (String.valueOf(b.value).equals(text)) {
         return b;
       }

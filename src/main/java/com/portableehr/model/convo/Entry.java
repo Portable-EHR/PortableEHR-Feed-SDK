@@ -1,7 +1,6 @@
 package com.portableehr.model.convo;
 
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
@@ -12,7 +11,7 @@ public class Entry extends EntryEnvelop {
         super();
     }
 
-    public Entry(UUID id, UUID from, List<EntryMemberStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn, EntryPayload payload) {
+    public Entry(UUID id, UUID from, List<EntryParticipantStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn, EntryPayload payload) {
         super(id, from, statusList, type, audience, attachmentCount, createdOn);
         this.payload = payload;
     }
