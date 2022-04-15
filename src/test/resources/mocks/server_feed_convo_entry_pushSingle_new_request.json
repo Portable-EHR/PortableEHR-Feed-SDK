@@ -4,8 +4,8 @@
   "parameters": {
     "entry": {
       "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-      "type": "MESSAGE",
-      "audience": "ALL",
+      "type": "message",
+      "audience": "all",
       "attachmentCount" : 1,
       "createdOn": "2021-03-03T14:51:43.622Z",
       "payload": {

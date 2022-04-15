@@ -16,18 +16,18 @@ public class Participant {
     private ParticipantTypeEnum type;
     private ParticipantRoleEnum role;
     private Date addedOn;
-    private Date createdOn;
+    private Date removedOn;
 
     public Participant() {
     }
 
-    public Participant(UUID id, String participantId, ParticipantTypeEnum type, ParticipantRoleEnum role, Date addedOn, Date createdOn) {
+    public Participant(UUID id, String participantId, ParticipantTypeEnum type, ParticipantRoleEnum role, Date addedOn, Date removedOn) {
         this.id = id;
         this.participantId = participantId;
         this.type = type;
         this.role = role;
         this.addedOn = addedOn;
-        this.createdOn = createdOn;
+        this.removedOn = removedOn;
     }
 
     public UUID getId() {
@@ -70,11 +70,11 @@ public class Participant {
         this.addedOn = addedOn;
     }
 
-    public Date getCreatedOn() {
-        return createdOn;
+    public Date getRemovedOn() {
+        return removedOn;
     }
 
-    public void setCreatedOn(Date createdOn) {
-        this.createdOn = createdOn;
+    public void setRemovedOn(Date removedOn) {
+        this.removedOn = removedOn;
     }
 }

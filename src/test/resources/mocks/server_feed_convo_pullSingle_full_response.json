@@ -5,46 +5,47 @@
   },
   "responseContent": {
     "id": "00000000-0000-0000-0000-000000000000",
-    "status": "OPEN",
+    "status": "open",
     "location": "Reception",
-    "staffTitle": "Client X - Case XYZ",
-    "clientTitle": "Requested documents for my claim",
+    "staffTittle": "Client X - Case XYZ",
+    "clientTittle": "Requested documents for my claim",
     "createdOn": "2021-03-03T14:51:43.622Z",
     "updatedOn": "2021-03-03T14:51:43.622Z",
     "participants": [
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "participantId": "10000000-0000-0000-0000-000000000001",
-        "type": "CLIENT",
-        "role": "PARTICIPANT",
+        "type": "client",
+        "role": "participant",
         "addedOn": "2021-03-03T14:51:43.622Z"
       },
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
         "participantId": "20000000-0000-0000-0000-000000000002",
-        "type": "STAFF",
-        "role": "ADMIN",
+        "type": "staff",
+        "role": "admin",
         "addedOn": "2021-03-03T14:51:43.622Z"
       }
     ],
     "entries": [
       {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-        "type": "MESSAGE",
-        "audience": "ALL",
+        "type": "message",
+        "audience": "all",
         "attachmentCount" : 1,
         "createdOn": "2021-03-03T14:51:43.622Z",
         "status" : [
           {
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-            "status": "RECEIVED",
+            "status": "received",
             "date": "2021-03-03T14:51:43.622Z"
           },
           {
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-            "status": "RECEIVED",
+            "status": "received",
             "date": "2021-03-03T14:51:43.622Z"
           }
         ],
@@ -60,22 +61,23 @@
         }
       },
       {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
-        "type": "MESSAGE",
-        "audience": "ALL",
+        "type": "message",
+        "audience": "all",
         "attachmentCount" : 0,
         "createdOn": "2021-03-03T14:59:43.622Z",
         "status" : [
           {
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-            "status": "RECEIVED",
+            "status": "received",
             "date": "2021-03-03T14:51:43.622Z"
           },
           {
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-            "status": "RECEIVED",
+            "status": "received",
             "date": "2021-03-03T14:51:43.622Z"
           }
         ],
@@ -84,28 +86,134 @@
         }
       },
       {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
-        "type": "STATUS_CHANGE",
-        "audience": "CLIENT",
+        "type": "status-change",
+        "audience": "client",
         "attachmentCount" : 0,
         "createdOn": "2021-03-03T14:59:43.622Z",
         "status" : [
           {
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-            "status": "RECEIVED",
+            "status": "received",
             "date": "2021-03-03T14:51:43.622Z"
           },
           {
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-            "status": "RECEIVED",
+            "status": "received",
             "date": "2021-03-03T14:51:43.622Z"
           }
         ],
         "payload": {
-          "fromStatus": "OPEN",
-          "toStatus": "CLOSED"
+          "fromStatus": "open",
+          "toStatus": "closed"
+        }
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "move",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "fromLocation": "Dr. X's Waiting room",
+          "toLocation": "Dr. X's office"
+        }
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "participant",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "action": "add"
+        }
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "participant",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "action": "remove"
+        }
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "assign",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "action": "assign",
+          "role": "admin"
         }
       }
     ]

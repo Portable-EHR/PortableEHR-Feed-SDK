@@ -7,13 +7,13 @@
       {
         "participantId": "00000000-0000-0000-0000-000000000000",
         "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
-        "status": "READ",
+        "status": "read",
         "date": "2021-03-03T14:51:43.622Z"
       },
       {
         "participantId": "00000000-0000-0000-0000-000000000000",
         "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
-        "status": "READ",
+        "status": "read",
         "date": "2021-03-03T14:51:43.622Z"
       }
     ]
