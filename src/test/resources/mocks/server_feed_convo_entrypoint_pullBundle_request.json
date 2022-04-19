@@ -1,6 +1,6 @@
 {
   "feedAlias": "fiktivDP",
-  "command": "pushBundle",
+  "command": "pullBundle",
   "parameters": {
     "lang": "en"
   }
