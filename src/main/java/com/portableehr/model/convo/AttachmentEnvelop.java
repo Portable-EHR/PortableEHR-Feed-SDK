@@ -1,8 +1,14 @@
 package com.portableehr.model.convo;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import java.util.UUID;
 
+@JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = AttachmentEnvelop.class)
+@JsonSubTypes( {
+        @JsonSubTypes.Type(Attachment.class),
+})
 public class AttachmentEnvelop {
 
     private UUID id;

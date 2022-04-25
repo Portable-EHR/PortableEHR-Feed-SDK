@@ -11,9 +11,13 @@ import org.junit.Test;
 public class AppointmentPullResponseTest extends SerializationDeserializationTest {
 
     @Test
-    public void testAppointmentPullResponse() throws Exception {
-        test("mocks/server_feed_appointment_pullSingle_request.json", AppointmentPullResponse.class);
-        test("mocks/server_feed_appointment_pullBundle_request.json", AppointmentPullResponse.class);
+    public void testAppointmentPullSingleResponse() throws Exception {
+        test("mocks/server_feed_appointment_pullSingle_response.json", AppointmentPullResponse.class);
+    }
+
+    @Test
+    public void testAppointmentPullBundleResponse() throws Exception {
+        test("mocks/server_feed_appointment_pullBundle_response.json", AppointmentPullResponse.class);
     }
 
 }

@@ -3,7 +3,7 @@
   "command": "pushBundle",
   "parameters": {
     "conversationId": "00000000-0000-0000-0000-000000000000",
-    "statuses": [
+    "status": [
       {
         "participantId": "00000000-0000-0000-0000-000000000000",
         "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",

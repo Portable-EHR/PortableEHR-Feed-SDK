@@ -28,11 +28,11 @@ public class EntryPushSingleResponseContent extends FeedApiResponseContent {
         this.entry = entry;
     }
 
-    public Entry getConversation() {
+    public Entry getEntry() {
         return entry;
     }
 
-    public void setConversation(Entry entry) {
+    public void setEntry(Entry entry) {
         this.entry = entry;
     }
 }

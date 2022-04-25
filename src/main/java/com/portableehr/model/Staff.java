@@ -70,7 +70,7 @@ public class Staff {
   private StaffRole role = null;
 
   @JsonProperty("practices")
-  private List<Practice> practices = new ArrayList<Practice>();
+  private List<Practice> practices = null;
 
   public Staff() {
   }

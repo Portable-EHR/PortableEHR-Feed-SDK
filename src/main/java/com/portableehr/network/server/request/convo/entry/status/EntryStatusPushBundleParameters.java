@@ -26,16 +26,16 @@ public class EntryStatusPushBundleParameters extends FeedHubRequestParameters {
     @JsonProperty("conversationId")
     private UUID conversationId = null;
 
-    @JsonProperty("statuses")
-    private List<EntryParticipantStatus> statuses = null;
+    @JsonProperty("status")
+    private List<EntryParticipantStatus> status = null;
 
 
     public EntryStatusPushBundleParameters() {
     }
 
-    public EntryStatusPushBundleParameters(UUID conversationId, List<EntryParticipantStatus> statuses) {
+    public EntryStatusPushBundleParameters(UUID conversationId, List<EntryParticipantStatus> status) {
         this.conversationId = conversationId;
-        this.statuses = statuses;
+        this.status = status;
     }
 
     public UUID getConversationId() {
@@ -46,11 +46,11 @@ public class EntryStatusPushBundleParameters extends FeedHubRequestParameters {
         this.conversationId = conversationId;
     }
 
-    public List<EntryParticipantStatus> getStatuses() {
-        return statuses;
+    public List<EntryParticipantStatus> getStatus() {
+        return status;
     }
 
-    public void setStatuses(List<EntryParticipantStatus> statuses) {
-        this.statuses = statuses;
+    public void setStatus(List<EntryParticipantStatus> status) {
+        this.status = status;
     }
 }

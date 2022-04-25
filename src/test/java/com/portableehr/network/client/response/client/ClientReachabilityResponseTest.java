@@ -11,8 +11,8 @@ import org.junit.Test;
 public class ClientReachabilityResponseTest extends SerializationDeserializationTest {
 
     @Test
-    public void testPatientReachabilityResponse() throws Exception {
-        test("mocks/client_backend_patient_reachability_response.json", ClientReachabilityResponse.class);
+    public void testClientReachabilityResponse() throws Exception {
+        test("mocks/client_backend_client_reachability_response.json", ClientReachabilityResponse.class);
     }
 
 }

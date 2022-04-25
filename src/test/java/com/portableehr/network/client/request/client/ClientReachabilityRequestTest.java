@@ -12,7 +12,7 @@ public class ClientReachabilityRequestTest extends SerializationDeserializationT
 
     @Test
     public void testClientReachabilityRequest() throws Exception {
-        test("mocks/client_backend_patient_reachability_request.json", ClientReachabilityRequest.class);
+        test("mocks/client_backend_client_reachability_request.json", ClientReachabilityRequest.class);
     }
 
 }

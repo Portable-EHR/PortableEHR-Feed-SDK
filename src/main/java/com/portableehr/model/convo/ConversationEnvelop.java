@@ -1,12 +1,13 @@
 package com.portableehr.model.convo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import java.util.Date;
 import java.util.UUID;
 
-@JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION)
+@JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = ConversationEnvelop.class)
 @JsonSubTypes( {
         @JsonSubTypes.Type(Conversation.class)
 })
@@ -17,7 +18,9 @@ public class ConversationEnvelop {
     private String location;
     private String staffTittle;
     private String clientTittle;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date createdOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date updatedOn;
 
     public ConversationEnvelop() {

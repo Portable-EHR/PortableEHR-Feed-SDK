@@ -7,8 +7,8 @@ import java.util.UUID;
 
 public class Conversation extends ConversationEnvelop {
 
-    private List<Entry> entries = new ArrayList<>();
-    private List<Participant> participants = new ArrayList<>();
+    private List<Entry> entries = null;
+    private List<Participant> participants = null;
 
     public Conversation(){
         super();

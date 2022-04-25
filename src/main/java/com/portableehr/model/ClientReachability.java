@@ -8,7 +8,7 @@ package com.portableehr.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * PatientReachability
+ * ClientReachability
  * <pre><code>
  * {
  *    "patientId": "00000000-0000-0000-0000-000000000000",

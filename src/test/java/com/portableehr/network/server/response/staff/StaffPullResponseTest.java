@@ -11,8 +11,12 @@ import org.junit.Test;
 public class StaffPullResponseTest extends SerializationDeserializationTest {
 
     @Test
-    public void testStaffPullResponse() throws Exception {
+    public void testStaffPullSingleResponse() throws Exception {
         test("mocks/server_feed_staff_pullSingle_response.json", StaffPullResponse.class);
+    }
+
+    @Test
+    public void testStaffPullBundleResponse() throws Exception {
         test("mocks/server_feed_staff_pullBundle_response.json", StaffPullResponse.class);
     }
 

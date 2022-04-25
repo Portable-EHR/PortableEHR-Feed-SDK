@@ -7,9 +7,11 @@ package com.portableehr.network;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.flipkart.zjsonpatch.JsonDiff;
 import com.portableehr.network.client.request.privateMessage.PrivateMessageNotificationParameters;
 import com.portableehr.network.client.request.privateMessage.PrivateMessageNotificationParametersDeserializer;
 import com.portableehr.network.server.request.appointment.AppointmentPullParameters;
@@ -26,6 +28,8 @@ import com.portableehr.network.server.response.staff.StaffPullResponse;
 import com.portableehr.network.server.response.staff.StaffPullResponseDeserializer;
 import org.junit.Before;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -58,19 +62,34 @@ public abstract class SerializationDeserializationTest {
 
         module.addDeserializer(PrivateMessageNotificationParameters.class, new PrivateMessageNotificationParametersDeserializer());
 
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+        objectMapper.setDateFormat(df);
+
         objectMapper.registerModule(module);
     }
 
     protected <T> void test(String src, Class<T> clazz) throws java.io.IOException {
         // Deserialize file
+        JsonNode expectedNode = objectMapper.readTree(this.getClass().getClassLoader().getResourceAsStream(src));
         T object = objectMapper.readValue(this.getClass().getClassLoader().getResourceAsStream(src), clazz);
+
         // Serialize object
         String json = objectMapper.writeValueAsString(object);
+
         // Deserialize object
         T objectResult = objectMapper.readValue(json, clazz);
+        JsonNode actualNode = objectMapper.readTree(json);
 
+        // Compare objects
         Map<String, Object> options = new HashMap<>();
         options.put(IGNORE_CUSTOM_EQUALS, true);
         assertTrue(deepEquals(object, objectResult));
+
+        // Compare jsons
+        JsonNode endedUpWith = JsonDiff.asJson(actualNode, expectedNode);
+        if(!endedUpWith.isEmpty()){
+            System.out.println("Differences in jsons : " + endedUpWith.toPrettyString());
+        }
+        assertTrue(endedUpWith.isEmpty());
     }
 }

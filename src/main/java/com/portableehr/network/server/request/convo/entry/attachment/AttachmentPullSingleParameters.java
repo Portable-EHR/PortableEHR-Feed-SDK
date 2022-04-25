@@ -28,8 +28,11 @@ public class AttachmentPullSingleParameters extends FeedHubRequestParameters {
     @JsonProperty("conversationId")
     private UUID conversationId = null;
 
-    @JsonProperty("includeEntries")
-    private boolean includeEntries = false;
+    @JsonProperty("entryId")
+    private UUID entryId = null;
+
+    @JsonProperty("attachmentId")
+    private UUID attachmentId = null;
 
     @JsonProperty("participantType")
     private ParticipantTypeEnum participantType = null;
@@ -40,9 +43,10 @@ public class AttachmentPullSingleParameters extends FeedHubRequestParameters {
     public AttachmentPullSingleParameters() {
     }
 
-    public AttachmentPullSingleParameters(UUID conversationId, boolean includeEntries, ParticipantTypeEnum participantType, UUID participantId) {
+    public AttachmentPullSingleParameters(UUID conversationId, UUID entryId, UUID attachmentId, ParticipantTypeEnum participantType, UUID participantId) {
         this.conversationId = conversationId;
-        this.includeEntries = includeEntries;
+        this.entryId = entryId;
+        this.attachmentId = attachmentId;
         this.participantType = participantType;
         this.participantId = participantId;
     }
@@ -55,12 +59,20 @@ public class AttachmentPullSingleParameters extends FeedHubRequestParameters {
         this.conversationId = conversationId;
     }
 
-    public boolean isIncludeEntries() {
-        return includeEntries;
+    public UUID getEntryId() {
+        return entryId;
     }
 
-    public void setIncludeEntries(boolean includeEntries) {
-        this.includeEntries = includeEntries;
+    public void setEntryId(UUID entryId) {
+        this.entryId = entryId;
+    }
+
+    public UUID getAttachmentId() {
+        return attachmentId;
+    }
+
+    public void setAttachmentId(UUID attachmentId) {
+        this.attachmentId = attachmentId;
     }
 
     public ParticipantTypeEnum getParticipantType() {

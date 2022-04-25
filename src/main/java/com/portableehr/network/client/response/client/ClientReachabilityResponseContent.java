@@ -25,11 +25,11 @@ public class ClientReachabilityResponseContent extends FeedHubApiResponseContent
         this.clientReachability = clientReachability;
     }
 
-    public ClientReachability getPatientReachability() {
+    public ClientReachability getClientReachability() {
         return clientReachability;
     }
 
-    public void setPatientReachability(ClientReachability clientReachability) {
+    public void setClientReachability(ClientReachability clientReachability) {
         this.clientReachability = clientReachability;
     }
 }

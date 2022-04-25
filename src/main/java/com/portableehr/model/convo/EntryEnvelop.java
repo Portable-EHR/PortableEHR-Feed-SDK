@@ -1,18 +1,27 @@
 package com.portableehr.model.convo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+@JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = EntryEnvelop.class)
+@JsonSubTypes( {
+        @JsonSubTypes.Type(Entry.class),
+})
 public class EntryEnvelop {
 
     private UUID id;
     private UUID from;
-    private List<EntryParticipantStatus> status = new ArrayList<>();
+    private List<EntryParticipantStatus> status = null;
     private EntryTypeEnum type;
     private EntryAudienceEnum audience;
     private int attachmentCount;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date createdOn;
 
     public EntryEnvelop() {

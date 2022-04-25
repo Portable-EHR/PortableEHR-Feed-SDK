@@ -25,11 +25,11 @@ public class ConversationEntryNotificationResponseContent extends FeedHubApiResp
         this.entry = entry;
     }
 
-    public EntryEnvelop getPatientReachability() {
+    public EntryEnvelop getEntry() {
         return entry;
     }
 
-    public void setPatientReachability(EntryEnvelop entry) {
+    public void setEntry(EntryEnvelop entry) {
         this.entry = entry;
     }
 }

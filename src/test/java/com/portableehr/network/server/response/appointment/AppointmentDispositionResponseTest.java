@@ -12,7 +12,7 @@ public class AppointmentDispositionResponseTest extends SerializationDeserializa
 
     @Test
     public void testAppointmentDispositionResponse() throws Exception {
-        test("mocks/server_feed_appointment_disposition_request.json", AppointmentDispositionResponse.class);
+        test("mocks/server_feed_appointment_disposition_response.json", AppointmentDispositionResponse.class);
     }
 
 }
