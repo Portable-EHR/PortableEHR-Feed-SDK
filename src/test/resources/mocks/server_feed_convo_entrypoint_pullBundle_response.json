@@ -4,8 +4,6 @@
     "message" : "Returning a Bundle of [3] Conversations Location Entry Point from [fiktivDP]"
   },
   "responseContent" : {
-    "offset" : 0,
-    "hasMore" : false,
     "results" : [
       {
         "id": "1ef9bda1-e67f-11ea-a057-fdaac99f1414",
