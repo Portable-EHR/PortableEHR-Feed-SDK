@@ -5,6 +5,8 @@
 
 package com.portableehr.network.server.request.convo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.model.convo.ParticipantTypeEnum;
 import com.portableehr.model.convo.Conversation;
@@ -21,6 +23,8 @@ import java.util.UUID;
  *     "includeEntries": true, // true -> a  {@link Conversation} must be returned, false -> {@link ConversationEnvelop}
  *     "participantType" : {@link ParticipantTypeEnum}, // Only used when includeEntries = true. To filter the returned entries to only display what the participant can see
  *     "participantId": "00000000-0000-0000-0000-000000000000" // Only used when includeEntries = true. To filter the returned entries to only display what the participant can see
+ *     "maxEntries": 50, // Only used when includeEntries = true. How many entries to return, starting from the newest
+ *     "offset": 0 // Only used when includeEntries = true. To get older entries, get the next "maxEntries" entries
  * }
  * </code></pre>
  */
@@ -38,14 +42,27 @@ public class ConvoPullSingleParameters extends FeedHubRequestParameters {
     @JsonProperty("participantId")
     private UUID participantId = null;
 
+    @JsonProperty("offset")
+    private Integer offset;
+
+    @JsonProperty("maxEntries")
+    private Integer maxEntries;
+
     public ConvoPullSingleParameters() {
     }
 
-    public ConvoPullSingleParameters(UUID conversationId, boolean includeEntries, ParticipantTypeEnum participantType, UUID participantId) {
+    public ConvoPullSingleParameters(UUID conversationId, boolean includeEntries, ParticipantTypeEnum participantType, UUID participantId, int offset, int maxEntries) {
         this.conversationId = conversationId;
         this.includeEntries = includeEntries;
         this.participantType = participantType;
         this.participantId = participantId;
+        this.offset = offset;
+        this.maxEntries = maxEntries;
+    }
+
+    public ConvoPullSingleParameters(UUID conversationId, boolean includeEntries) {
+        this.conversationId = conversationId;
+        this.includeEntries = includeEntries;
     }
 
     public UUID getConversationId() {
@@ -78,5 +95,21 @@ public class ConvoPullSingleParameters extends FeedHubRequestParameters {
 
     public void setParticipantId(UUID participantId) {
         this.participantId = participantId;
+    }
+
+    public Integer getOffset() {
+        return offset;
+    }
+
+    public void setOffset(Integer offset) {
+        this.offset = offset;
+    }
+
+    public Integer getMaxEntries() {
+        return maxEntries;
+    }
+
+    public void setMaxEntries(Integer maxEntries) {
+        this.maxEntries = maxEntries;
     }
 }

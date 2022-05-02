@@ -11,7 +11,7 @@ public class ConvoPullSingleRequestTest extends SerializationDeserializationTest
     }
 
     @Test
-    public void testConvoPullSinglEnvelopRequest() throws Exception {
+    public void testConvoPullSingleEnvelopRequest() throws Exception {
         test("mocks/server_feed_convo_pullSingle_envelop_request.json", ConvoPullSingleRequest.class);
     }
 }
