@@ -1,6 +1,5 @@
 package com.portableehr.model.convo;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -8,23 +7,20 @@ import java.util.UUID;
 public class Conversation extends ConversationEnvelop {
 
     private List<Entry> entries = null;
-    private List<Participant> participants = null;
 
     public Conversation(){
         super();
     }
 
-    public Conversation(List<Entry> entries, List<Participant> participants) {
+    public Conversation(List<Entry> entries) {
         super();
         this.entries = entries;
-        this.participants = participants;
     }
 
     public Conversation(UUID id, ConversationStatusEnum status, String location, String staffTittle, String clientTittle, Date createdOn, Date updatedOn,
                         List<Entry> entries, List<Participant> participants) {
-        super(id, status, location, staffTittle, clientTittle, createdOn, updatedOn);
+        super(id, status, location, staffTittle, clientTittle, participants, createdOn, updatedOn);
         this.entries = entries;
-        this.participants = participants;
     }
 
     public List<Entry> getEntries() {
@@ -35,11 +31,4 @@ public class Conversation extends ConversationEnvelop {
         this.entries = entries;
     }
 
-    public List<Participant> getParticipants() {
-        return participants;
-    }
-
-    public void setParticipants(List<Participant> participants) {
-        this.participants = participants;
-    }
 }

@@ -17,6 +17,8 @@ public class Participant {
     private String participantId;
     private ParticipantTypeEnum type;
     private ParticipantRoleEnum role;
+    private UUID staffUUID;
+    private UUID clientUUID;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date addedOn;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
@@ -25,11 +27,13 @@ public class Participant {
     public Participant() {
     }
 
-    public Participant(UUID id, String participantId, ParticipantTypeEnum type, ParticipantRoleEnum role, Date addedOn, Date removedOn) {
+    public Participant(UUID id, String participantId, ParticipantTypeEnum type, ParticipantRoleEnum role, UUID staffUUID, UUID clientUUID, Date addedOn, Date removedOn) {
         this.id = id;
         this.participantId = participantId;
         this.type = type;
         this.role = role;
+        this.staffUUID = staffUUID;
+        this.clientUUID = clientUUID;
         this.addedOn = addedOn;
         this.removedOn = removedOn;
     }
@@ -64,6 +68,22 @@ public class Participant {
 
     public void setRole(ParticipantRoleEnum role) {
         this.role = role;
+    }
+
+    public UUID getStaffUUID() {
+        return staffUUID;
+    }
+
+    public void setStaffUUID(UUID staffUUID) {
+        this.staffUUID = staffUUID;
+    }
+
+    public UUID getClientUUID() {
+        return clientUUID;
+    }
+
+    public void setClientUUID(UUID clientUUID) {
+        this.clientUUID = clientUUID;
     }
 
     public Date getAddedOn() {

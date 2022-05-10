@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = ConversationEnvelop.class)
@@ -18,6 +19,7 @@ public class ConversationEnvelop {
     private String location;
     private String staffTittle;
     private String clientTittle;
+    private List<Participant> participants = null;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date createdOn;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
@@ -26,12 +28,13 @@ public class ConversationEnvelop {
     public ConversationEnvelop() {
     }
 
-    public ConversationEnvelop(UUID id, ConversationStatusEnum status, String location, String staffTittle, String clientTittle, Date createdOn, Date updatedOn) {
+    public ConversationEnvelop(UUID id, ConversationStatusEnum status, String location, String staffTittle, String clientTittle, List<Participant> participants, Date createdOn, Date updatedOn) {
         this.id = id;
         this.status = status;
         this.location = location;
         this.staffTittle = staffTittle;
         this.clientTittle = clientTittle;
+        this.participants = participants;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
     }
@@ -74,6 +77,14 @@ public class ConversationEnvelop {
 
     public void setClientTittle(String clientTittle) {
         this.clientTittle = clientTittle;
+    }
+
+    public List<Participant> getParticipants() {
+        return participants;
+    }
+
+    public void setParticipants(List<Participant> participants) {
+        this.participants = participants;
     }
 
     public Date getCreatedOn() {
