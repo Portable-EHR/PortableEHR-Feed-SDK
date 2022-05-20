@@ -12,8 +12,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum ParticipantTypeEnum {
     CLIENT("client"),
-    STAFF("staff"),
     CLIENT_GUESS("client_guess"),
+    STAFF("staff"),
+    PRIVILEGED_STAFF("privileged_staff"),
     STAFF_GUESS("staff_guess");
 
     private String value;
