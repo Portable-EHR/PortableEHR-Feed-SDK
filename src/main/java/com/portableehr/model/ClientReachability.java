@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * </code></pre>
  */
 public class ClientReachability {
-  @JsonProperty("clientId")
+  @JsonProperty("patientId")
   private String clientId = null;
 
   @JsonProperty("isReachable")

@@ -12,14 +12,14 @@ import com.portableehr.network.server.request.FeedHubRequestParameters;
  * The parameters for the {@link ClientReachabilityRequest}
  * <pre><code>
  * {
- *     "clientId": "00000000-0000-0000-0000-000000000000",
+ *     "patientId": "00000000-0000-0000-0000-000000000000",
  *     "isReachable": true
  * }
  * </code></pre>
  */
 public class ClientReachabilityParameters extends FeedHubRequestParameters {
 
-    @JsonProperty("clientId")
+    @JsonProperty("patientId")
     private String clientId = null;
 
     @JsonProperty("isReachable")

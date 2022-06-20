@@ -2,7 +2,7 @@
   "feedAlias": "fiktivDP",
   "command": "pushSingle",
   "parameters": {
-    "clientId": "1ef9bda1-e67f-11ea-a057-fdaac99f1414",
+    "patientId": "1ef9bda1-e67f-11ea-a057-fdaac99f1414",
     "isReachable": true
   }
 }
