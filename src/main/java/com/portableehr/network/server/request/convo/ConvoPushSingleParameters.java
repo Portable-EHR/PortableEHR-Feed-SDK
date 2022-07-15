@@ -31,13 +31,13 @@ public class ConvoPushSingleParameters extends FeedHubRequestParameters {
     @JsonProperty("locationEntryPointId")
     private UUID locationEntryPointId = null;
 
+    @JsonProperty("clientId")
+    private UUID clientId = null;
+
+    @JsonProperty("clientTitle")
+    private String clientTitle = null;
 
     public ConvoPushSingleParameters() {
-    }
-
-    public ConvoPushSingleParameters(Entry entry, UUID locationEntryPointId) {
-        this.entry = entry;
-        this.locationEntryPointId = locationEntryPointId;
     }
 
     public Entry getEntry() {
@@ -54,5 +54,21 @@ public class ConvoPushSingleParameters extends FeedHubRequestParameters {
 
     public void setLocationEntryPointId(UUID locationEntryPointId) {
         this.locationEntryPointId = locationEntryPointId;
+    }
+
+    public UUID getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(UUID clientId) {
+        this.clientId = clientId;
+    }
+
+    public String getClientTitle() {
+        return clientTitle;
+    }
+
+    public void setClientTitle(String clientTitle) {
+        this.clientTitle = clientTitle;
     }
 }

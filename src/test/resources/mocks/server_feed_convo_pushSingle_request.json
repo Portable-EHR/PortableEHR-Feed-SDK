@@ -19,6 +19,8 @@
         ]
       }
     },
-    "locationEntryPointId": "00000000-0000-0000-0000-000000000000"
+    "locationEntryPointId": "00000000-0000-0000-0000-000000000000",
+    "clientId": "00000000-0000-0000-0000-000000000000",
+    "clientTitle": "This is the title the client chose"
   }
 }

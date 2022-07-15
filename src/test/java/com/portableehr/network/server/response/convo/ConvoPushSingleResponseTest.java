@@ -1,7 +1,6 @@
 package com.portableehr.network.server.response.convo;
 
 import com.portableehr.network.SerializationDeserializationTest;
-import junit.framework.TestCase;
 import org.junit.Test;
 
 public class ConvoPushSingleResponseTest extends SerializationDeserializationTest {
