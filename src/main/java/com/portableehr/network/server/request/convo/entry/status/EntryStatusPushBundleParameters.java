@@ -17,7 +17,7 @@ import java.util.UUID;
  * <pre><code>
  * {
  *     "conversationId": "00000000-0000-0000-0000-000000000000",
- *     "statuses":[{@link EntryParticipantStatus}...], // A list of EntryParticipantStatus to update
+ *     "status":[{@link EntryParticipantStatus}...], // A list of EntryParticipantStatus to update
  * }
  * </code></pre>
  */
