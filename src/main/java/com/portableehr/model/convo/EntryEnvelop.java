@@ -3,11 +3,10 @@ package com.portableehr.model.convo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.portableehr.DateDeserializer;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = EntryEnvelop.class)
 @JsonSubTypes( {
@@ -21,6 +20,7 @@ public class EntryEnvelop {
     private EntryTypeEnum type;
     private EntryAudienceEnum audience;
     private int attachmentCount;
+    @JsonDeserialize(using = DateDeserializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date createdOn;
 

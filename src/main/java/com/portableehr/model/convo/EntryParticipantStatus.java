@@ -1,6 +1,8 @@
 package com.portableehr.model.convo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.portableehr.DateDeserializer;
 
 import java.util.Date;
 import java.util.UUID;
@@ -10,6 +12,7 @@ public class EntryParticipantStatus {
     private UUID participantId;
     private UUID entryId;
     private EntryParticipantStatusEnum status;
+    @JsonDeserialize(using = DateDeserializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date date;
 
