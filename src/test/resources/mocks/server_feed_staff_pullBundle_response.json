@@ -12,57 +12,66 @@
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1420",
         "lastUpdated": "2021-06-03T15:21:22.515Z",
         "feedItemVersion": 1,
-        "id": "1ef9bda5-e67f-11ea-a057-fdaac99f1420",
-        "firstName": "John",
-        "lastName": "Zoidberg",
-        "middleName": "A.",
-        "role": "privileged_staff",
-        "practices": [
-          {
-            "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1420",
-            "issuerKind": "practiceLicense",
-            "issuerAlias": "CA_QC_CMQ",
-            "issuer": "CMQ",
-            "number": "112499",
-            "version": "2",
-            "expiresOn": "2021-01-28",
-            "isActive": false
-          }
-        ]
+        "roles": ["staff", "someVerySpecificRoleOfYourOrganization"],
+        "contact": {
+          "feedItemId": "28b2c2a2-3e60-11ed-b878-0242ac120002",
+          "type" : "self",
+          "lastName": "Zoidberg",
+          "firstName": "John",
+          "middleName": "A.",
+          "preferredGender": "M",
+          "email": "dr-zoidberg@mailinator.com",
+          "alternateEmail": "zoidberg.the.crab@mailinator.com",
+          "mobilePhone": "15553330001",
+          "professionalSalutation": "Dr",
+          "salutation": "Crustacean",
+          "titles": "Md, PhD",
+          "description": "Fantasy Crustacean Doctor"
+        }
       },
       {
         "feedAlias": "fiktivDP",
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1421",
         "lastUpdated": "2021-06-03T15:21:22.515Z",
         "feedItemVersion": 1,
-        "id": "1ef9bda5-e67f-11ea-a057-fdaac99f1421",
-        "firstName": "Douglas",
-        "lastName": "Evil",
-        "middleName": "",
-        "role": "privileged_staff",
-        "practices": [
-          {
-            "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1421",
-            "issuerKind": "practiceLicense",
-            "issuerAlias": "CA_QC_CMQ",
-            "issuer": "CMQ",
-            "number": "112488",
-            "version": "2",
-            "expiresOn": "2021-01-28",
-            "isActive": false
-          }
-        ]
+        "roles": ["admin"],
+        "contact": {
+          "feedItemId": "28b2c572-3e60-11ed-b878-0242ac120002",
+          "type" : "self",
+          "lastName": "Evil",
+          "firstName": "Douglas",
+          "middleName": "",
+          "preferredGender": "M",
+          "email": "dr-evil@mailinator.com",
+          "alternateEmail": "devil@mailinator.com",
+          "mobilePhone": "15554440001",
+          "professionalSalutation": "Dr",
+          "salutation": "Dr",
+          "titles": "Md, PhD",
+          "description": "Fantasy Evil Doctor"
+        }
       },
       {
         "feedAlias": "fiktivDP",
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
         "lastUpdated": "2021-06-03T15:21:22.515Z",
         "feedItemVersion": 1,
-        "id": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
-        "firstName": "Michaela",
-        "lastName": "Quinn",
-        "middleName": "Anne",
-        "role": "staff"
+        "roles": ["staff", "admin", "someVerySpecificRoleOfYourOrganization"],
+        "contact": {
+          "feedItemId": "2ab32c12-ded4-44b4-916d-8ef312f49277",
+          "type" : "self",
+          "lastName": "Quinn",
+          "firstName": "Michaela",
+          "middleName": "Anne",
+          "preferredGender": "F",
+          "email": "mquinn-md@mailinator.com",
+          "alternateEmail": "michaela-anne-quinn@mailinator.com",
+          "mobilePhone": "15552229999",
+          "professionalSalutation": "Dr",
+          "salutation": "Lady",
+          "titles": "Md, PhD",
+          "description": "Fantasy Family Doctor"
+        }
       }
     ]
   }

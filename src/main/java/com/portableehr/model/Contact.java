@@ -12,202 +12,216 @@ import java.util.UUID;
 /**
  * Contact for the Patient.
  */
-public class Contact   {
-  @JsonProperty("feedItemId")
-  private UUID feedItemId = null;
+public class Contact {
+    @JsonProperty("feedItemId")
+    private UUID feedItemId = null;
 
-  @JsonProperty("backendItemId")
-  private UUID backendItemId = null;
+    @JsonProperty("backendItemId")
+    private UUID backendItemId = null;
 
-  @JsonProperty("type")
-  private ContactTypeEnum type = null;
+    @JsonProperty("type")
+    private ContactTypeEnum type = null;
 
-  @JsonProperty("lastName")
-  private String lastName = null;
+    @JsonProperty("lastName")
+    private String lastName = null;
 
-  @JsonProperty("firstName")
-  private String firstName = null;
+    @JsonProperty("firstName")
+    private String firstName = null;
 
-  @JsonProperty("middleName")
-  private String middleName = null;
+    @JsonProperty("middleName")
+    private String middleName = null;
 
-  @JsonProperty("preferredGender")
-  private GenderEnum preferredGender = null;
+    @JsonProperty("preferredGender")
+    private GenderEnum preferredGender = null;
 
-  @JsonProperty("preferredLanguage")
-  private PreferredLanguageEnum preferredLanguage = null;
+    @JsonProperty("preferredLanguage")
+    private PreferredLanguageEnum preferredLanguage = null;
 
-  @JsonProperty("email")
-  private String email = null;
+    @JsonProperty("email")
+    private String email = null;
 
-  @JsonProperty("alternateEmail")
-  private String alternateEmail = null;
+    @JsonProperty("alternateEmail")
+    private String alternateEmail = null;
 
-  @JsonProperty("mobilePhone")
-  private String mobilePhone = null;
+    @JsonProperty("mobilePhone")
+    private String mobilePhone = null;
 
-  @JsonProperty("landPhone")
-  private String landPhone = null;
+    @JsonProperty("landPhone")
+    private String landPhone = null;
 
-  @JsonProperty("fax")
-  private String fax = null;
+    @JsonProperty("fax")
+    private String fax = null;
 
-  @JsonProperty("professionalSalutation")
-  private String professionalSalutation = null;
+    @JsonProperty("professionalSalutation")
+    private String professionalSalutation = null;
 
-  @JsonProperty("salutation")
-  private String salutation = null;
+    @JsonProperty("salutation")
+    private String salutation = null;
 
-  @JsonProperty("titles")
-  private String titles = null;
+    @JsonProperty("titles")
+    private String titles = null;
 
-  public Contact() {
-  }
+    @JsonProperty("description")
+    private String description = null;
 
-  public Contact(UUID feedItemId, UUID backendItemId, ContactTypeEnum type, String lastName, String firstName, String middleName, GenderEnum preferredGender, PreferredLanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax, String professionalSalutation, String salutation, String titles) {
-    this.feedItemId = feedItemId;
-    this.backendItemId = backendItemId;
-    this.type = type;
-    this.lastName = lastName;
-    this.firstName = firstName;
-    this.middleName = middleName;
-    this.preferredGender = preferredGender;
-    this.preferredLanguage = preferredLanguage;
-    this.email = email;
-    this.alternateEmail = alternateEmail;
-    this.mobilePhone = mobilePhone;
-    this.landPhone = landPhone;
-    this.fax = fax;
-    this.professionalSalutation = professionalSalutation;
-    this.salutation = salutation;
-    this.titles = titles;
-  }
+    public Contact() {
+    }
 
-  public UUID getFeedItemId() {
-    return feedItemId;
-  }
+    public Contact(UUID feedItemId, UUID backendItemId, ContactTypeEnum type, String lastName, String firstName, String middleName, GenderEnum preferredGender,
+                   PreferredLanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax, String professionalSalutation,
+                   String salutation, String titles, String description) {
+        this.feedItemId = feedItemId;
+        this.backendItemId = backendItemId;
+        this.type = type;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.preferredGender = preferredGender;
+        this.preferredLanguage = preferredLanguage;
+        this.email = email;
+        this.alternateEmail = alternateEmail;
+        this.mobilePhone = mobilePhone;
+        this.landPhone = landPhone;
+        this.fax = fax;
+        this.professionalSalutation = professionalSalutation;
+        this.salutation = salutation;
+        this.titles = titles;
+        this.description = description;
+    }
 
-  public void setFeedItemId(UUID feedItemId) {
-    this.feedItemId = feedItemId;
-  }
+    public UUID getFeedItemId() {
+        return feedItemId;
+    }
 
-  public UUID getBackendItemId() {
-    return backendItemId;
-  }
+    public void setFeedItemId(UUID feedItemId) {
+        this.feedItemId = feedItemId;
+    }
 
-  public void setBackendItemId(UUID backendItemId) {
-    this.backendItemId = backendItemId;
-  }
+    public UUID getBackendItemId() {
+        return backendItemId;
+    }
 
-  public ContactTypeEnum getType() {
-    return type;
-  }
+    public void setBackendItemId(UUID backendItemId) {
+        this.backendItemId = backendItemId;
+    }
 
-  public void setType(ContactTypeEnum type) {
-    this.type = type;
-  }
+    public ContactTypeEnum getType() {
+        return type;
+    }
 
-  public String getLastName() {
-    return lastName;
-  }
+    public void setType(ContactTypeEnum type) {
+        this.type = type;
+    }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
+    public String getLastName() {
+        return lastName;
+    }
 
-  public String getFirstName() {
-    return firstName;
-  }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
-  }
+    public String getFirstName() {
+        return firstName;
+    }
 
-  public String getMiddleName() {
-    return middleName;
-  }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-  public void setMiddleName(String middleName) {
-    this.middleName = middleName;
-  }
+    public String getMiddleName() {
+        return middleName;
+    }
 
-  public GenderEnum getPreferredGender() {
-    return preferredGender;
-  }
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
 
-  public void setPreferredGender(GenderEnum preferredGender) {
-    this.preferredGender = preferredGender;
-  }
+    public GenderEnum getPreferredGender() {
+        return preferredGender;
+    }
 
-  public PreferredLanguageEnum getPreferredLanguage() {
-    return preferredLanguage;
-  }
+    public void setPreferredGender(GenderEnum preferredGender) {
+        this.preferredGender = preferredGender;
+    }
 
-  public void setPreferredLanguage(PreferredLanguageEnum preferredLanguage) {
-    this.preferredLanguage = preferredLanguage;
-  }
+    public PreferredLanguageEnum getPreferredLanguage() {
+        return preferredLanguage;
+    }
 
-  public String getEmail() {
-    return email;
-  }
+    public void setPreferredLanguage(PreferredLanguageEnum preferredLanguage) {
+        this.preferredLanguage = preferredLanguage;
+    }
 
-  public void setEmail(String email) {
-    this.email = email;
-  }
+    public String getEmail() {
+        return email;
+    }
 
-  public String getAlternateEmail() {
-    return alternateEmail;
-  }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-  public void setAlternateEmail(String alternateEmail) {
-    this.alternateEmail = alternateEmail;
-  }
+    public String getAlternateEmail() {
+        return alternateEmail;
+    }
 
-  public String getMobilePhone() {
-    return mobilePhone;
-  }
+    public void setAlternateEmail(String alternateEmail) {
+        this.alternateEmail = alternateEmail;
+    }
 
-  public void setMobilePhone(String mobilePhone) {
-    this.mobilePhone = mobilePhone;
-  }
+    public String getMobilePhone() {
+        return mobilePhone;
+    }
 
-  public String getLandPhone() {
-    return landPhone;
-  }
+    public void setMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
+    }
 
-  public void setLandPhone(String landPhone) {
-    this.landPhone = landPhone;
-  }
+    public String getLandPhone() {
+        return landPhone;
+    }
 
-  public String getFax() {
-    return fax;
-  }
+    public void setLandPhone(String landPhone) {
+        this.landPhone = landPhone;
+    }
 
-  public void setFax(String fax) {
-    this.fax = fax;
-  }
+    public String getFax() {
+        return fax;
+    }
 
-  public String getProfessionalSalutation() {
-    return professionalSalutation;
-  }
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
 
-  public void setProfessionalSalutation(String professionalSalutation) {
-    this.professionalSalutation = professionalSalutation;
-  }
+    public String getProfessionalSalutation() {
+        return professionalSalutation;
+    }
 
-  public String getSalutation() {
-    return salutation;
-  }
+    public void setProfessionalSalutation(String professionalSalutation) {
+        this.professionalSalutation = professionalSalutation;
+    }
 
-  public void setSalutation(String salutation) {
-    this.salutation = salutation;
-  }
+    public String getSalutation() {
+        return salutation;
+    }
 
-  public String getTitles() {
-    return titles;
-  }
+    public void setSalutation(String salutation) {
+        this.salutation = salutation;
+    }
 
-  public void setTitles(String titles) {
-    this.titles = titles;
-  }
+    public String getTitles() {
+        return titles;
+    }
+
+    public void setTitles(String titles) {
+        this.titles = titles;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

@@ -8,10 +8,21 @@
     "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
     "lastUpdated": "2021-06-02T20:20:29.079Z",
     "feedItemVersion": 1,
-    "id": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
-    "firstName": "Michaela",
-    "lastName": "Quinn",
-    "middleName": "Anne",
-    "role": "staff"
+    "roles": ["staff", "admin", "someVerySpecificRoleOfYourOrganization"],
+    "contact": {
+      "feedItemId": "2ab32c12-ded4-44b4-916d-8ef312f49277",
+      "type" : "self",
+      "lastName": "Quinn",
+      "firstName": "Michaela",
+      "middleName": "Anne",
+      "preferredGender": "F",
+      "email": "mquinn-md@mailinator.com",
+      "alternateEmail": "michaela-anne-quinn@mailinator.com",
+      "mobilePhone": "15552229999",
+      "professionalSalutation": "Dr",
+      "salutation": "Lady",
+      "titles": "Md, PhD",
+      "description": "Fantasy Family Doctor"
+    }
   }
 }

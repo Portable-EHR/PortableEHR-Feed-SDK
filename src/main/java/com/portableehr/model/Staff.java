@@ -22,159 +22,101 @@ import java.util.UUID;
  *     "backendItemId": "00000000-0000-0000-0000-000000000000",
  *     "lastUpdated": "2021-01-14T23:41:21.050Z",
  *     "feedItemVersion": 1,
- *     "id": "00000000-0000-0000-0000-000000000000",
- *     "firstName": "John",
- *     "lastName": "Smith",
- *     "middleName": "Edward",
- *     "role": "staff",
- *     "practices": [
- *       {@link Practice}1,
- *       {@link Practice}2,
- *       ...
- *       {@link Practice}N,
- *     ]
+ *     "roles": ["staff", "reception", "someVerySpecificRoleOfYourOrganization"],
+ *     "contact": {@link Contact}
  *   }
  * </code></pre>
  */
 public class Staff {
 
-  @JsonProperty("feedAlias")
-  private String feedAlias = null;
+    @JsonProperty("feedAlias")
+    private String feedAlias = null;
 
-  @JsonProperty("feedItemId")
-  private UUID feedItemId = null;
+    @JsonProperty("feedItemId")
+    private UUID feedItemId = null;
 
-  @JsonProperty("backendItemId")
-  private UUID backendItemId = null;
+    @JsonProperty("backendItemId")
+    private UUID backendItemId = null;
 
-  @JsonProperty("lastUpdated")
-  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
-  private Date lastUpdated = null;
+    @JsonProperty("lastUpdated")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date lastUpdated = null;
 
-  @JsonProperty("feedItemVersion")
-  private Integer feedItemVersion = null;
+    @JsonProperty("feedItemVersion")
+    private Integer feedItemVersion = null;
 
-  @JsonProperty("id")
-  private UUID id = null;
+    @JsonProperty("roles")
+    private List<String> roles = null;
 
-  @JsonProperty("firstName")
-  private String firstName = null;
+    @JsonProperty("contact")
+    private Contact contact = null;
 
-  @JsonProperty("lastName")
-  private String lastName = null;
+    public Staff() {
+    }
 
-  @JsonProperty("middleName")
-  private String middleName = null;
+    public Staff(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion, List<String> roles, Contact contact) {
+        this.feedAlias = feedAlias;
+        this.feedItemId = feedItemId;
+        this.backendItemId = backendItemId;
+        this.lastUpdated = lastUpdated;
+        this.feedItemVersion = feedItemVersion;
+        this.roles = roles;
+        this.contact = contact;
+    }
 
-  @JsonProperty("role")
-  private StaffRole role = null;
+    public String getFeedAlias() {
+        return feedAlias;
+    }
 
-  @JsonProperty("practices")
-  private List<Practice> practices = null;
+    public void setFeedAlias(String feedAlias) {
+        this.feedAlias = feedAlias;
+    }
 
-  public Staff() {
-  }
+    public UUID getFeedItemId() {
+        return feedItemId;
+    }
 
-  public Staff(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion,
-               UUID id, String firstName, String lastName, String middleName, StaffRole role, List<Practice> practices) {
-    this.feedAlias = feedAlias;
-    this.feedItemId = feedItemId;
-    this.backendItemId = backendItemId;
-    this.lastUpdated = lastUpdated;
-    this.feedItemVersion = feedItemVersion;
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.middleName = middleName;
-    this.role = role;
-    this.practices = practices;
-  }
+    public void setFeedItemId(UUID feedItemId) {
+        this.feedItemId = feedItemId;
+    }
 
-  public String getFeedAlias() {
-    return feedAlias;
-  }
+    public UUID getBackendItemId() {
+        return backendItemId;
+    }
 
-  public void setFeedAlias(String feedAlias) {
-    this.feedAlias = feedAlias;
-  }
+    public void setBackendItemId(UUID backendItemId) {
+        this.backendItemId = backendItemId;
+    }
 
-  public UUID getFeedItemId() {
-    return feedItemId;
-  }
+    public Date getLastUpdated() {
+        return lastUpdated;
+    }
 
-  public void setFeedItemId(UUID feedItemId) {
-    this.feedItemId = feedItemId;
-  }
+    public void setLastUpdated(Date lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
 
-  public UUID getBackendItemId() {
-    return backendItemId;
-  }
+    public Integer getFeedItemVersion() {
+        return feedItemVersion;
+    }
 
-  public void setBackendItemId(UUID backendItemId) {
-    this.backendItemId = backendItemId;
-  }
+    public void setFeedItemVersion(Integer feedItemVersion) {
+        this.feedItemVersion = feedItemVersion;
+    }
 
-  public Date getLastUpdated() {
-    return lastUpdated;
-  }
+    public List<String> getRoles() {
+        return roles;
+    }
 
-  public void setLastUpdated(Date lastUpdated) {
-    this.lastUpdated = lastUpdated;
-  }
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
+    }
 
-  public Integer getFeedItemVersion() {
-    return feedItemVersion;
-  }
+    public Contact getContact() {
+        return contact;
+    }
 
-  public void setFeedItemVersion(Integer feedItemVersion) {
-    this.feedItemVersion = feedItemVersion;
-  }
-
-  public UUID getId() {
-    return id;
-  }
-
-  public void setId(UUID id) {
-    this.id = id;
-  }
-
-  public String getFirstName() {
-    return firstName;
-  }
-
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
-  }
-
-  public String getLastName() {
-    return lastName;
-  }
-
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
-
-  public String getMiddleName() {
-    return middleName;
-  }
-
-  public void setMiddleName(String middleName) {
-    this.middleName = middleName;
-  }
-
-  public StaffRole getRole() {
-    return role;
-  }
-
-  public void setRole(StaffRole role) {
-    this.role = role;
-  }
-
-  public List<Practice> getPractices() {
-    return practices;
-  }
-
-  public void setPractices(List<Practice> practices) {
-    this.practices = practices;
-  }
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
 }
