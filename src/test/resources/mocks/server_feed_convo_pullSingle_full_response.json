@@ -215,6 +215,33 @@
           "action": "assign",
           "role": "admin"
         }
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "share",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "id": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "type": "private-message",
+          "text": "Here is the message of the specialist"
+        }
       }
     ]
   }

@@ -15,13 +15,15 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>move</b> : The entry is about the conversation changing location<br>
  * <b>participant</b> : The entry is about adding or removing a participant<br>
  * <b>assign</b> : The entry is about assigning someone as admin<br>
+ * <b>share</b> : The entry is about sharing an element in the conversation<br>
  */
 public enum EntryTypeEnum {
   MESSAGE("message"),
   STATUS_CHANGE("status-change"),
   MOVE("move"),
   PARTICIPANT("participant"),
-  ASSIGN("assign");
+  ASSIGN("assign"),
+  SHARE("share");
 
   private String value;
 
