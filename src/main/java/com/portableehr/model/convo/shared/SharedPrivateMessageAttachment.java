@@ -1,11 +1,14 @@
 package com.portableehr.model.convo.shared;
 
-import java.time.Instant;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.util.Date;
 
 public class SharedPrivateMessageAttachment {
 
     private String name;
-    private Instant date;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date date;
     private String type;
     private String ext;
     private String b64;
@@ -13,7 +16,7 @@ public class SharedPrivateMessageAttachment {
     public SharedPrivateMessageAttachment() {
     }
 
-    public SharedPrivateMessageAttachment(String name, Instant date, String type, String ext, String b64) {
+    public SharedPrivateMessageAttachment(String name, Date date, String type, String ext, String b64) {
         this.name = name;
         this.date = date;
         this.type = type;
@@ -29,11 +32,11 @@ public class SharedPrivateMessageAttachment {
         this.name = name;
     }
 
-    public Instant getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(Instant date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

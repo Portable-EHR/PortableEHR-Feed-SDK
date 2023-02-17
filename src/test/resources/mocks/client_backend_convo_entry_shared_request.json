@@ -1,0 +1,8 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pullSingle",
+  "parameters": {
+    "conversationId": "6965664a-a703-11ed-bf51-cb85398e1eeb",
+    "elementId": "c83133eb-e15c-494a-bbc4-b4ca33b523c3"
+  }
+}

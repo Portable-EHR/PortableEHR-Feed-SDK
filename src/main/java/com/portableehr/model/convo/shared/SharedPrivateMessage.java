@@ -1,42 +1,55 @@
 package com.portableehr.model.convo.shared;
 
-import java.time.Instant;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.util.Date;
 import java.util.List;
 
 public class SharedPrivateMessage {
     private String source;
     private String shortNameSource;
     private String from;
-    private String patient;
+    private String client;
     private String to;
     private String messageB64;
     private String subject;
     private String context;
 
-    private Instant createdOn;
-    private Instant receivedOn;
-    private Instant sentOn;
-    private Instant seenOn;
-    private Instant notifiedOn;
-    private Instant remindedOn;
-    private Instant failedOn;
-    private Instant acknowledgedOn;
-    private Instant fellBackOn;
-    private Instant sendReminderOn;
-    private Instant sendFallbackOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date createdOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date receivedOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date sentOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date seenOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date notifiedOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date remindedOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date failedOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date acknowledgedOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date fellBackOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date sendReminderOn;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+    private Date sendFallbackOn;
 
     private List<SharedPrivateMessageAttachment> attachments;
 
     public SharedPrivateMessage() {
     }
 
-    public SharedPrivateMessage(String source, String shortNameSource, String from, String patient, String to, String messageB64, String subject, String context,
-                                Instant createdOn, Instant receivedOn, Instant sentOn, Instant seenOn, Instant notifiedOn, Instant remindedOn, Instant failedOn,
-                                Instant acknowledgedOn, Instant fellBackOn, Instant sendReminderOn, Instant sendFallbackOn, List<SharedPrivateMessageAttachment> attachments) {
+    public SharedPrivateMessage(String source, String shortNameSource, String from, String client, String to, String messageB64, String subject, String context,
+                                Date createdOn, Date receivedOn, Date sentOn, Date seenOn, Date notifiedOn, Date remindedOn, Date failedOn,
+                                Date acknowledgedOn, Date fellBackOn, Date sendReminderOn, Date sendFallbackOn, List<SharedPrivateMessageAttachment> attachments) {
         this.source = source;
         this.shortNameSource = shortNameSource;
         this.from = from;
-        this.patient = patient;
+        this.client = client;
         this.to = to;
         this.messageB64 = messageB64;
         this.subject = subject;
@@ -79,12 +92,12 @@ public class SharedPrivateMessage {
         this.from = from;
     }
 
-    public String getPatient() {
-        return patient;
+    public String getClient() {
+        return client;
     }
 
-    public void setPatient(String patient) {
-        this.patient = patient;
+    public void setClient(String client) {
+        this.client = client;
     }
 
     public String getTo() {
@@ -119,91 +132,91 @@ public class SharedPrivateMessage {
         this.context = context;
     }
 
-    public Instant getCreatedOn() {
+    public Date getCreatedOn() {
         return createdOn;
     }
 
-    public void setCreatedOn(Instant createdOn) {
+    public void setCreatedOn(Date createdOn) {
         this.createdOn = createdOn;
     }
 
-    public Instant getReceivedOn() {
+    public Date getReceivedOn() {
         return receivedOn;
     }
 
-    public void setReceivedOn(Instant receivedOn) {
+    public void setReceivedOn(Date receivedOn) {
         this.receivedOn = receivedOn;
     }
 
-    public Instant getSentOn() {
+    public Date getSentOn() {
         return sentOn;
     }
 
-    public void setSentOn(Instant sentOn) {
+    public void setSentOn(Date sentOn) {
         this.sentOn = sentOn;
     }
 
-    public Instant getSeenOn() {
+    public Date getSeenOn() {
         return seenOn;
     }
 
-    public void setSeenOn(Instant seenOn) {
+    public void setSeenOn(Date seenOn) {
         this.seenOn = seenOn;
     }
 
-    public Instant getNotifiedOn() {
+    public Date getNotifiedOn() {
         return notifiedOn;
     }
 
-    public void setNotifiedOn(Instant notifiedOn) {
+    public void setNotifiedOn(Date notifiedOn) {
         this.notifiedOn = notifiedOn;
     }
 
-    public Instant getRemindedOn() {
+    public Date getRemindedOn() {
         return remindedOn;
     }
 
-    public void setRemindedOn(Instant remindedOn) {
+    public void setRemindedOn(Date remindedOn) {
         this.remindedOn = remindedOn;
     }
 
-    public Instant getFailedOn() {
+    public Date getFailedOn() {
         return failedOn;
     }
 
-    public void setFailedOn(Instant failedOn) {
+    public void setFailedOn(Date failedOn) {
         this.failedOn = failedOn;
     }
 
-    public Instant getAcknowledgedOn() {
+    public Date getAcknowledgedOn() {
         return acknowledgedOn;
     }
 
-    public void setAcknowledgedOn(Instant acknowledgedOn) {
+    public void setAcknowledgedOn(Date acknowledgedOn) {
         this.acknowledgedOn = acknowledgedOn;
     }
 
-    public Instant getFellBackOn() {
+    public Date getFellBackOn() {
         return fellBackOn;
     }
 
-    public void setFellBackOn(Instant fellBackOn) {
+    public void setFellBackOn(Date fellBackOn) {
         this.fellBackOn = fellBackOn;
     }
 
-    public Instant getSendReminderOn() {
+    public Date getSendReminderOn() {
         return sendReminderOn;
     }
 
-    public void setSendReminderOn(Instant sendReminderOn) {
+    public void setSendReminderOn(Date sendReminderOn) {
         this.sendReminderOn = sendReminderOn;
     }
 
-    public Instant getSendFallbackOn() {
+    public Date getSendFallbackOn() {
         return sendFallbackOn;
     }
 
-    public void setSendFallbackOn(Instant sendFallbackOn) {
+    public void setSendFallbackOn(Date sendFallbackOn) {
         this.sendFallbackOn = sendFallbackOn;
     }
 
