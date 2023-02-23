@@ -14,13 +14,13 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>en</b><br>
  * <b>fr</b><br>
  */
-public enum PreferredLanguageEnum {
+public enum LanguageEnum {
     EN("en"),
     FR("fr");
 
     private String value;
 
-    PreferredLanguageEnum(String value) {
+    LanguageEnum(String value) {
         this.value = value;
     }
 
@@ -31,8 +31,8 @@ public enum PreferredLanguageEnum {
     }
 
     @JsonCreator
-    public static PreferredLanguageEnum fromValue(String text) {
-        for (PreferredLanguageEnum b : PreferredLanguageEnum.values()) {
+    public static LanguageEnum fromValue(String text) {
+        for (LanguageEnum b : LanguageEnum.values()) {
             if (String.valueOf(b.value).equals(text)) {
                 return b;
             }

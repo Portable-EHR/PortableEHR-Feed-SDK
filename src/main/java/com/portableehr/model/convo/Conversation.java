@@ -1,7 +1,10 @@
 package com.portableehr.model.convo;
 
+import com.portableehr.model.LanguageEnum;
+
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 public class Conversation extends ConversationEnvelop {
@@ -17,7 +20,7 @@ public class Conversation extends ConversationEnvelop {
         this.entries = entries;
     }
 
-    public Conversation(UUID id, ConversationStatusEnum status, String location, String staffTittle, String clientTittle, Date createdOn, Date updatedOn,
+    public Conversation(UUID id, ConversationStatusEnum status, Map<LanguageEnum, String> location, String staffTittle, String clientTittle, Date createdOn, Date updatedOn,
                         List<Entry> entries, List<Participant> participants) {
         super(id, status, location, staffTittle, clientTittle, participants, createdOn, updatedOn);
         this.entries = entries;

@@ -6,7 +6,10 @@
   "responseContent": {
     "id": "00000000-0000-0000-0000-000000000000",
     "status": "open",
-    "location": "Reception",
+    "location": {
+      "en": "Reception",
+      "fr": "Acueil"
+    },
     "staffTittle": "Client X - Case XYZ",
     "clientTittle": "Requested documents for my claim",
     "createdOn": "2021-03-03T14:51:43.622Z",

@@ -35,7 +35,7 @@ public class Contact {
     private GenderEnum preferredGender = null;
 
     @JsonProperty("preferredLanguage")
-    private PreferredLanguageEnum preferredLanguage = null;
+    private LanguageEnum preferredLanguage = null;
 
     @JsonProperty("email")
     private String email = null;
@@ -68,7 +68,7 @@ public class Contact {
     }
 
     public Contact(UUID feedItemId, UUID backendItemId, ContactTypeEnum type, String lastName, String firstName, String middleName, GenderEnum preferredGender,
-                   PreferredLanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax, String professionalSalutation,
+                   LanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax, String professionalSalutation,
                    String salutation, String titles, String description) {
         this.feedItemId = feedItemId;
         this.backendItemId = backendItemId;
@@ -145,11 +145,11 @@ public class Contact {
         this.preferredGender = preferredGender;
     }
 
-    public PreferredLanguageEnum getPreferredLanguage() {
+    public LanguageEnum getPreferredLanguage() {
         return preferredLanguage;
     }
 
-    public void setPreferredLanguage(PreferredLanguageEnum preferredLanguage) {
+    public void setPreferredLanguage(LanguageEnum preferredLanguage) {
         this.preferredLanguage = preferredLanguage;
     }
 

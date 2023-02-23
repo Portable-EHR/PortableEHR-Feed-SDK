@@ -6,40 +6,35 @@
 package com.portableehr.network.server.request.convo.entrypoint;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.PreferredLanguageEnum;
-import com.portableehr.model.convo.Conversation;
-import com.portableehr.model.convo.ConversationEnvelop;
-import com.portableehr.model.convo.ParticipantTypeEnum;
+import com.portableehr.model.LanguageEnum;
 import com.portableehr.network.server.request.FeedHubRequestParameters;
 import com.portableehr.network.server.request.convo.ConvoPullSingleRequest;
-
-import java.util.UUID;
 
 /**
  * The parameters for the {@link ConvoPullSingleRequest}
  * <pre><code>
  * {
- *     "lang": {@link PreferredLanguageEnum}
+ *     "lang": {@link LanguageEnum}
  * }
  * </code></pre>
  */
 public class EntryPointPullBundleParameters extends FeedHubRequestParameters {
 
     @JsonProperty("lang")
-    private PreferredLanguageEnum lang = null;
+    private LanguageEnum lang = null;
 
     public EntryPointPullBundleParameters() {
     }
 
-    public EntryPointPullBundleParameters(PreferredLanguageEnum lang) {
+    public EntryPointPullBundleParameters(LanguageEnum lang) {
         this.lang = lang;
     }
 
-    public PreferredLanguageEnum getLang() {
+    public LanguageEnum getLang() {
         return lang;
     }
 
-    public void setLang(PreferredLanguageEnum lang) {
+    public void setLang(LanguageEnum lang) {
         this.lang = lang;
     }
 }

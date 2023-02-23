@@ -5,9 +5,11 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.portableehr.DateDeserializer;
+import com.portableehr.model.LanguageEnum;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = ConversationEnvelop.class)
@@ -18,7 +20,7 @@ public class ConversationEnvelop {
 
     private UUID id;
     private ConversationStatusEnum status;
-    private String location;
+    private Map<LanguageEnum, String> location;
     private String staffTittle;
     private String clientTittle;
     private List<Participant> participants = null;
@@ -32,7 +34,7 @@ public class ConversationEnvelop {
     public ConversationEnvelop() {
     }
 
-    public ConversationEnvelop(UUID id, ConversationStatusEnum status, String location, String staffTittle, String clientTittle, List<Participant> participants, Date createdOn, Date updatedOn) {
+    public ConversationEnvelop(UUID id, ConversationStatusEnum status, Map<LanguageEnum, String> location, String staffTittle, String clientTittle, List<Participant> participants, Date createdOn, Date updatedOn) {
         this.id = id;
         this.status = status;
         this.location = location;
@@ -59,11 +61,11 @@ public class ConversationEnvelop {
         this.status = status;
     }
 
-    public String getLocation() {
+    public Map<LanguageEnum, String> getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(Map<LanguageEnum, String> location) {
         this.location = location;
     }
 

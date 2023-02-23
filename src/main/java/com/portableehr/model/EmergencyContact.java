@@ -37,7 +37,7 @@ public class EmergencyContact extends Contact {
     }
 
     public EmergencyContact(UUID feedItemId, UUID backendItemId, String lastName, String firstName, String middleName, GenderEnum preferredGender,
-                            PreferredLanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax,
+                            LanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax,
                             String professionalSalutation, String salutation, String titles, String description) {
         super(feedItemId, backendItemId, null, lastName, firstName, middleName, preferredGender, preferredLanguage, email, alternateEmail, mobilePhone, landPhone, fax,
                 professionalSalutation, salutation, titles, description);
