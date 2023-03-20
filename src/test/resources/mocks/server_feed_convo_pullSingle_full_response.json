@@ -162,7 +162,7 @@
           }
         ],
         "payload": {
-          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "targetParticipantGuid": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
           "action": "add"
         }
       },
@@ -188,7 +188,7 @@
           }
         ],
         "payload": {
-          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "targetParticipantGuid": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
           "action": "remove"
         }
       },
@@ -214,7 +214,7 @@
           }
         ],
         "payload": {
-          "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "targetParticipantGuid": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
           "action": "assign",
           "role": "admin"
         }

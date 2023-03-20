@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class EntryPayloadParticipant extends EntryPayload {
 
-    private UUID participantId;
+    private UUID targetParticipantGuid;
     private EntryPayloadParticipantActionEnum action;
     private ParticipantRoleEnum role;
 
@@ -12,17 +12,17 @@ public class EntryPayloadParticipant extends EntryPayload {
     }
 
     public EntryPayloadParticipant(UUID participantId, EntryPayloadParticipantActionEnum action, ParticipantRoleEnum role) {
-        this.participantId = participantId;
+        this.targetParticipantGuid = participantId;
         this.action = action;
         this.role = role;
     }
 
-    public UUID getParticipantId() {
-        return participantId;
+    public UUID getTargetParticipantGuid() {
+        return targetParticipantGuid;
     }
 
-    public void setParticipantId(UUID participantId) {
-        this.participantId = participantId;
+    public void setTargetParticipantGuid(UUID targetParticipantGuid) {
+        this.targetParticipantGuid = targetParticipantGuid;
     }
 
     public EntryPayloadParticipantActionEnum getAction() {
