@@ -55,6 +55,9 @@ public class Client {
   @JsonProperty("profileNumber")
   private String profileNumber = null;
 
+  @JsonProperty("identityValidated")
+  private Boolean identityValidated = null;
+
   @JsonProperty("demographics")
   private Demographics demographics = null;
 
@@ -68,13 +71,14 @@ public class Client {
   }
 
   public Client(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion,
-                String profileNumber, Demographics demographics, List<ClientLegitId> identifiedBy, ClientLocatedWith locatedWith) {
+                String profileNumber, Boolean identityValidated, Demographics demographics, List<ClientLegitId> identifiedBy, ClientLocatedWith locatedWith) {
     this.feedAlias = feedAlias;
     this.feedItemId = feedItemId;
     this.backendItemId = backendItemId;
     this.lastUpdated = lastUpdated;
     this.feedItemVersion = feedItemVersion;
     this.profileNumber = profileNumber;
+    this.identityValidated = identityValidated;
     this.demographics = demographics;
     this.identifiedBy = identifiedBy;
     this.locatedWith = locatedWith;
@@ -126,6 +130,14 @@ public class Client {
 
   public void setProfileNumber(String profileNumber) {
     this.profileNumber = profileNumber;
+  }
+
+  public Boolean getIdentityValidated() {
+    return identityValidated;
+  }
+
+  public void setIdentityValidated(Boolean identityValidated) {
+    this.identityValidated = identityValidated;
   }
 
   public Demographics getDemographics() {

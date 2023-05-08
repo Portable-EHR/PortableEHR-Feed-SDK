@@ -13,6 +13,7 @@
       "lastUpdated" : "2021-06-03T15:20:59.694Z",
       "feedItemVersion" : 1,
       "profileNumber" : "H009",
+      "identityValidated" : true,
       "demographics" : {
         "dateOfBirth" : "1955-04-15",
         "gender" : "M",
@@ -103,6 +104,7 @@
       "lastUpdated" : "2021-06-03T15:20:59.694Z",
       "feedItemVersion" : 1,
       "profileNumber" : "H008",
+      "identityValidated" : false,
       "demographics" : {
         "dateOfBirth" : "1955-04-15",
         "gender" : "M",
