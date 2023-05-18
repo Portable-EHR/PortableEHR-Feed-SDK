@@ -1,0 +1,14 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "locationEntryPointId": "48e899ce-c791-42a6-a10a-27bb65d6b6fd",
+    "entry": {
+      "type": "message",
+      "audience": "all",
+      "payload": {}
+    },
+    "clientId": "04b9dcbe-a661-11ed-bf51-cb85398e1eeb",
+    "clientTitle": "For Vickel DO NOT TOUCH - 337"
+  }
+}

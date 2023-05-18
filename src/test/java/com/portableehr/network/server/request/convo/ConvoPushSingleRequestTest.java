@@ -10,4 +10,9 @@ public class ConvoPushSingleRequestTest extends SerializationDeserializationTest
         test("mocks/server_feed_convo_pushSingle_request.json", ConvoPushSingleRequest.class);
     }
 
+    @Test
+    public void testConvoPushSingleNoContentRequest() throws Exception {
+        test("mocks/server_feed_convo_pushSingle_request_no_content.json", ConvoPushSingleRequest.class);
+    }
+
 }

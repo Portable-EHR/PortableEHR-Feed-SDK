@@ -1,6 +1,7 @@
 package com.portableehr.model.convo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -19,7 +20,8 @@ public class EntryEnvelop {
     private List<EntryParticipantStatus> status = null;
     private EntryTypeEnum type;
     private EntryAudienceEnum audience;
-    private int attachmentCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Integer attachmentCount;
     @JsonDeserialize(using = DateDeserializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date createdOn;
@@ -77,11 +79,11 @@ public class EntryEnvelop {
         this.audience = audience;
     }
 
-    public int getAttachmentCount() {
+    public Integer getAttachmentCount() {
         return attachmentCount;
     }
 
-    public void setAttachmentCount(int attachmentCount) {
+    public void setAttachmentCount(Integer attachmentCount) {
         this.attachmentCount = attachmentCount;
     }
 
