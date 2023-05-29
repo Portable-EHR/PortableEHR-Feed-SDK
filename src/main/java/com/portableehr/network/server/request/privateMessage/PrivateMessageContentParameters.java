@@ -12,13 +12,13 @@ import com.portableehr.network.server.request.FeedHubRequestParameters;
  * Parameters sent by FeedHub in the {@link PrivateMessageContentRequest}
  * <pre><code>
  * {
- *     "feedItemId" : "00000000-0000-0000-0000-000000000000"
+ *     "id" : "00000000-0000-0000-0000-000000000000"
  * }
  * </code></pre>
  */
 public class PrivateMessageContentParameters extends FeedHubRequestParameters {
 
-    @JsonProperty("feedItemId")
+    @JsonProperty("id")
     private String feedItemId = null;
 
     public PrivateMessageContentParameters() {
