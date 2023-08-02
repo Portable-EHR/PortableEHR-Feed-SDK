@@ -9,7 +9,7 @@ public class Entry extends EntryEnvelop {
     private Boolean requiresAcknowledge;
     private List<ReplyTypeEnum> possibleRepliesTypes;
     private Entry repliesTo;
-    private List<PossibleReply> possibleReplies;
+    private List<ChoiceOption> choiceReplyOptions;
 
     public Entry() {
         super();
@@ -17,13 +17,13 @@ public class Entry extends EntryEnvelop {
 
     public Entry(UUID id, UUID from, List<EntryParticipantStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn,
                  List<MentionedParticipant> mentionedParticipants, EntryPayload payload, Boolean requiresAcknowledge, List<ReplyTypeEnum> possibleRepliesTypes, Entry repliesTo,
-                 List<PossibleReply> possibleReplies) {
+                 List<ChoiceOption> choiceReplyOptions) {
         super(id, from, statusList, type, audience, attachmentCount, createdOn, mentionedParticipants);
         this.payload = payload;
         this.requiresAcknowledge = requiresAcknowledge;
         this.possibleRepliesTypes = possibleRepliesTypes;
         this.repliesTo = repliesTo;
-        this.possibleReplies = possibleReplies;
+        this.choiceReplyOptions = choiceReplyOptions;
     }
 
     public EntryPayload getPayload() {
@@ -60,12 +60,12 @@ public class Entry extends EntryEnvelop {
     }
 
 
-    public List<PossibleReply> getPossibleReplies() {
-        return possibleReplies;
+    public List<ChoiceOption> getChoiceReplyOptions() {
+        return choiceReplyOptions;
     }
 
-    public void setPossibleReplies(List<PossibleReply> possibleReplies) {
-        this.possibleReplies = possibleReplies;
+    public void setChoiceReplyOptions(List<ChoiceOption> choiceReplyOptions) {
+        this.choiceReplyOptions = choiceReplyOptions;
     }
 
 }

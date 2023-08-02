@@ -15,7 +15,7 @@ public class EntryPayloadStatusChange extends EntryPayload {
         this.toStatus = toStatus;
     }
 
-    public EntryPayloadStatusChange(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, ConversationStatusEnum fromStatus,
+    public EntryPayloadStatusChange(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply, ConversationStatusEnum fromStatus,
                                     ConversationStatusEnum toStatus) {
         super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.fromStatus = fromStatus;

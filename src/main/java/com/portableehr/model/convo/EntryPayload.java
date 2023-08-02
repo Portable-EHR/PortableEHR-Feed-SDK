@@ -20,12 +20,12 @@ public abstract class EntryPayload {
     private Date dateReply = null;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date dateTimeReply = null;
-    private PossibleReply choiceReply = null;
+    private ChoiceOption choiceReply = null;
 
     public EntryPayload() {
     }
 
-    public EntryPayload(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply) {
+    public EntryPayload(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply) {
         this.freeTextReply = freeTextReply;
         this.dateReply = dateReply;
         this.dateTimeReply = dateTimeReply;
@@ -56,11 +56,11 @@ public abstract class EntryPayload {
         this.dateTimeReply = dateTimeReply;
     }
 
-    public PossibleReply getChoiceReply() {
+    public ChoiceOption getChoiceReply() {
         return choiceReply;
     }
 
-    public void setChoiceReply(PossibleReply choiceReply) {
+    public void setChoiceReply(ChoiceOption choiceReply) {
         this.choiceReply = choiceReply;
     }
 }

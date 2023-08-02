@@ -35,7 +35,7 @@
       ]
     },
     "possibleRepliesTypes": ["choice", "free_text"],
-    "possibleReplies": [
+    "choiceReplyOptions": [
       {
         "id": "00000000-0000-0000-0000-000000000001",
         "disablesReminder": true,

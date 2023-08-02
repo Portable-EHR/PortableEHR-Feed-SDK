@@ -16,7 +16,7 @@ public class EntryPayloadMessage extends EntryPayload {
         this.attachments = attachments;
     }
 
-    public EntryPayloadMessage(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, String text, List<AttachmentEnvelop> attachments) {
+    public EntryPayloadMessage(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply, String text, List<AttachmentEnvelop> attachments) {
         super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.text = text;
         this.attachments = attachments;

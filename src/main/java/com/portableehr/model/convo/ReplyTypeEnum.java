@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>free_text</b> : Participants can reply by typing a message<br>
  * <b>date</b> : Participants must choose a Date<br>
  * <b>date_time</b> : Participants must choose a Date and Time<br>
- * <b>choice</b> : Participants must choose from a set of PossibleReply <br>
+ * <b>choice</b> : Participants must choose from a set of ChoiceOption <br>
  */
 public enum ReplyTypeEnum {
   FREE_TEXT("free_text"),

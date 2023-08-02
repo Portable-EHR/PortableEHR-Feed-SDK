@@ -18,7 +18,7 @@ public class EntryPayloadParticipant extends EntryPayload {
         this.role = role;
     }
 
-    public EntryPayloadParticipant(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, UUID targetParticipantGuid,
+    public EntryPayloadParticipant(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply, UUID targetParticipantGuid,
                                    EntryPayloadParticipantActionEnum action, ParticipantRoleEnum role) {
         super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.targetParticipantGuid = targetParticipantGuid;

@@ -17,7 +17,7 @@ public class EntryPayloadShare extends EntryPayload {
         this.type = type;
     }
 
-    public EntryPayloadShare(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, UUID id, String text, ShareTypeEnum type) {
+    public EntryPayloadShare(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply, UUID id, String text, ShareTypeEnum type) {
         super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.id = id;
         this.text = text;

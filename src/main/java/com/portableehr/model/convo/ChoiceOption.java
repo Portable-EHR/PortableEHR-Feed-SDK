@@ -2,15 +2,15 @@ package com.portableehr.model.convo;
 
 import java.util.UUID;
 
-public class PossibleReply {
+public class ChoiceOption {
     private UUID id;
     private Boolean disablesReminder;
     private String label;
 
-    public PossibleReply() {
+    public ChoiceOption() {
     }
 
-    public PossibleReply(UUID id, Boolean disablesReminder, String label) {
+    public ChoiceOption(UUID id, Boolean disablesReminder, String label) {
         this.id = id;
         this.disablesReminder = disablesReminder;
         this.label = label;
