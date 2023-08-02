@@ -6,7 +6,6 @@
 package com.portableehr.network.client.response.convo;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import com.portableehr.model.convo.EntryEnvelop;
 import com.portableehr.model.convo.shared.SharedPrivateMessage;
 import com.portableehr.network.client.response.FeedHubApiResponseContent;
 

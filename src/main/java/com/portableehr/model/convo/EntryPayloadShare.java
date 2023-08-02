@@ -1,9 +1,9 @@
 package com.portableehr.model.convo;
 
+import java.util.Date;
 import java.util.UUID;
 
 public class EntryPayloadShare extends EntryPayload {
-
     private UUID id;
     private String text;
     private ShareTypeEnum type;
@@ -12,6 +12,13 @@ public class EntryPayloadShare extends EntryPayload {
     }
 
     public EntryPayloadShare(UUID id, String text, ShareTypeEnum type) {
+        this.id = id;
+        this.text = text;
+        this.type = type;
+    }
+
+    public EntryPayloadShare(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, UUID id, String text, ShareTypeEnum type) {
+        super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.id = id;
         this.text = text;
         this.type = type;

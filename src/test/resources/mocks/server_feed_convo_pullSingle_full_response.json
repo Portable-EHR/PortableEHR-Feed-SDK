@@ -245,7 +245,345 @@
           "type": "private-message",
           "text": "Here is the message of the specialist"
         }
+      },
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "message",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "mentionedParticipants" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "reminder": "2021-03-03T14:51:43.622Z",
+            "reminderMethod": "sms",
+            "state": "enabled"
+          }
+        ],
+        "payload": {
+          "text": "Did you did the thing?"
+        },
+        "requiresAcknowledge": true,
+        "possibleRepliesTypes": ["free_text", "date", "date_time", "choice"],
+        "possibleReplies": [
+          {
+            "id": "00000000-0000-0000-0000-000000000001",
+            "disablesReminder": true,
+            "label": "Yes"
+          },
+          {
+            "id": "00000000-0000-0000-0000-000000000002",
+            "disablesReminder": false,
+            "label": "Not yet"
+          }
+        ]
+      },
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "message",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "id": "00000000-0000-0000-0000-000000000003",
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "choiceReply": {
+            "id": "00000000-0000-0000-0000-000000000001",
+            "disablesReminder": true,
+            "label": "Yes"
+          }
+        },
+        "repliesTo" : {
+          "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "type": "message",
+          "audience": "all",
+          "attachmentCount" : 0,
+          "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "createdOn": "2021-03-03T14:59:43.622Z",
+          "status" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            },
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            }
+          ],
+          "mentionedParticipants" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "reminder": "2021-03-03T14:51:43.622Z",
+              "reminderMethod": "sms",
+              "state": "enabled"
+            }
+          ],
+          "payload": {
+            "text": "Did you did the thing?"
+          },
+          "possibleRepliesTypes": ["free_text", "choice"],
+          "possibleReplies": [
+            {
+              "id": "00000000-0000-0000-0000-000000000001",
+              "disablesReminder": true,
+              "label": "Yes"
+            },
+            {
+              "id": "00000000-0000-0000-0000-000000000002",
+              "disablesReminder": false,
+              "label": "Not yet"
+            }
+          ]
+        }
+      },
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "message",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "id": "00000000-0000-0000-0000-000000000003",
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "freeTextReply": "I kind of did it but just maybe"
+        },
+        "repliesTo" : {
+          "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "type": "message",
+          "audience": "all",
+          "attachmentCount" : 0,
+          "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "createdOn": "2021-03-03T14:59:43.622Z",
+          "status" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            },
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            }
+          ],
+          "mentionedParticipants" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "reminder": "2021-03-03T14:51:43.622Z",
+              "reminderMethod": "sms",
+              "state": "enabled"
+            }
+          ],
+          "payload": {
+            "text": "Did you did the thing?"
+          },
+          "possibleRepliesTypes": ["free_text", "choice"],
+          "possibleReplies": [
+            {
+              "id": "00000000-0000-0000-0000-000000000001",
+              "disablesReminder": true,
+              "label": "Yes"
+            },
+            {
+              "id": "00000000-0000-0000-0000-000000000002",
+              "disablesReminder": false,
+              "label": "Not yet"
+            }
+          ]
+        }
+      },
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "message",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "id": "00000000-0000-0000-0000-000000000003",
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "dateReply": "2021-03-03"
+        },
+        "repliesTo" : {
+          "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "type": "message",
+          "audience": "all",
+          "attachmentCount" : 0,
+          "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "createdOn": "2021-03-03T14:59:43.622Z",
+          "status" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            },
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            }
+          ],
+          "mentionedParticipants" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "reminder": "2021-03-03T14:51:43.622Z",
+              "reminderMethod": "sms",
+              "state": "enabled"
+            }
+          ],
+          "payload": {
+            "text": "Did you did the thing?"
+          },
+          "possibleRepliesTypes": ["free_text", "choice"],
+          "possibleReplies": [
+            {
+              "id": "00000000-0000-0000-0000-000000000001",
+              "disablesReminder": true,
+              "label": "Yes"
+            },
+            {
+              "id": "00000000-0000-0000-0000-000000000002",
+              "disablesReminder": false,
+              "label": "Not yet"
+            }
+          ]
+        }
+      },
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "message",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "id": "00000000-0000-0000-0000-000000000003",
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "dateTimeReply": "2021-03-03T14:51:43.622Z"
+        },
+        "repliesTo" : {
+          "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "type": "message",
+          "audience": "all",
+          "attachmentCount" : 0,
+          "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "createdOn": "2021-03-03T14:59:43.622Z",
+          "status" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            },
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            }
+          ],
+          "mentionedParticipants" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "reminder": "2021-03-03T14:51:43.622Z",
+              "reminderMethod": "sms",
+              "state": "enabled"
+            }
+          ],
+          "payload": {
+            "text": "Did you did the thing?"
+          },
+          "possibleRepliesTypes": ["free_text", "choice"],
+          "possibleReplies": [
+            {
+              "id": "00000000-0000-0000-0000-000000000001",
+              "disablesReminder": true,
+              "label": "Yes"
+            },
+            {
+              "id": "00000000-0000-0000-0000-000000000002",
+              "disablesReminder": false,
+              "label": "Not yet"
+            }
+          ]
+        }
       }
+    ],
+    "unresolvedEntries": [
+
     ]
   }
 }

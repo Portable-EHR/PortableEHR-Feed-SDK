@@ -86,9 +86,11 @@ public abstract class SerializationDeserializationTest {
         assertTrue(deepEquals(object, objectResult));
 
         // Compare jsons
-        JsonNode endedUpWith = JsonDiff.asJson(actualNode, expectedNode);
+        JsonNode endedUpWith = JsonDiff.asJson(expectedNode, actualNode);
         if(!endedUpWith.isEmpty()){
             System.out.println("Differences in jsons : " + endedUpWith.toPrettyString());
+            System.out.println("Expected : " + expectedNode.toString());
+            System.out.println("Actual   : " + actualNode.toString());
         }
         assertTrue(endedUpWith.isEmpty());
     }

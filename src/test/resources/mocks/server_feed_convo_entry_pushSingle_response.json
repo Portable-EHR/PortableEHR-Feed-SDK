@@ -33,6 +33,19 @@
           "mimeType": "application/pdf"
         }
       ]
-    }
+    },
+    "possibleRepliesTypes": ["choice", "free_text"],
+    "possibleReplies": [
+      {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "disablesReminder": true,
+        "label": "Done"
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000002",
+        "disablesReminder": false,
+        "label": "Not done"
+      }
+    ]
   }
 }

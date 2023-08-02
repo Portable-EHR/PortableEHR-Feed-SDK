@@ -25,11 +25,13 @@ public class EntryEnvelop {
     @JsonDeserialize(using = DateDeserializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date createdOn;
+    private List<MentionedParticipant> mentionedParticipants = null;
 
     public EntryEnvelop() {
     }
 
-    public EntryEnvelop(UUID id, UUID from, List<EntryParticipantStatus> status, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn) {
+    public EntryEnvelop(UUID id, UUID from, List<EntryParticipantStatus> status, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn,
+                        List<MentionedParticipant> mentionedParticipants) {
         this.id = id;
         this.from = from;
         this.status = status;
@@ -37,6 +39,7 @@ public class EntryEnvelop {
         this.audience = audience;
         this.attachmentCount = attachmentCount;
         this.createdOn = createdOn;
+        this.mentionedParticipants = mentionedParticipants;
     }
 
     public UUID getId() {
@@ -93,5 +96,13 @@ public class EntryEnvelop {
 
     public void setCreatedOn(Date createdOn) {
         this.createdOn = createdOn;
+    }
+
+    public List<MentionedParticipant> getMentionedParticipants() {
+        return mentionedParticipants;
+    }
+
+    public void setMentionedParticipants(List<MentionedParticipant> mentionedParticipants) {
+        this.mentionedParticipants = mentionedParticipants;
     }
 }

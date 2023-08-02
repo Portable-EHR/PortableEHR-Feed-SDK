@@ -1,5 +1,7 @@
 package com.portableehr.model.convo;
 
+import java.util.Date;
+
 public class EntryPayloadMove extends EntryPayload {
 
     private String fromLocation;
@@ -9,6 +11,12 @@ public class EntryPayloadMove extends EntryPayload {
     }
 
     public EntryPayloadMove(String fromLocation, String toLocation) {
+        this.fromLocation = fromLocation;
+        this.toLocation = toLocation;
+    }
+
+    public EntryPayloadMove(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, String fromLocation, String toLocation) {
+        super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.fromLocation = fromLocation;
         this.toLocation = toLocation;
     }

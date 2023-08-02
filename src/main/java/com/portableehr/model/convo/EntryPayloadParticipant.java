@@ -1,5 +1,6 @@
 package com.portableehr.model.convo;
 
+import java.util.Date;
 import java.util.UUID;
 
 public class EntryPayloadParticipant extends EntryPayload {
@@ -13,6 +14,14 @@ public class EntryPayloadParticipant extends EntryPayload {
 
     public EntryPayloadParticipant(UUID participantId, EntryPayloadParticipantActionEnum action, ParticipantRoleEnum role) {
         this.targetParticipantGuid = participantId;
+        this.action = action;
+        this.role = role;
+    }
+
+    public EntryPayloadParticipant(String freeTextReply, Date dateReply, Date dateTimeReply, PossibleReply choiceReply, UUID targetParticipantGuid,
+                                   EntryPayloadParticipantActionEnum action, ParticipantRoleEnum role) {
+        super(freeTextReply, dateReply, dateTimeReply, choiceReply);
+        this.targetParticipantGuid = targetParticipantGuid;
         this.action = action;
         this.role = role;
     }
