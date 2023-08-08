@@ -14,16 +14,16 @@ public class MentionedParticipant {
     )
     private Date reminder;
     private ReminderMethodEnum reminderMethod;
-    private ReminderStateEnum state;
+    private ReminderStateEnum reminderState;
 
     public MentionedParticipant() {
     }
 
-    public MentionedParticipant(UUID participantId, Date reminder, ReminderMethodEnum reminderMethod, ReminderStateEnum state) {
+    public MentionedParticipant(UUID participantId, Date reminder, ReminderMethodEnum reminderMethod, ReminderStateEnum reminderState) {
         this.participantId = participantId;
         this.reminder = reminder;
         this.reminderMethod = reminderMethod;
-        this.state = state;
+        this.reminderState = reminderState;
     }
 
     public UUID getParticipantId() {
@@ -50,11 +50,11 @@ public class MentionedParticipant {
         this.reminderMethod = reminderMethod;
     }
 
-    public ReminderStateEnum getState() {
-        return state;
+    public ReminderStateEnum getReminderState() {
+        return reminderState;
     }
 
-    public void setState(ReminderStateEnum state) {
-        this.state = state;
+    public void setReminderState(ReminderStateEnum reminderState) {
+        this.reminderState = reminderState;
     }
 }

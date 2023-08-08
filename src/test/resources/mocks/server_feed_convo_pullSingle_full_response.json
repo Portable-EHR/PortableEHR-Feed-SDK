@@ -272,7 +272,7 @@
             "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
             "reminder": "2021-03-03T14:51:43.622Z",
             "reminderMethod": "sms",
-            "state": "enabled"
+            "reminderState": "enabled"
           }
         ],
         "payload": {
@@ -347,7 +347,7 @@
               "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
               "reminder": "2021-03-03T14:51:43.622Z",
               "reminderMethod": "sms",
-              "state": "enabled"
+              "reminderState": "enabled"
             }
           ],
           "payload": {
@@ -418,7 +418,7 @@
               "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
               "reminder": "2021-03-03T14:51:43.622Z",
               "reminderMethod": "sms",
-              "state": "enabled"
+              "reminderState": "enabled"
             }
           ],
           "payload": {
@@ -489,7 +489,7 @@
               "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
               "reminder": "2021-03-03T14:51:43.622Z",
               "reminderMethod": "sms",
-              "state": "enabled"
+              "reminderState": "enabled"
             }
           ],
           "payload": {
@@ -560,7 +560,7 @@
               "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
               "reminder": "2021-03-03T14:51:43.622Z",
               "reminderMethod": "sms",
-              "state": "enabled"
+              "reminderState": "enabled"
             }
           ],
           "payload": {
