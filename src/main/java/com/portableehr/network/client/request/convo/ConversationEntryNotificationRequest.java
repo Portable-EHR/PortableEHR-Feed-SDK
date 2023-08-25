@@ -8,7 +8,6 @@ package com.portableehr.network.client.request.convo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.RequestCommand;
 import com.portableehr.network.client.request.FeedBackendRequest;
-import com.portableehr.network.client.request.client.ClientReachabilityParameters;
 
 /**
  * Request sent to FeedHub to notify about a new entry in a Conversation.

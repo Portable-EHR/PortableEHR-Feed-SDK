@@ -3,9 +3,10 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.client.response.client;
+package com.portableehr.network.client.response.client.rechability;
 
 import com.portableehr.network.SerializationDeserializationTest;
+import com.portableehr.network.client.response.client.reachability.ClientReachabilityResponse;
 import org.junit.Test;
 
 public class ClientReachabilityResponseTest extends SerializationDeserializationTest {

@@ -3,7 +3,7 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.client.request.client;
+package com.portableehr.network.client.request.client.reachability;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.RequestCommand;
