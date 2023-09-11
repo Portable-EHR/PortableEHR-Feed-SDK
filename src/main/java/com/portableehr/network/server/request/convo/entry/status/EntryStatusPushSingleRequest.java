@@ -14,28 +14,28 @@ import com.portableehr.network.server.request.FeedHubRequest;
  * <pre><code>
  * {
  *   "feedAlias": "fiktivDP",
- *   "command": "pushBundle",
- *   "parameters": {@link EntryStatusPushBundleParameters}
+ *   "command": "pushSingle",
+ *   "parameters": {@link EntryStatusPushSingleParameters}
  * }
  * </code></pre>
  */
-public class EntryStatusPushBundleRequest extends FeedHubRequest {
+public class EntryStatusPushSingleRequest extends FeedHubRequest {
 
     @JsonProperty("parameters")
-    private EntryStatusPushBundleParameters parameters = null;
+    private EntryStatusPushSingleParameters parameters = null;
 
-    public EntryStatusPushBundleRequest() {}
+    public EntryStatusPushSingleRequest() {}
 
-    public EntryStatusPushBundleRequest(String feedAlias, RequestCommand command, EntryStatusPushBundleParameters parameters) {
+    public EntryStatusPushSingleRequest(String feedAlias, RequestCommand command, EntryStatusPushSingleParameters parameters) {
         super(feedAlias, command);
         this.parameters = parameters;
     }
 
-    public EntryStatusPushBundleParameters getParameters() {
+    public EntryStatusPushSingleParameters getParameters() {
         return parameters;
     }
 
-    public void setParameters(EntryStatusPushBundleParameters parameters) {
+    public void setParameters(EntryStatusPushSingleParameters parameters) {
         this.parameters = parameters;
     }
 
