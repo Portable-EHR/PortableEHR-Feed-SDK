@@ -10,19 +10,19 @@ import com.portableehr.network.server.response.FeedApiResponse;
 import com.portableehr.network.server.response.FeedApiResponseContent;
 
 /**
- * The response to the FeedHub /feed/convo/entry [pushBundle] request
+ * The response to the FeedHub /feed/convo/entry [pushSingle] request
  * <pre><code>
  * {
  *   "requestStatus": {@link ApiStatus},
  * }
  * </code></pre>
  */
-public class EntryStatusPushBundleResponse extends FeedApiResponse {
+public class EntryStatusPushSingleResponse extends FeedApiResponse {
 
-    public EntryStatusPushBundleResponse() {
+    public EntryStatusPushSingleResponse() {
     }
 
-    public EntryStatusPushBundleResponse(ApiStatus requestStatus, FeedApiResponseContent responseContent) {
+    public EntryStatusPushSingleResponse(ApiStatus requestStatus, FeedApiResponseContent responseContent) {
         super(requestStatus, responseContent);
         setResponseContent(null);
     }

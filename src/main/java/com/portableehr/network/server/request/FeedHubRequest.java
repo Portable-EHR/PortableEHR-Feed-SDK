@@ -6,10 +6,6 @@
 package com.portableehr.network.server.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.portableehr.model.convo.Conversation;
-import com.portableehr.model.convo.ConversationEnvelop;
 import com.portableehr.network.RequestCommand;
 import com.portableehr.network.server.request.appointment.AppointmentDispositionRequest;
 import com.portableehr.network.server.request.appointment.AppointmentPullRequest;
@@ -19,7 +15,7 @@ import com.portableehr.network.server.request.convo.ConvoPullSingleRequest;
 import com.portableehr.network.server.request.convo.ConvoPushSingleRequest;
 import com.portableehr.network.server.request.convo.entry.EntryPushSingleRequest;
 import com.portableehr.network.server.request.convo.entry.attachment.AttachmentPullSingleRequest;
-import com.portableehr.network.server.request.convo.entry.status.EntryStatusPushBundleRequest;
+import com.portableehr.network.server.request.convo.entry.status.EntryStatusPushSingleRequest;
 import com.portableehr.network.server.request.convo.entrypoint.EntryPointPullBundleRequest;
 import com.portableehr.network.server.request.privateMessage.PrivateMessageContentRequest;
 import com.portableehr.network.server.request.privateMessage.PrivateMessageStatusRequest;
@@ -43,7 +39,7 @@ import com.portableehr.network.server.request.staff.StaffPullRequest;
  * {@link PrivateMessageStatusRequest}
  * {@link PrivateMessageContentRequest}
  * {@link AttachmentPullSingleRequest}
- * {@link EntryStatusPushBundleRequest}
+ * {@link EntryStatusPushSingleRequest}
  * {@link EntryPushSingleRequest}
  * {@link EntryPointPullBundleRequest}
  * {@link ConvoPullSingleRequest}

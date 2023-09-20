@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * The parameters for the {@link EntryStatusPushBundleRequest}
+ * The parameters for the {@link EntryStatusPushSingleRequest}
  * <pre><code>
  * {
  *     "conversationId": "00000000-0000-0000-0000-000000000000",
@@ -21,7 +21,7 @@ import java.util.UUID;
  * }
  * </code></pre>
  */
-public class EntryStatusPushBundleParameters extends FeedHubRequestParameters {
+public class EntryStatusPushSingleParameters extends FeedHubRequestParameters {
 
     @JsonProperty("conversationId")
     private UUID conversationId = null;
@@ -30,10 +30,10 @@ public class EntryStatusPushBundleParameters extends FeedHubRequestParameters {
     private List<EntryParticipantStatus> status = null;
 
 
-    public EntryStatusPushBundleParameters() {
+    public EntryStatusPushSingleParameters() {
     }
 
-    public EntryStatusPushBundleParameters(UUID conversationId, List<EntryParticipantStatus> status) {
+    public EntryStatusPushSingleParameters(UUID conversationId, List<EntryParticipantStatus> status) {
         this.conversationId = conversationId;
         this.status = status;
     }
