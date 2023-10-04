@@ -1,6 +1,8 @@
 package com.portableehr.model.convo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.portableehr.DateDeserializer;
 
 import java.util.Date;
 import java.util.UUID;
@@ -8,10 +10,8 @@ import java.util.UUID;
 public class MentionedParticipant {
 
     private UUID participantId;
-    @JsonFormat(
-            shape = JsonFormat.Shape.STRING,
-            pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
-    )
+    @JsonDeserialize(using = DateDeserializer.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date reminder;
     private ReminderMethodEnum reminderMethod;
     private ReminderStateEnum reminderState;
