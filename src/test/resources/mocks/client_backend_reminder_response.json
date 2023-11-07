@@ -1,0 +1,18 @@
+{
+  "requestStatus" : {
+    "status" : "OK",
+    "message" : "Invite sent"
+  },
+  "responseContent" : [
+    {
+      "feedItemId": "00000000-0000-0000-0000-000000000000",
+      "status" : "OK"
+    },
+    {
+      "feedItemId": "00000000-0000-0000-0000-000000000000",
+      "status" : "INVALID_PARAMETERS",
+      "message" : "Optional error message in case of error",
+      "errorCode" : "Optional error code in case of error"
+    }
+  ]
+}

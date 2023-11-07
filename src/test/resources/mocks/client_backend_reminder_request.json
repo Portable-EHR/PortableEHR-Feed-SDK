@@ -1,0 +1,34 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushBundle",
+  "parameters": [
+    {
+      "feedItemId": "bbcebad0-b0d3-4b2b-a895-3f4e3b158575",
+      "status": "pending",
+      "aboutType": "PrivateMessage",
+      "aboutId": "bbcebad0-b0d3-4b2b-a895-3f4e3b158576",
+      "triggers": [
+        {
+          "date": "2021-01-14T23:41:21.050Z",
+          "hint": "PM"
+        },
+        {
+          "date": "2021-01-14T23:41:21.050Z",
+          "hint": "SMS"
+        }
+      ]
+    },
+    {
+      "feedItemId": "bbcebad0-b0d3-4b2b-a895-3f4e3b158577",
+      "status": "pending",
+      "triggers": [
+        {
+          "date": "2021-01-14T23:41:21.050Z"
+        },
+        {
+          "date": "2021-01-14T23:41:21.050Z"
+        }
+      ]
+    }
+  ]
+}
