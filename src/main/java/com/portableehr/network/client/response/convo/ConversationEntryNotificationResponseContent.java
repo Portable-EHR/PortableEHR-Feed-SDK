@@ -7,13 +7,12 @@ package com.portableehr.network.client.response.convo;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.portableehr.model.convo.EntryEnvelop;
-import com.portableehr.network.client.response.FeedHubApiResponseContent;
 
 /**
  * The responseContent field for {@link ConversationEntryNotificationResponse}<br><br>
  * Serialized as a {@link EntryEnvelop}
  */
-public class ConversationEntryNotificationResponseContent extends FeedHubApiResponseContent {
+public class ConversationEntryNotificationResponseContent {
 
     @JsonUnwrapped
     private EntryEnvelop entry = null;

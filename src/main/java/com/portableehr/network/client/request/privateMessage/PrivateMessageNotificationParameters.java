@@ -7,7 +7,6 @@ package com.portableehr.network.client.request.privateMessage;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.client.request.FeedBackendRequestParameters;
 
 import java.util.Date;
 
@@ -17,7 +16,7 @@ import java.util.Date;
  * {@link PrivateMessageNotificationParametersWithPhysicianId}<br>
  * {@link PrivateMessageNotificationParametersWithAuthor}<br>
  */
-public abstract class PrivateMessageNotificationParameters extends FeedBackendRequestParameters {
+public abstract class PrivateMessageNotificationParameters {
 
     @JsonProperty("messageId")
     private String messageId = null;

@@ -8,7 +8,6 @@ package com.portableehr.network.client.response.login;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.ApiStatus;
 import com.portableehr.network.client.response.FeedHubApiResponse;
-import com.portableehr.network.client.response.FeedHubApiResponseContent;
 
 /**
  * Response to the /login call
@@ -27,7 +26,7 @@ public class LoginResponse extends FeedHubApiResponse {
     public LoginResponse() {
     }
 
-    public LoginResponse(ApiStatus requestStatus, FeedHubApiResponseContent responseContent, LoginResponseContent responseContent1) {
+    public LoginResponse(ApiStatus requestStatus, Object responseContent, LoginResponseContent responseContent1) {
         super(requestStatus, responseContent);
         this.responseContent = responseContent1;
     }

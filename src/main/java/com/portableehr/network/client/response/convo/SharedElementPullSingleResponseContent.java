@@ -7,13 +7,12 @@ package com.portableehr.network.client.response.convo;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.portableehr.model.convo.shared.SharedPrivateMessage;
-import com.portableehr.network.client.response.FeedHubApiResponseContent;
 
 /**
  * The responseContent field for {@link SharedElementPullSingleResponse}<br><br>
  * Serialized as a {@link SharedPrivateMessage}
  */
-public class SharedElementPullSingleResponseContent extends FeedHubApiResponseContent {
+public class SharedElementPullSingleResponseContent {
 
     @JsonUnwrapped
     private SharedPrivateMessage privateMessage = null;

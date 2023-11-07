@@ -27,7 +27,7 @@ public class FeedBackendRequest implements RequestToFeedHub {
     private RequestCommand command = null;
 
     @JsonProperty("parameters")
-    private FeedBackendRequestParameters parameters = null;
+    protected Object parameters = null;
 
     public FeedBackendRequest() {
     }
@@ -37,7 +37,7 @@ public class FeedBackendRequest implements RequestToFeedHub {
         this.command = command;
     }
 
-    public FeedBackendRequest(String feedAlias, RequestCommand command, FeedBackendRequestParameters parameters) {
+    public FeedBackendRequest(String feedAlias, RequestCommand command, Object parameters) {
         this.feedAlias = feedAlias;
         this.command = command;
         this.parameters = parameters;
@@ -59,11 +59,11 @@ public class FeedBackendRequest implements RequestToFeedHub {
         this.command = command;
     }
 
-    public FeedBackendRequestParameters getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
-    public void setParameters(FeedBackendRequestParameters parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 

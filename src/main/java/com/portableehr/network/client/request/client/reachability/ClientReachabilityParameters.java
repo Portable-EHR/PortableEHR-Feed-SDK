@@ -6,7 +6,6 @@
 package com.portableehr.network.client.request.client.reachability;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.client.request.FeedBackendRequestParameters;
 
 /**
  * The parameters to sent in the client reachability.
@@ -16,7 +15,7 @@ import com.portableehr.network.client.request.FeedBackendRequestParameters;
  * }
  * </code></pre>
  */
-public class ClientReachabilityParameters extends FeedBackendRequestParameters {
+public class ClientReachabilityParameters {
 
     @JsonProperty("clientId")
     private String clientId = null;

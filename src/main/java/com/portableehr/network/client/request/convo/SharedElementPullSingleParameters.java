@@ -6,7 +6,6 @@
 package com.portableehr.network.client.request.convo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.client.request.FeedBackendRequestParameters;
 
 import java.util.UUID;
 
@@ -19,7 +18,7 @@ import java.util.UUID;
  * }
  * </code></pre>
  */
-public class SharedElementPullSingleParameters extends FeedBackendRequestParameters {
+public class SharedElementPullSingleParameters {
 
     @JsonProperty("conversationId")
     private UUID conversationId = null;

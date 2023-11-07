@@ -6,7 +6,6 @@
 package com.portableehr.network.client.response.login;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.client.response.FeedHubApiResponseContent;
 
 /**
  * The responseContent field in {@link LoginResponse}
@@ -16,7 +15,7 @@ import com.portableehr.network.client.response.FeedHubApiResponseContent;
  * }
  * </code></pre>
  */
-public class LoginResponseContent extends FeedHubApiResponseContent {
+public class LoginResponseContent {
 
     @JsonProperty("token")
     private String token = null;

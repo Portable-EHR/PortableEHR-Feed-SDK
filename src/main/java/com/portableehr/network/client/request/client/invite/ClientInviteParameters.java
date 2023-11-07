@@ -7,7 +7,6 @@ package com.portableehr.network.client.request.client.invite;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.model.ClientInviteMethodEnum;
-import com.portableehr.network.client.request.FeedBackendRequestParameters;
 
 /**
  * The parameters to invite a client to install and activate the app.
@@ -18,7 +17,7 @@ import com.portableehr.network.client.request.FeedBackendRequestParameters;
  * }
  * </code></pre>
  */
-public class ClientInviteParameters extends FeedBackendRequestParameters {
+public class ClientInviteParameters {
 
     @JsonProperty("clientId")
     private String clientId = null;

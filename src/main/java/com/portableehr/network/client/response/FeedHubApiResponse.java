@@ -23,11 +23,11 @@ public class FeedHubApiResponse {
     private ApiStatus requestStatus = null;
 
     @JsonProperty("responseContent")
-    private FeedHubApiResponseContent responseContent = null;
+    private Object responseContent = null;
 
     public FeedHubApiResponse() {}
 
-    public FeedHubApiResponse(ApiStatus requestStatus, FeedHubApiResponseContent responseContent) {
+    public FeedHubApiResponse(ApiStatus requestStatus, Object responseContent) {
         this.requestStatus = requestStatus;
         this.responseContent = responseContent;
     }
@@ -48,11 +48,11 @@ public class FeedHubApiResponse {
      * Get responseContent
      * @return responseContent
      **/
-    public FeedHubApiResponseContent getResponseContent() {
+    public Object getResponseContent() {
         return responseContent;
     }
 
-    public void setResponseContent(FeedHubApiResponseContent responseContent) {
+    public void setResponseContent(Object responseContent) {
         this.responseContent = responseContent;
     }
 }
