@@ -15,7 +15,8 @@ import java.util.Date;
  * <pre><code>
  * {
  *    "date": "2021-01-14T23:41:21.050Z",
- *    "hint": "Whatever the feed needs to know what to do when this trigger gets triggered. I.E. A key word, a JSON"
+ *    "hint": "Whatever the feed needs to know what to do when this trigger is activated. I.E.: A key word, a JSON"
+ *    "state": {@link ReminderTriggerStatusEnum}
  * }
  * </code></pre>
  */
@@ -27,12 +28,16 @@ public class ReminderTrigger {
   @JsonProperty("hint")
   private String hint = null;
 
+  @JsonProperty("status")
+  private ReminderTriggerStatusEnum status = null;
+
   public ReminderTrigger() {
   }
 
-  public ReminderTrigger(Date date, String hint) {
+  public ReminderTrigger(Date date, String hint, ReminderTriggerStatusEnum status) {
     this.date = date;
     this.hint = hint;
+    this.status = status;
   }
 
   public Date getDate() {
@@ -49,5 +54,13 @@ public class ReminderTrigger {
 
   public void setHint(String hint) {
     this.hint = hint;
+  }
+
+  public ReminderTriggerStatusEnum getStatus() {
+    return status;
+  }
+
+  public void setStatus(ReminderTriggerStatusEnum status) {
+    this.status = status;
   }
 }

@@ -19,9 +19,9 @@ import java.util.List;
  *    "aboutType": "feed object type",
  *    "aboutId": "00000000-0000-0000-0000-000000000000",
  *    "triggers": [
- *      {@link LicenseIssuerKindEnum},
+ *      {@link ReminderTrigger},
  *      ...,
- *      {@link LicenseIssuerKindEnum}
+ *      {@link ReminderTrigger}
  *    ],
  *
  * }

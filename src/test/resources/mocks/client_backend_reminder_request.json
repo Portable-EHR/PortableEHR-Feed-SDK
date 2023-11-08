@@ -10,11 +10,13 @@
       "triggers": [
         {
           "date": "2021-01-14T23:41:21.050Z",
-          "hint": "PM"
+          "hint": "PM",
+          "status": "enabled"
         },
         {
           "date": "2021-01-14T23:41:21.050Z",
-          "hint": "SMS"
+          "hint": "SMS",
+          "status": "enabled"
         }
       ]
     },
@@ -23,10 +25,12 @@
       "status": "pending",
       "triggers": [
         {
-          "date": "2021-01-14T23:41:21.050Z"
+          "date": "2021-01-14T23:41:21.050Z",
+          "status": "sent"
         },
         {
-          "date": "2021-01-14T23:41:21.050Z"
+          "date": "2021-01-14T23:41:21.050Z",
+          "status": "disabled"
         }
       ]
     }
