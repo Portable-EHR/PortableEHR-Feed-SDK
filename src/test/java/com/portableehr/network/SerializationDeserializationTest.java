@@ -47,7 +47,6 @@ public abstract class SerializationDeserializationTest {
         objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         objectMapper.configure(SerializationFeature.FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS, false);
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-//    objectMapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         SimpleModule module = new SimpleModule();
@@ -62,10 +61,10 @@ public abstract class SerializationDeserializationTest {
 
         module.addDeserializer(PrivateMessageNotificationParameters.class, new PrivateMessageNotificationParametersDeserializer());
 
+        objectMapper.registerModule(module);
+
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         objectMapper.setDateFormat(df);
-
-        objectMapper.registerModule(module);
     }
 
     protected <T> void test(String src, Class<T> clazz) throws java.io.IOException {

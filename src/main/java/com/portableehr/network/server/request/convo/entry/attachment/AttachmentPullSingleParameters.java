@@ -7,7 +7,6 @@ package com.portableehr.network.server.request.convo.entry.attachment;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.model.convo.ParticipantTypeEnum;
-import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 import java.util.UUID;
 
@@ -23,7 +22,7 @@ import java.util.UUID;
  * }
  * </code></pre>
  */
-public class AttachmentPullSingleParameters extends FeedHubRequestParameters {
+public class AttachmentPullSingleParameters {
 
     @JsonProperty("conversationId")
     private UUID conversationId = null;

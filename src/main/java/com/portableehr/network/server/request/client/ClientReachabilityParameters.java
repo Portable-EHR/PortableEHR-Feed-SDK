@@ -6,7 +6,6 @@
 package com.portableehr.network.server.request.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 /**
  * The parameters for the {@link ClientReachabilityRequest}
@@ -17,7 +16,7 @@ import com.portableehr.network.server.request.FeedHubRequestParameters;
  * }
  * </code></pre>
  */
-public class ClientReachabilityParameters extends FeedHubRequestParameters {
+public class ClientReachabilityParameters {
 
     @JsonProperty("patientId")
     private String clientId = null;

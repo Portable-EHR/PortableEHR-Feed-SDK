@@ -7,7 +7,6 @@ package com.portableehr.network.server.request.convo.entrypoint;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.model.LanguageEnum;
-import com.portableehr.network.server.request.FeedHubRequestParameters;
 import com.portableehr.network.server.request.convo.ConvoPullSingleRequest;
 
 /**
@@ -18,7 +17,7 @@ import com.portableehr.network.server.request.convo.ConvoPullSingleRequest;
  * }
  * </code></pre>
  */
-public class EntryPointPullBundleParameters extends FeedHubRequestParameters {
+public class EntryPointPullBundleParameters {
 
     @JsonProperty("lang")
     private LanguageEnum lang = null;

@@ -8,7 +8,6 @@ package com.portableehr.network.server.request.appointment;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.model.AppointmentDispositionEnum;
-import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 import java.util.Date;
 
@@ -22,7 +21,7 @@ import java.util.Date;
  * }
  * </code></pre>
  */
-public class AppointmentDispositionParameters extends FeedHubRequestParameters {
+public class AppointmentDispositionParameters {
 
     @JsonProperty("id")
     private String id = null;

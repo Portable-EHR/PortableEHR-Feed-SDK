@@ -28,6 +28,7 @@ import java.util.List;
  * </code></pre>
  */
 public class Reminder {
+
   @JsonProperty("feedItemId")
   private String feedItemId = null;
 

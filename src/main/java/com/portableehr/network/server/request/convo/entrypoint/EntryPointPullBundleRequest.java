@@ -8,8 +8,6 @@ package com.portableehr.network.server.request.convo.entrypoint;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.RequestCommand;
 import com.portableehr.network.server.request.FeedHubRequest;
-import com.portableehr.network.server.request.FeedHubRequestParameters;
-import com.portableehr.network.server.request.convo.ConvoPullSingleParameters;
 
 /**
  * Request send by FeedHub to pull the list of conversations entry points of an organization

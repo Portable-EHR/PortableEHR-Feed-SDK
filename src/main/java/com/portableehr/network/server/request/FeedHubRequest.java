@@ -27,7 +27,7 @@ import com.portableehr.network.server.request.staff.StaffPullRequest;
  * {
  *   "feedAlias": "fiktivDP",
  *   "command": "pushSingle",
- *   "parameters": {@link FeedHubRequestParameters}
+ *   "parameters": ...
  * }
  * </code></pre>
  * Subclasses:<br>
@@ -54,7 +54,7 @@ public abstract class FeedHubRequest {
     private RequestCommand command = null;
 
     @JsonProperty("parameters")
-    private FeedHubRequestParameters parameters = null;
+    private Object parameters = null;
 
     public FeedHubRequest() {
     }
@@ -64,7 +64,7 @@ public abstract class FeedHubRequest {
         this.command = command;
     }
 
-    public FeedHubRequest(String feedAlias, RequestCommand command, FeedHubRequestParameters parameters) {
+    public FeedHubRequest(String feedAlias, RequestCommand command, Object parameters) {
         this.feedAlias = feedAlias;
         this.command = command;
         this.parameters = parameters;
@@ -86,11 +86,11 @@ public abstract class FeedHubRequest {
         this.command = command;
     }
 
-    public FeedHubRequestParameters getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
-    public void setParameters(FeedHubRequestParameters parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 }

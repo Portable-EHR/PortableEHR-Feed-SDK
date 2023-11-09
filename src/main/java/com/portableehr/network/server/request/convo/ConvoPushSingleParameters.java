@@ -6,11 +6,7 @@
 package com.portableehr.network.server.request.convo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.model.convo.Conversation;
-import com.portableehr.model.convo.ConversationEnvelop;
 import com.portableehr.model.convo.Entry;
-import com.portableehr.model.convo.ParticipantTypeEnum;
-import com.portableehr.network.server.request.FeedHubRequestParameters;
 
 import java.util.UUID;
 
@@ -23,7 +19,7 @@ import java.util.UUID;
  * }
  * </code></pre>
  */
-public class ConvoPushSingleParameters extends FeedHubRequestParameters {
+public class ConvoPushSingleParameters {
 
     @JsonProperty("entry")
     private Entry entry = null;

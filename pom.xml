@@ -41,7 +41,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <jackson.version>2.13.2.2</jackson.version>
+        <jackson.version>2.13.4.2</jackson.version>
     </properties>
 
     <distributionManagement>
@@ -74,14 +74,14 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>com.flipkart.zjsonpatch</groupId>
             <artifactId>zjsonpatch</artifactId>
-            <version>0.4.12</version>
+            <version>0.4.13</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
