@@ -1,0 +1,13 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "feedItemId" : "00000000-0000-0000-0000-000000000000",
+    "method" : "email",
+    "recipient" : "00000000-0000-0000-0000-000000000000",
+    "recipient_type" : "client",
+    "body" : "The body of the message to send // Mandatory",
+    "subject" : "The subject of the email // Mandatori in case of EMAIL, ignored otherwise",
+    "title" : "The title of the push // Mandatory in case of method = PUSH, ignored otherwise"
+  }
+}
