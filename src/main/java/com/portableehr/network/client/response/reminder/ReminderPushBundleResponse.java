@@ -7,7 +7,7 @@ package com.portableehr.network.client.response.reminder;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.ApiStatus;
-import com.portableehr.network.PushBundleItemResponse;
+import com.portableehr.network.FeedItemStatusUpdate;
 import com.portableehr.network.client.response.FeedHubApiResponse;
 
 import java.util.List;
@@ -17,29 +17,29 @@ import java.util.List;
  * <pre><code>
  * {
  *   "requestStatus": {@link ApiStatus},
- *   "responseContent": [{@link PushBundleItemResponse}]
+ *   "responseContent": [{@link FeedItemStatusUpdate}]
  * }
  * </code></pre>
  */
 public class ReminderPushBundleResponse extends FeedHubApiResponse {
 
     @JsonProperty("responseContent")
-    private List<PushBundleItemResponse> responseContent = null;
+    private List<FeedItemStatusUpdate> responseContent = null;
 
     public ReminderPushBundleResponse() {
     }
 
-    public ReminderPushBundleResponse(ApiStatus requestStatus, List<PushBundleItemResponse> responseContent) {
+    public ReminderPushBundleResponse(ApiStatus requestStatus, List<FeedItemStatusUpdate> responseContent) {
         super(requestStatus, responseContent);
         this.responseContent = responseContent;
     }
 
     @Override
-    public List<PushBundleItemResponse> getResponseContent() {
+    public List<FeedItemStatusUpdate> getResponseContent() {
         return responseContent;
     }
 
-    public void setResponseContent(List<PushBundleItemResponse> responseContent) {
+    public void setResponseContent(List<FeedItemStatusUpdate> responseContent) {
         this.responseContent = responseContent;
     }
 }

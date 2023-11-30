@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>INTERNAL</b> : The request resulted in an internal FeedHub error, the "requestStatus.message" may provide more details.<br>
  * <b>INVALID_COMMAND</b> : The command specified as part of the request to FeedHub API is not supported in that context.<br>
  * <b>INVALID_PARAMETERS</b> : One or more parameter provided with the request to FeedHub API is invalid.<br>
+ * <b>INVALID_SYNTAX</b>,
  * <b>MALFORMED</b> : Wrong content or media type or failed JSON parsing.<br>
  * <b>BACKEND</b> : Forwarding of some error reported by the targeted backend.<br>
  * <b>AUTH</b> : Authentication is required as part of the request and has failed or has not been provided.<br>
@@ -28,6 +29,7 @@ public enum ApiStatusEnum {
   INTERNAL("INTERNAL"),
   INVALID_COMMAND("INVALID_COMMAND"),
   INVALID_PARAMETERS("INVALID_PARAMETERS"),
+  INVALID_SYNTAX("INVALID_SYNTAX"),
   MALFORMED("MALFORMED"),
   BACKEND("BACKEND"),
   AUTH("AUTH"),

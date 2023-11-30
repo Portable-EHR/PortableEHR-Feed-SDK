@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  *   }
  * </code></pre>
  */
-public class PushBundleItemResponse {
+public class FeedItemStatusUpdate {
 
     @JsonProperty("feedItemId")
     private String feedItemId = null;
@@ -32,11 +32,11 @@ public class PushBundleItemResponse {
     @JsonProperty("errorCode")
     private String errorCode = null;
 
-    public PushBundleItemResponse() {
+    public FeedItemStatusUpdate() {
 
     }
 
-    public PushBundleItemResponse(String feedItemId, ApiStatusEnum status, String message, String errorCode) {
+    public FeedItemStatusUpdate(String feedItemId, ApiStatusEnum status, String message, String errorCode) {
         this.feedItemId = feedItemId;
         this.status = status;
         this.message = message;
