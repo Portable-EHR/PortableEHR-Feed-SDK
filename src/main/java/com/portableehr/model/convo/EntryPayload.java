@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, defaultImpl = EntryPayloadMessage.class)
@@ -17,7 +18,7 @@ import java.util.Date;
 public abstract class EntryPayload {
     private String freeTextReply = null;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    private Date dateReply = null;
+    private LocalDate dateReply = null;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date dateTimeReply = null;
     private ChoiceOption choiceReply = null;
@@ -25,7 +26,7 @@ public abstract class EntryPayload {
     public EntryPayload() {
     }
 
-    public EntryPayload(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply) {
+    public EntryPayload(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply) {
         this.freeTextReply = freeTextReply;
         this.dateReply = dateReply;
         this.dateTimeReply = dateTimeReply;
@@ -40,11 +41,11 @@ public abstract class EntryPayload {
         this.freeTextReply = freeTextReply;
     }
 
-    public Date getDateReply() {
+    public LocalDate getDateReply() {
         return dateReply;
     }
 
-    public void setDateReply(Date dateReply) {
+    public void setDateReply(LocalDate dateReply) {
         this.dateReply = dateReply;
     }
 

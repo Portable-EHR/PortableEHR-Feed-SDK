@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.flipkart.zjsonpatch.JsonDiff;
 import com.portableehr.network.client.request.privateMessage.PrivateMessageNotificationParameters;
 import com.portableehr.network.client.request.privateMessage.PrivateMessageNotificationParametersDeserializer;
@@ -62,6 +63,8 @@ public abstract class SerializationDeserializationTest {
         module.addDeserializer(PrivateMessageNotificationParameters.class, new PrivateMessageNotificationParametersDeserializer());
 
         objectMapper.registerModule(module);
+
+        objectMapper.registerModule(new JavaTimeModule());
 
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
         objectMapper.setDateFormat(df);

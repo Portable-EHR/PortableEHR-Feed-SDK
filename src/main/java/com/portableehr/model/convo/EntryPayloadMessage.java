@@ -1,5 +1,6 @@
 package com.portableehr.model.convo;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class EntryPayloadMessage extends EntryPayload {
         this.attachments = attachments;
     }
 
-    public EntryPayloadMessage(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply, String text, List<AttachmentEnvelop> attachments) {
+    public EntryPayloadMessage(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply, String text, List<AttachmentEnvelop> attachments) {
         super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.text = text;
         this.attachments = attachments;

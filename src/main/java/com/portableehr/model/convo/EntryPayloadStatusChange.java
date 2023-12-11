@@ -1,5 +1,6 @@
 package com.portableehr.model.convo;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class EntryPayloadStatusChange extends EntryPayload {
@@ -15,7 +16,7 @@ public class EntryPayloadStatusChange extends EntryPayload {
         this.toStatus = toStatus;
     }
 
-    public EntryPayloadStatusChange(String freeTextReply, Date dateReply, Date dateTimeReply, ChoiceOption choiceReply, ConversationStatusEnum fromStatus,
+    public EntryPayloadStatusChange(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply, ConversationStatusEnum fromStatus,
                                     ConversationStatusEnum toStatus) {
         super(freeTextReply, dateReply, dateTimeReply, choiceReply);
         this.fromStatus = fromStatus;
