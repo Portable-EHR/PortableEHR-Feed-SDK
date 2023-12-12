@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  *     "feedItemId" : "00000000-0000-0000-0000-000000000000",
  *     "method" : {@link ExternalMessageMethodEnum},
  *     "recipient" : "00000000-0000-0000-0000-000000000000",
- *     "recipient_type" : {@link ExternalMessageRecipientTypeEnum},
+ *     "recipientType" : {@link ExternalMessageRecipientTypeEnum},
  *     "body" : "This is the body of the message",
  *     "subject" : "The subject of the email",
  *     "title" : "The title of the push notification"
@@ -32,7 +32,7 @@ public class ExternalMessage {
   @JsonProperty("recipient")
   private String recipient = null;
 
-  @JsonProperty("recipient_type")
+  @JsonProperty("recipientType")
   private ExternalMessageRecipientTypeEnum recipientType = null;
 
   @JsonProperty("body")
