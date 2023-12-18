@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>participant</b> : The entry is about adding or removing a participant<br>
  * <b>assign</b> : The entry is about assigning someone as admin<br>
  * <b>share</b> : The entry is about sharing an element in the conversation<br>
+ * <b>announcement</b> : An entry containing text and attachments that can be used for welcome messages or reminders<br>
  */
 public enum EntryTypeEnum {
   MESSAGE("message"),
@@ -23,7 +24,8 @@ public enum EntryTypeEnum {
   MOVE("move"),
   PARTICIPANT("participant"),
   ASSIGN("assign"),
-  SHARE("share");
+  SHARE("share"),
+  ANNOUNCEMENT("announcement");
 
   private String value;
 

@@ -33,6 +33,39 @@
     "entries": [
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "announcement",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "text": "Welcome to the Big Fiktiv Clinic.\nPlease complete the Health History Form and we will get back to you from monday to friday in 24 hours.",
+          "attachments": [
+            {
+              "id": "00000000-0000-0000-0000-000000000000",
+              "name":  "patient-health-history.pdf",
+              "mimeType": "application/pdf"
+            }
+          ],
+          "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyNHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjx0aXRsZS8+PGRlc2MvPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgaWQ9InNob3BwaW5nIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgZmlsbD0iIzAwMDAwMCIgZmlsbC1ydWxlPSJub256ZXJvIiBpZD0iZXh0ZXJuYWxfbGluayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzLjAwMDAwMCwgLTEzLjAwMDAwMCkiPjxwYXRoIGQ9Ik0yNSwxNC4yNSBDMzAuOTM3MDYxMSwxNC4yNSAzNS43NSwxOS4wNjI5Mzg5IDM1Ljc1LDI1IEMzNS43NSwzMC45MzcwNjExIDMwLjkzNzA2MTEsMzUuNzUgMjUsMzUuNzUgQzE5LjA2MjkzODksMzUuNzUgMTQuMjUsMzAuOTM3MDYxMSAxNC4yNSwyNSBDMTQuMjUsMTkuMDYyOTM4OSAxOS4wNjI5Mzg5LDE0LjI1IDI1LDE0LjI1IFogTTI1LDE1Ljc1IEMxOS44OTEzNjYxLDE1Ljc1IDE1Ljc1LDE5Ljg5MTM2NjEgMTUuNzUsMjUgQzE1Ljc1LDMwLjEwODYzMzkgMTkuODkxMzY2MSwzNC4yNSAyNSwzNC4yNSBDMzAuMTA4NjMzOSwzNC4yNSAzNC4yNSwzMC4xMDg2MzM5IDM0LjI1LDI1IEMzNC4yNSwxOS44OTEzNjYxIDMwLjEwODYzMzksMTUuNzUgMjUsMTUuNzUgWiBNMjUsMjMuMzg5NDA0MyBDMjUuMzc5Njk1OCwyMy4zODk0MDQzIDI1LjY5MzQ5MSwyMy42NzE1NTgyIDI1Ljc0MzE1MzQsMjQuMDM3NjMzNyBMMjUuNzUsMjQuMTM5NDA0MyBMMjUuNzUsMjkuODk5NDE0MSBDMjUuNzUsMzAuMzEzNjI3NiAyNS40MTQyMTM2LDMwLjY0OTQxNDEgMjUsMzAuNjQ5NDE0MSBDMjQuNjIwMzA0MiwzMC42NDk0MTQxIDI0LjMwNjUwOSwzMC4zNjcyNjAyIDI0LjI1Njg0NjYsMzAuMDAxMTg0NiBMMjQuMjUsMjkuODk5NDE0MSBMMjQuMjUsMjQuMTM5NDA0MyBDMjQuMjUsMjMuNzI1MTkwNyAyNC41ODU3ODY0LDIzLjM4OTQwNDMgMjUsMjMuMzg5NDA0MyBaIE0yNSwyMC41IEMyNS41NTIyODQ3LDIwLjUgMjYsMjAuOTQ3NzE1MyAyNiwyMS41IEMyNiwyMi4wNTIyODQ3IDI1LjU1MjI4NDcsMjIuNSAyNSwyMi41IEMyNC40NDc3MTUzLDIyLjUgMjQsMjIuMDUyMjg0NyAyNCwyMS41IEMyNCwyMC45NDc3MTUzIDI0LjQ0NzcxNTMsMjAuNSAyNSwyMC41IFoiIGlkPSJTaGFwZSIvPjwvZz48L2c+PC9zdmc+"
+        }
+      },
+      {
+        "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "type": "message",
         "audience": "all",
