@@ -7,7 +7,8 @@ public enum RequestCommand {
     PULL_SINGLE("pullSingle"),
     PULL_BUNDLE("pullBundle"),
     PUSH_SINGLE("pushSingle"),
-    PUSH_BUNDLE("pushBundle");
+    PUSH_BUNDLE("pushBundle"),
+    FUNNEL_SINGLE("funnelSingle");
 
     private String value;
 

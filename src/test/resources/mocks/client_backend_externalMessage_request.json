@@ -1,6 +1,6 @@
 {
   "feedAlias": "fiktivDP",
-  "command": "pushSingle",
+  "command": "funnelSingle",
   "parameters": {
     "feedItemId" : "00000000-0000-0000-0000-000000000000",
     "method" : "email",

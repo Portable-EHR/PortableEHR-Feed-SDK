@@ -15,7 +15,7 @@ import com.portableehr.network.client.request.FeedBackendRequest;
  * <pre><code>
  * {
  *    "feedAlias": "fiktivDP",
- *    "command": "pushSingle",
+ *    "command": "funnelSingle",
  *    "parameters": [{@link ExternalMessage}]
  * }
  * </code></pre>
