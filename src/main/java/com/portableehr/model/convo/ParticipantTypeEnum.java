@@ -9,13 +9,15 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>staff</b> : This participant is part of the organization serving the client(s)<br>
  * <b>client_guess</b> : This participant was invited by the client. Example : A spouse<br>
  * <b>staff_guess</b> : This participant was invited by the organization. Example : An expert<br>
+ * <b>system</b> : The system performing automatism like sending welcome messages, reminders, etc.<br>
  */
 public enum ParticipantTypeEnum {
     CLIENT("client"),
     CLIENT_GUESS("client_guess"),
     STAFF("staff"),
     PRIVILEGED_STAFF("privileged_staff"),
-    STAFF_GUESS("staff_guess");
+    STAFF_GUESS("staff_guess"),
+    SYSTEM("system");
 
     private String value;
 
