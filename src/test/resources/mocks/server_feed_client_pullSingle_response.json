@@ -9,7 +9,8 @@
     "lastUpdated": "2021-06-02T20:20:19.865Z",
     "feedItemVersion": 1,
     "profileNumber": "H008",
-    "identityValidated" : true,
+    "identityValidatedBy" : "some feed item id",
+    "identityValidatedOn" : "2021-06-02T20:20:19.865Z",
     "demographics": {
       "dateOfBirth": "1955-04-15",
       "gender": "F",

@@ -55,8 +55,12 @@ public class Client {
   @JsonProperty("profileNumber")
   private String profileNumber = null;
 
-  @JsonProperty("identityValidated")
-  private Boolean identityValidated = null;
+  @JsonProperty("identityValidatedBy")
+  private String identityValidatedBy = null;
+
+  @JsonProperty("identityValidatedOn")
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
+  private Date identityValidatedOn = null;
 
   @JsonProperty("demographics")
   private Demographics demographics = null;
@@ -70,15 +74,16 @@ public class Client {
   public Client() {
   }
 
-  public Client(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion,
-                String profileNumber, Boolean identityValidated, Demographics demographics, List<ClientLegitId> identifiedBy, ClientLocatedWith locatedWith) {
+  public Client(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion, String profileNumber, String identityValidatedBy,
+                Date identityValidatedOn, Demographics demographics, List<ClientLegitId> identifiedBy, ClientLocatedWith locatedWith) {
     this.feedAlias = feedAlias;
     this.feedItemId = feedItemId;
     this.backendItemId = backendItemId;
     this.lastUpdated = lastUpdated;
     this.feedItemVersion = feedItemVersion;
     this.profileNumber = profileNumber;
-    this.identityValidated = identityValidated;
+    this.identityValidatedBy = identityValidatedBy;
+    this.identityValidatedOn = identityValidatedOn;
     this.demographics = demographics;
     this.identifiedBy = identifiedBy;
     this.locatedWith = locatedWith;
@@ -132,12 +137,20 @@ public class Client {
     this.profileNumber = profileNumber;
   }
 
-  public Boolean getIdentityValidated() {
-    return identityValidated;
+  public String getIdentityValidatedBy() {
+    return identityValidatedBy;
   }
 
-  public void setIdentityValidated(Boolean identityValidated) {
-    this.identityValidated = identityValidated;
+  public void setIdentityValidatedBy(String identityValidatedBy) {
+    this.identityValidatedBy = identityValidatedBy;
+  }
+
+  public Date getIdentityValidatedOn() {
+    return identityValidatedOn;
+  }
+
+  public void setIdentityValidatedOn(Date identityValidatedOn) {
+    this.identityValidatedOn = identityValidatedOn;
   }
 
   public Demographics getDemographics() {
