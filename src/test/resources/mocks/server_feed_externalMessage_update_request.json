@@ -1,9 +1,0 @@
-{
-  "feedAlias": "fiktivDP",
-  "command": "pullSingle",
-  "parameters": {
-    "feedItemId": "00000000-0000-0000-0000-000000000000",
-    "status" : "INVALID_PARAMETERS",
-    "message" : "Optional error message in case of error"
-  }
-}

@@ -3,15 +3,14 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network.server.request.externalMessage;
+package com.portableehr.network.server.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.FeedItemStatusUpdate;
 import com.portableehr.network.RequestCommand;
-import com.portableehr.network.server.request.FeedHubRequest;
 
 /**
- * Request sent by FeedHub to update the feed on the status of an external message
+ * Request sent by FeedHub to update the feed on the status of a feed item
  * <pre><code>
  * {
  *   "feedAlias": "fiktivDP",
@@ -20,14 +19,14 @@ import com.portableehr.network.server.request.FeedHubRequest;
  * }
  * </code></pre>
  */
-public class ExternalMessageUpdateRequest extends FeedHubRequest {
+public class ApiResponseRequest extends FeedHubRequest {
 
     @JsonProperty("parameters")
     private FeedItemStatusUpdate parameters = null;
 
-    public ExternalMessageUpdateRequest() {}
+    public ApiResponseRequest() {}
 
-    public ExternalMessageUpdateRequest(String feedAlias, RequestCommand command, FeedItemStatusUpdate parameters) {
+    public ApiResponseRequest(String feedAlias, RequestCommand command, FeedItemStatusUpdate parameters) {
         super(feedAlias, command);
         this.parameters = parameters;
     }

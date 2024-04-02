@@ -1,0 +1,11 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "feedItemId": "00000000-0000-0000-0000-000000000000",
+    "status" : "INVALID_PARAMETERS",
+    "message" : "Optional error message in case of error",
+    "responseContent": "Hello"
+  },
+  "trackingId" : "4b9a0a60-e7b4-11ee-a290-4f164a24ac35"
+}

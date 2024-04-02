@@ -56,6 +56,9 @@ public abstract class FeedHubRequest {
     @JsonProperty("parameters")
     private Object parameters = null;
 
+    @JsonProperty("trackingId")
+    private String trackingId = null;
+
     public FeedHubRequest() {
     }
 
@@ -64,10 +67,11 @@ public abstract class FeedHubRequest {
         this.command = command;
     }
 
-    public FeedHubRequest(String feedAlias, RequestCommand command, Object parameters) {
+    public FeedHubRequest(String feedAlias, RequestCommand command, Object parameters, String trackingId) {
         this.feedAlias = feedAlias;
         this.command = command;
         this.parameters = parameters;
+        this.trackingId = trackingId;
     }
 
     public String getFeedAlias() {
@@ -92,5 +96,13 @@ public abstract class FeedHubRequest {
 
     public void setParameters(Object parameters) {
         this.parameters = parameters;
+    }
+
+    public String getTrackingId() {
+        return trackingId;
+    }
+
+    public void setTrackingId(String trackingId) {
+        this.trackingId = trackingId;
     }
 }

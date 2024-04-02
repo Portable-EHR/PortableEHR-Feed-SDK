@@ -32,15 +32,19 @@ public class FeedItemStatusUpdate {
     @JsonProperty("errorCode")
     private String errorCode = null;
 
+    @JsonProperty("responseContent")
+    private Object responseContent = null;
+
     public FeedItemStatusUpdate() {
 
     }
 
-    public FeedItemStatusUpdate(String feedItemId, ApiStatusEnum status, String message, String errorCode) {
+    public FeedItemStatusUpdate(String feedItemId, ApiStatusEnum status, String message, String errorCode, Object responseContent) {
         this.feedItemId = feedItemId;
         this.status = status;
         this.message = message;
         this.errorCode = errorCode;
+        this.responseContent = responseContent;
     }
 
     public String getFeedItemId() {
@@ -73,5 +77,13 @@ public class FeedItemStatusUpdate {
 
     public void setErrorCode(String errorCode) {
         this.errorCode = errorCode;
+    }
+
+    public Object getResponseContent() {
+        return responseContent;
+    }
+
+    public void setResponseContent(Object responseContent) {
+        this.responseContent = responseContent;
     }
 }
