@@ -1,0 +1,49 @@
+{
+  "requestStatus": {
+    "status": "OK",
+    "message": "Processed patient with file [G60KVCG0]"
+  },
+  "responseContent": {
+    "backendItemId": "ee4f054b-7d82-4d5f-a12f-eb52edcdb4fb",
+    "backendItem": {
+      "backendPatientId": "ee4f054b-7d82-4d5f-a12f-eb52edcdb4fb",
+      "lastUpdated": "2024-04-09T16:37:52+0000",
+      "locatedWith": {
+        "contact": {
+          "firstName": "Dave",
+          "name": "Collins",
+          "email": "undefined.undefined.self@mailinator.com",
+          "guid": "eaa25cca-9cec-43ac-92d3-71da5c902c31",
+          "lastUpdated": "2024-04-09T16:37:51+0000"
+        },
+        "address": {}
+      },
+      "demographics": {
+        "dateOfBirth": "2001-02-16T00:00:00+0000",
+        "name": {},
+        "nameAtBirth": {
+          "familyName": "Collins",
+          "firstName": "Dave"
+        },
+        "placeOfBirth": {},
+        "motherPlaceOfBirth": {},
+        "genderAtBirth": "M",
+        "gender": "M"
+      },
+      "identifiedBy": [
+        {
+          "guid": "d32e9e31-4534-4495-8497-85a565e0df68",
+          "number": "SKYO96790043",
+          "expiresOn": "2027-12-28T05:46:43+0000",
+          "jurisdiction": {
+            "alias": "CA_QC_RAMQ",
+            "guid": "47371b17-82a2-4f57-9b57-c7d35b09a6ab",
+            "issuer": "RAMQ",
+            "description": "Régie de l'assurance maladie du Québec",
+            "kind": "healthCare"
+          }
+        }
+      ]
+    }
+  }
+}
