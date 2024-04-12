@@ -22,6 +22,8 @@ import java.util.UUID;
  *     "backendItemId": "00000000-0000-0000-0000-000000000000",
  *     "lastUpdated": "2021-01-14T23:41:21.050Z",
  *     "feedItemVersion": 1,
+ *     "isActive" : true,
+ *     "isGuest" : false,
  *     "roles": ["staff", "reception", "someVerySpecificRoleOfYourOrganization"],
  *     "contact": {@link Contact}
  *   }
@@ -45,6 +47,12 @@ public class Staff {
     @JsonProperty("feedItemVersion")
     private Integer feedItemVersion = null;
 
+    @JsonProperty("isActive")
+    private boolean active;
+
+    @JsonProperty("isGuest")
+    private boolean guest;
+
     @JsonProperty("roles")
     private List<String> roles = null;
 
@@ -54,12 +62,15 @@ public class Staff {
     public Staff() {
     }
 
-    public Staff(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion, List<String> roles, Contact contact) {
+    public Staff(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion, boolean isActive, boolean isGuest, List<String> roles,
+                 Contact contact) {
         this.feedAlias = feedAlias;
         this.feedItemId = feedItemId;
         this.backendItemId = backendItemId;
         this.lastUpdated = lastUpdated;
         this.feedItemVersion = feedItemVersion;
+        this.active = isActive;
+        this.guest = isGuest;
         this.roles = roles;
         this.contact = contact;
     }
@@ -102,6 +113,22 @@ public class Staff {
 
     public void setFeedItemVersion(Integer feedItemVersion) {
         this.feedItemVersion = feedItemVersion;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public boolean isGuest() {
+        return guest;
+    }
+
+    public void setGuest(boolean guest) {
+        this.guest = guest;
     }
 
     public List<String> getRoles() {

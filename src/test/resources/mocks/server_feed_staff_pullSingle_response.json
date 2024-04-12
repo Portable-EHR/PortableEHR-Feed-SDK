@@ -8,6 +8,8 @@
     "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
     "lastUpdated": "2021-06-02T20:20:29.079Z",
     "feedItemVersion": 1,
+    "isActive" : false,
+    "isGuest" : true,
     "roles": ["staff", "admin", "someVerySpecificRoleOfYourOrganization"],
     "contact": {
       "feedItemId": "2ab32c12-ded4-44b4-916d-8ef312f49277",

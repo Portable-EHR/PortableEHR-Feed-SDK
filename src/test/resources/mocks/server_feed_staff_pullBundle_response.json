@@ -12,6 +12,8 @@
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1420",
         "lastUpdated": "2021-06-03T15:21:22.515Z",
         "feedItemVersion": 1,
+        "isActive" : true,
+        "isGuest" : false,
         "roles": ["staff", "someVerySpecificRoleOfYourOrganization"],
         "contact": {
           "feedItemId": "28b2c2a2-3e60-11ed-b878-0242ac120002",
@@ -34,6 +36,8 @@
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1421",
         "lastUpdated": "2021-06-03T15:21:22.515Z",
         "feedItemVersion": 1,
+        "isActive" : false,
+        "isGuest" : true,
         "roles": ["admin"],
         "contact": {
           "feedItemId": "28b2c572-3e60-11ed-b878-0242ac120002",
@@ -56,6 +60,8 @@
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1422",
         "lastUpdated": "2021-06-03T15:21:22.515Z",
         "feedItemVersion": 1,
+        "isActive" : true,
+        "isGuest" : false,
         "roles": ["staff", "admin", "someVerySpecificRoleOfYourOrganization"],
         "contact": {
           "feedItemId": "2ab32c12-ded4-44b4-916d-8ef312f49277",
