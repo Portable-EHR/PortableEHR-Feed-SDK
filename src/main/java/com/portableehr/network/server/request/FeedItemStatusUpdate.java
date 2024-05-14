@@ -15,6 +15,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  *     "status": {@link ApiStatusEnum},
  *     "message": "Optional. Only useful in the case of status != {@link ApiStatusEnum#OK}",
  *     "errorCode": "Optional. Only useful in the case of status != {@link ApiStatusEnum#OK}"
+ *     "responseContent": {@link FeedItemStatusUpdateResponseContent},
  *   }
  * </code></pre>
  */
@@ -33,13 +34,13 @@ public class FeedItemStatusUpdate {
     private String errorCode = null;
 
     @JsonProperty("responseContent")
-    private Object responseContent = null;
+    private FeedItemStatusUpdateResponseContent responseContent = null;
 
     public FeedItemStatusUpdate() {
 
     }
 
-    public FeedItemStatusUpdate(String feedItemId, ApiStatusEnum status, String message, String errorCode, Object responseContent) {
+    public FeedItemStatusUpdate(String feedItemId, ApiStatusEnum status, String message, String errorCode, FeedItemStatusUpdateResponseContent responseContent) {
         this.feedItemId = feedItemId;
         this.status = status;
         this.message = message;
@@ -79,11 +80,11 @@ public class FeedItemStatusUpdate {
         this.errorCode = errorCode;
     }
 
-    public Object getResponseContent() {
+    public FeedItemStatusUpdateResponseContent getResponseContent() {
         return responseContent;
     }
 
-    public void setResponseContent(Object responseContent) {
+    public void setResponseContent(FeedItemStatusUpdateResponseContent responseContent) {
         this.responseContent = responseContent;
     }
 }
