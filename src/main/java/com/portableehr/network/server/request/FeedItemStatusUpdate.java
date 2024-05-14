@@ -3,9 +3,10 @@
  * https://portableehr.com/
  */
 
-package com.portableehr.network;
+package com.portableehr.network.server.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.network.ApiStatusEnum;
 
 /**
  * Class for the "requestStatus" in the responses from the Feed and FeedHub
@@ -34,7 +35,7 @@ public class FeedItemStatusUpdate {
     private String errorCode = null;
 
     @JsonProperty("responseContent")
-    private FeedItemStatusUpdateResponseContent responseContent = null;
+    protected FeedItemStatusUpdateResponseContent responseContent = null;
 
     public FeedItemStatusUpdate() {
 

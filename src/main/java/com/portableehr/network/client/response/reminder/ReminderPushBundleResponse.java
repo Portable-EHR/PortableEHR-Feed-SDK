@@ -7,7 +7,7 @@ package com.portableehr.network.client.response.reminder;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.network.ApiStatus;
-import com.portableehr.network.FeedItemStatusUpdate;
+import com.portableehr.network.server.request.FeedItemStatusUpdate;
 import com.portableehr.network.client.response.FeedHubApiResponse;
 
 import java.util.List;

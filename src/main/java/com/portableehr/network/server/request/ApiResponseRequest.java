@@ -6,7 +6,6 @@
 package com.portableehr.network.server.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.portableehr.network.FeedItemStatusUpdate;
 import com.portableehr.network.RequestCommand;
 
 /**
@@ -22,7 +21,7 @@ import com.portableehr.network.RequestCommand;
 public class ApiResponseRequest extends FeedHubRequest {
 
     @JsonProperty("parameters")
-    private FeedItemStatusUpdate parameters = null;
+    protected FeedItemStatusUpdate parameters = null;
 
     public ApiResponseRequest() {}
 

@@ -12,7 +12,7 @@ import org.junit.Test;
 public class ApiResponseRequestTest extends SerializationDeserializationTest {
 
     @Test
-    public void testExternalMessageUpdateRequest() throws Exception {
+    public void testApiResponseRequestTest() throws Exception {
         test("mocks/server_feed_api_response_request.json", ApiResponseRequest.class);
     }
 
