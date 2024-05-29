@@ -14,7 +14,7 @@ import java.util.Date;
         @JsonSubTypes.Type(EntryPayloadParticipant.class),
         @JsonSubTypes.Type(EntryPayloadStatusChange.class),
         @JsonSubTypes.Type(EntryPayloadShare.class),
-        @JsonSubTypes.Type(EntryPayloadAnnouncement.class),
+//        @JsonSubTypes.Type(EntryPayloadAnnouncement.class),
 })
 public abstract class EntryPayload {
     private String freeTextReply = null;
