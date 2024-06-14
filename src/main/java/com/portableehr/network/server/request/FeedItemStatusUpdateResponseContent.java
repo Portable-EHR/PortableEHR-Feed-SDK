@@ -29,4 +29,12 @@ public class FeedItemStatusUpdateResponseContent {
     public FeedItemStatusUpdateResponseContent(List<FeedItemError> errors) {
         this.errors = errors;
     }
+
+    public List<FeedItemError> getErrors() {
+        return errors;
+    }
+
+    public void setErrors(List<FeedItemError> errors) {
+        this.errors = errors;
+    }
 }

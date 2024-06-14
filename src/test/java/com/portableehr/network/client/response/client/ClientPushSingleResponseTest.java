@@ -12,8 +12,13 @@ import org.junit.Test;
 public class ClientPushSingleResponseTest extends SerializationDeserializationTest {
 
     @Test
-    public void testClientInviteResponse() throws Exception {
+    public void testClientPushSingleResponse() throws Exception {
         test("mocks/client_backend_client_pushSingle_response.json", ClientPushSingleResponse.class);
+    }
+
+    @Test
+    public void testClientPushSingleErrorResponse() throws Exception {
+        test("mocks/client_backend_client_pushSingle_response_error.json", ClientPushSingleResponse.class);
     }
 
 }

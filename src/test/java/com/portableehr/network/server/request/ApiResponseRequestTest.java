@@ -6,7 +6,6 @@
 package com.portableehr.network.server.request;
 
 import com.portableehr.network.SerializationDeserializationTest;
-import com.portableehr.network.server.request.ApiResponseRequest;
 import org.junit.Test;
 
 public class ApiResponseRequestTest extends SerializationDeserializationTest {

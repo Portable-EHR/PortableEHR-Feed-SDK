@@ -1,0 +1,55 @@
+{
+  "requestStatus": {
+    "status": "INVALID_PARAMETERS",
+    "message": "FeedItemValidation: Invalid FeedClient :\n.demographics.dateOfBirth (\"2025-04-03T00:00:00.000Z\"): invalid date in the future.\n.demographics.name.familyName (\"3\"): invalid mandatory name string.\n.demographics.name.firstName (\"3\"): invalid mandatory name string.\n.demographics.name.middleName (\"3.3.3.\"): invalid optional name string.\n.demographics.nameAtBirth.familyName (\"3\"): invalid mandatory name string.\n.demographics.nameAtBirth.firstName (\"3\"): invalid mandatory name string.\n.demographics.nameAtBirth.middleName (\"3.3.3.\"): invalid optional name string.\n.locatedWith.contact.lastName (\"3\"): invalid mandatory name string.\n.locatedWith.contact.firstName (\"3\"): invalid mandatory name string."
+  },
+  "responseContent": {
+    "errors": [
+      {
+        "field": "demographics.dateOfBirth",
+        "code": "dateInTheFuture",
+        "message": "date in the future"
+      },
+      {
+        "field": "demographics.name.familyName",
+        "code": "invalidMandatoryName",
+        "message": "mandatory name string"
+      },
+      {
+        "field": "demographics.name.firstName",
+        "code": "invalidMandatoryString",
+        "message": "mandatory name string"
+      },
+      {
+        "field": "demographics.name.middleName",
+        "code": "invalidOptionalName",
+        "message": "optional name string"
+      },
+      {
+        "field": "demographics.nameAtBirth.familyName",
+        "code": "invalidMandatoryName",
+        "message": "mandatory name string"
+      },
+      {
+        "field": "demographics.nameAtBirth.firstName",
+        "code": "invalidMandatoryString",
+        "message": "mandatory name string"
+      },
+      {
+        "field": "demographics.nameAtBirth.middleName",
+        "code": "invalidOptionalName",
+        "message": "optional name string"
+      },
+      {
+        "field": "locatedWith.contact.lastName",
+        "code": "invalidMandatoryName",
+        "message": "mandatory name string"
+      },
+      {
+        "field": "locatedWith.contact.firstName",
+        "code": "invalidMandatoryName",
+        "message": "mandatory name string"
+      }
+    ]
+  }
+}
