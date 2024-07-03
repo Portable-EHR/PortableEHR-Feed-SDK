@@ -8,7 +8,7 @@ import com.portableehr.model.LanguageEnum;
  * <pre><code>
  * {
  *     "majorityAge": 18,
- *     "minimumPatientAge": 14,
+ *     "minimumClientAge": 14,
  *     "communicationsLanguage": {@link LanguageEnum}
  *     "patientDefaultLanguage": {@link LanguageEnum}
  *     "privateMessageSettings": {@link PrivateMessageSettings}
@@ -20,14 +20,14 @@ public class Settings {
     @JsonProperty("majorityAge")
     private int majorityAge;
 
-    @JsonProperty("minimumPatientAge")
-    private int minimumPatientAge;
+    @JsonProperty("minimumClientAge")
+    private int minimumClientAge;
 
     @JsonProperty("communicationsLanguage")
     private LanguageEnum communicationsLanguage;
 
-    @JsonProperty("patientDefaultLanguage")
-    private LanguageEnum patientDefaultLanguage;
+    @JsonProperty("clientDefaultLanguage")
+    private LanguageEnum clientDefaultLanguage;
 
     @JsonProperty("privateMessageSettings")
     private PrivateMessageSettings privateMessageSettings;
@@ -35,12 +35,12 @@ public class Settings {
     public Settings() {
     }
 
-    public Settings(int majorityAge, int minimumPatientAge, LanguageEnum communicationsLanguage, LanguageEnum patientDefaultLanguage,
+    public Settings(int majorityAge, int minimumClientAge, LanguageEnum communicationsLanguage, LanguageEnum clientDefaultLanguage,
                     PrivateMessageSettings privateMessageSettings) {
         this.majorityAge = majorityAge;
-        this.minimumPatientAge = minimumPatientAge;
+        this.minimumClientAge = minimumClientAge;
         this.communicationsLanguage = communicationsLanguage;
-        this.patientDefaultLanguage = patientDefaultLanguage;
+        this.clientDefaultLanguage = clientDefaultLanguage;
         this.privateMessageSettings = privateMessageSettings;
     }
 
@@ -52,12 +52,12 @@ public class Settings {
         this.majorityAge = majorityAge;
     }
 
-    public int getMinimumPatientAge() {
-        return minimumPatientAge;
+    public int getMinimumClientAge() {
+        return minimumClientAge;
     }
 
-    public void setMinimumPatientAge(int minimumPatientAge) {
-        this.minimumPatientAge = minimumPatientAge;
+    public void setMinimumClientAge(int minimumClientAge) {
+        this.minimumClientAge = minimumClientAge;
     }
 
     public LanguageEnum getCommunicationsLanguage() {
@@ -68,12 +68,12 @@ public class Settings {
         this.communicationsLanguage = communicationsLanguage;
     }
 
-    public LanguageEnum getPatientDefaultLanguage() {
-        return patientDefaultLanguage;
+    public LanguageEnum getClientDefaultLanguage() {
+        return clientDefaultLanguage;
     }
 
-    public void setPatientDefaultLanguage(LanguageEnum patientDefaultLanguage) {
-        this.patientDefaultLanguage = patientDefaultLanguage;
+    public void setClientDefaultLanguage(LanguageEnum clientDefaultLanguage) {
+        this.clientDefaultLanguage = clientDefaultLanguage;
     }
 
     public PrivateMessageSettings getPrivateMessageSettings() {

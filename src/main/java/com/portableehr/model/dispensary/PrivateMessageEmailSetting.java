@@ -1,5 +1,6 @@
 package com.portableehr.model.dispensary;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -35,6 +36,7 @@ public class PrivateMessageEmailSetting {
         this.email = email;
     }
 
+    @JsonIgnore
     public boolean isVerified() {
         return isVerified;
     }

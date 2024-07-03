@@ -1,0 +1,21 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "majorityAge": 18,
+    "minimumClientAge": 14,
+    "communicationsLanguage": "fr",
+    "clientDefaultLanguage": "fr",
+    "privateMessageSettings": {
+      "reminderDelay": "PT10M",
+      "fallbackDelay": "PT48H",
+      "failOnFallback": true,
+      "emailOnFallback": [
+        {
+          "email": "someone@domain.com",
+          "isVerified": true
+        }
+      ]
+    }
+  }
+}
