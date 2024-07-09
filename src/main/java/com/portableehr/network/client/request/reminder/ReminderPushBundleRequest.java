@@ -17,7 +17,7 @@ import java.util.List;
  * <pre><code>
  * {
  *    "feedAlias": "fiktivDP",
- *    "command": "pushSingle",
+ *    "command": "pushBundle",
  *    "parameters": [{@link Reminder}]
  * }
  * </code></pre>
