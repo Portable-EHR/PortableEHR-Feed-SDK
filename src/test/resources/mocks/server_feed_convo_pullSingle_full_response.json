@@ -60,6 +60,13 @@
               "name":  "patient-health-history.pdf",
               "mimeType": "application/pdf"
             }
+          ],
+          "questionnaires" : [
+            {
+              "surveyId" : 123456789,
+              "title" : "Health History Form",
+              "participantToken" : "A1S2D3F4"
+            }
           ]
         }
       },
@@ -91,6 +98,13 @@
               "id": "00000000-0000-0000-0000-000000000000",
               "name":  "the-document.pdf",
               "mimeType": "application/pdf"
+            }
+          ],
+          "questionnaires" : [
+            {
+              "surveyId" : 123456789,
+              "title" : "Client satisfaction form",
+              "participantToken" : "A1S2D3F4"
             }
           ]
         }

@@ -8,13 +8,15 @@ public class EntryPayloadMessage extends EntryPayload {
 
     private String text;
     private List<AttachmentEnvelop> attachments;
+    private List<QuestionnaireInvitation> questionnaires;
 
     public EntryPayloadMessage() {
     }
 
-    public EntryPayloadMessage(String text, List<AttachmentEnvelop> attachments) {
+    public EntryPayloadMessage(String text, List<AttachmentEnvelop> attachments, List<QuestionnaireInvitation> questionnaires) {
         this.text = text;
         this.attachments = attachments;
+        this.questionnaires = questionnaires;
     }
 
     public EntryPayloadMessage(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply, String text, List<AttachmentEnvelop> attachments) {
@@ -37,5 +39,13 @@ public class EntryPayloadMessage extends EntryPayload {
 
     public void setAttachments(List<AttachmentEnvelop> attachments) {
         this.attachments = attachments;
+    }
+
+    public List<QuestionnaireInvitation> getQuestionnaires() {
+        return questionnaires;
+    }
+
+    public void setQuestionnaires(List<QuestionnaireInvitation> questionnaires) {
+        this.questionnaires = questionnaires;
     }
 }
