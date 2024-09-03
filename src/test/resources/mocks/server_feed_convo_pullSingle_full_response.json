@@ -65,7 +65,12 @@
             {
               "surveyId" : 123456789,
               "title" : "Health History Form",
-              "participantToken" : "A1S2D3F4"
+              "participants" : [
+                {
+                  "participantUUID" : "00000000-0000-0000-0000-000000000000",
+                  "token" : "A1S2D3F4"
+                }
+              ]
             }
           ]
         }
@@ -104,7 +109,12 @@
             {
               "surveyId" : 123456789,
               "title" : "Client satisfaction form",
-              "participantToken" : "A1S2D3F4"
+              "participants" : [
+                {
+                  "participantUUID" : "00000000-0000-0000-0000-000000000000",
+                  "token" : "A1S2D3F4"
+                }
+              ]
             }
           ]
         }

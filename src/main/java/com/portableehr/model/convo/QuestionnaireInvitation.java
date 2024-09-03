@@ -1,18 +1,20 @@
 package com.portableehr.model.convo;
 
+import java.util.List;
+
 public class QuestionnaireInvitation {
 
     private int    surveyId;
     private String title;
-    private String participantToken;
+    private List<QuestionnaireParticipant> participants;
 
     public QuestionnaireInvitation() {
     }
 
-    public QuestionnaireInvitation(int surveyId, String title, String participantToken) {
+    public QuestionnaireInvitation(int surveyId, String title, List<QuestionnaireParticipant> participants) {
         this.surveyId = surveyId;
         this.title = title;
-        this.participantToken = participantToken;
+        this.participants = participants;
     }
 
     public int getSurveyId() {
@@ -31,11 +33,11 @@ public class QuestionnaireInvitation {
         this.title = title;
     }
 
-    public String getParticipantToken() {
-        return participantToken;
+    public List<QuestionnaireParticipant> getParticipants() {
+        return participants;
     }
 
-    public void setParticipantToken(String participantToken) {
-        this.participantToken = participantToken;
+    public void setParticipants(List<QuestionnaireParticipant> participants) {
+        this.participants = participants;
     }
 }
