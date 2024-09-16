@@ -68,12 +68,14 @@
               "participants" : [
                 {
                   "participantUUID" : "00000000-0000-0000-0000-000000000000",
-                  "token" : "A1S2D3F4"
+                  "token" : "A1S2D3F4",
+                  "status" : "complete"
                 }
               ]
             }
           ]
-        }
+        },
+        "possibleRepliesTypes": ["questionnaire"]
       },
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
@@ -112,12 +114,14 @@
               "participants" : [
                 {
                   "participantUUID" : "00000000-0000-0000-0000-000000000000",
-                  "token" : "A1S2D3F4"
+                  "token" : "A1S2D3F4",
+                  "status" : "incomplete"
                 }
               ]
             }
           ]
-        }
+        },
+        "possibleRepliesTypes": ["questionnaire"]
       },
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",

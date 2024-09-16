@@ -14,12 +14,14 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * <b>date</b> : Participants must choose a Date<br>
  * <b>date_time</b> : Participants must choose a Date and Time<br>
  * <b>choice</b> : Participants must choose from a set of ChoiceOption <br>
+ * <b>questionnaire</b> : Participants must complete the questionnaires <br>
  */
 public enum ReplyTypeEnum {
   FREE_TEXT("free_text"),
   DATE("date"),
   DATE_TIME("date_time"),
-  CHOICE("choice");
+  CHOICE("choice"),
+  QUESTIONNAIRE("questionnaire");
 
   private String value;
 
