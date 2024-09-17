@@ -23,15 +23,17 @@ public abstract class EntryPayload {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date dateTimeReply = null;
     private ChoiceOption choiceReply = null;
+    private Integer surveyIdReply = null;
 
     public EntryPayload() {
     }
 
-    public EntryPayload(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply) {
+    public EntryPayload(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply, Integer surveyIdReply) {
         this.freeTextReply = freeTextReply;
         this.dateReply = dateReply;
         this.dateTimeReply = dateTimeReply;
         this.choiceReply = choiceReply;
+        this.surveyIdReply = surveyIdReply;
     }
 
     public String getFreeTextReply() {
@@ -64,5 +66,13 @@ public abstract class EntryPayload {
 
     public void setChoiceReply(ChoiceOption choiceReply) {
         this.choiceReply = choiceReply;
+    }
+
+    public Integer getSurveyIdReply() {
+        return surveyIdReply;
+    }
+
+    public void setSurveyIdReply(Integer surveyIdReply) {
+        this.surveyIdReply = surveyIdReply;
     }
 }

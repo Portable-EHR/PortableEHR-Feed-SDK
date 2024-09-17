@@ -640,6 +640,77 @@
             }
           ]
         }
+      },
+      {
+        "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "type": "message",
+        "audience": "all",
+        "attachmentCount" : 0,
+        "id": "00000000-0000-0000-0000-000000000003",
+        "createdOn": "2021-03-03T14:59:43.622Z",
+        "status" : [
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          },
+          {
+            "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+            "status": "received",
+            "date": "2021-03-03T14:51:43.622Z"
+          }
+        ],
+        "payload": {
+          "surveyIdReply": 123456
+        },
+        "repliesTo" : {
+          "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+          "type": "message",
+          "audience": "all",
+          "attachmentCount" : 0,
+          "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+          "createdOn": "2021-03-03T14:59:43.622Z",
+          "status" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            },
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "entryId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "status": "received",
+              "date": "2021-03-03T14:51:43.622Z"
+            }
+          ],
+          "mentionedParticipants" : [
+            {
+              "participantId": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+              "reminder": "2021-03-03T14:51:43.622Z",
+              "reminderMethod": "sms",
+              "reminderState": "enabled"
+            }
+          ],
+          "payload": {
+            "text": "Did you did the thing?"
+          },
+          "possibleRepliesTypes": ["free_text", "choice"],
+          "choiceReplyOptions": [
+            {
+              "id": "00000000-0000-0000-0000-000000000001",
+              "disablesReminder": true,
+              "label": "Yes"
+            },
+            {
+              "id": "00000000-0000-0000-0000-000000000002",
+              "disablesReminder": false,
+              "label": "Not yet"
+            }
+          ]
+        }
       }
     ],
     "unresolvedEntries": [

@@ -16,12 +16,6 @@ public class EntryPayloadMove extends EntryPayload {
         this.toLocation = toLocation;
     }
 
-    public EntryPayloadMove(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply, String fromLocation, String toLocation) {
-        super(freeTextReply, dateReply, dateTimeReply, choiceReply);
-        this.fromLocation = fromLocation;
-        this.toLocation = toLocation;
-    }
-
     public String getFromLocation() {
         return fromLocation;
     }

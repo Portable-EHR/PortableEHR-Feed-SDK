@@ -19,12 +19,6 @@ public class EntryPayloadMessage extends EntryPayload {
         this.questionnaires = questionnaires;
     }
 
-    public EntryPayloadMessage(String freeTextReply, LocalDate dateReply, Date dateTimeReply, ChoiceOption choiceReply, String text, List<AttachmentEnvelop> attachments) {
-        super(freeTextReply, dateReply, dateTimeReply, choiceReply);
-        this.text = text;
-        this.attachments = attachments;
-    }
-
     public String getText() {
         return text;
     }
