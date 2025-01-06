@@ -7,16 +7,16 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * The type of conversation's participant : <br><br>
  * <b>client</b> : This participant is one of the client being served<br>
  * <b>staff</b> : This participant is part of the organization serving the client(s)<br>
- * <b>client_guess</b> : This participant was invited by the client. Example : A spouse<br>
- * <b>staff_guess</b> : This participant was invited by the organization. Example : An expert<br>
+ * <b>client_guest</b> : This participant was invited by the client. Example : A spouse<br>
+ * <b>staff_guest</b> : This participant was invited by the organization. Example : An expert<br>
  * <b>system</b> : The system performing automatism like sending welcome messages, reminders, etc.<br>
  */
 public enum ParticipantTypeEnum {
     CLIENT("client"),
-    CLIENT_GUESS("client_guess"),
+    CLIENT_GUEST("client_guest"),
     STAFF("staff"),
     PRIVILEGED_STAFF("privileged_staff"),
-    STAFF_GUESS("staff_guess"),
+    STAFF_GUEST("staff_guest"),
     SYSTEM("system");
 
     private String value;
