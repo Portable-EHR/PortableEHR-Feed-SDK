@@ -60,7 +60,6 @@
     "locatedWith": {
       "contact": {
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
-        "type" : "self",
         "lastName": "Joe",
         "firstName": "Jane",
         "middleName": "",
@@ -80,7 +79,7 @@
         "zip": "H0H 0H0",
         "country": "CA"
       },
-      "emergencyContact": {
+      "emergency": [{
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
         "lastName": "Doe",
         "firstName": "Jane",
@@ -92,7 +91,7 @@
         "professionalSalutation": "Dr",
         "salutation": "Mr",
         "titles": "Md, PhD"
-      }
+      }]
     }
   }
 }

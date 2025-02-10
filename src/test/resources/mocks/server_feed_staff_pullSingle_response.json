@@ -13,7 +13,6 @@
     "roles": ["staff", "admin", "someVerySpecificRoleOfYourOrganization"],
     "contact": {
       "feedItemId": "2ab32c12-ded4-44b4-916d-8ef312f49277",
-      "type" : "self",
       "lastName": "Quinn",
       "firstName": "Michaela",
       "middleName": "Anne",

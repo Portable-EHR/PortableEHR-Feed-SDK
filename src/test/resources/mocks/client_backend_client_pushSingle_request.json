@@ -57,7 +57,6 @@
     "locatedWith": {
       "contact": {
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
-        "type" : "self",
         "lastName": "Joe",
         "firstName": "Jane",
         "middleName": "",
@@ -77,7 +76,7 @@
         "zip": "H0H 0H0",
         "country": "CA"
       },
-      "emergencyContact": {
+      "emergency": [{
         "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
         "lastName": "Doe",
         "firstName": "Jane",
@@ -89,7 +88,35 @@
         "professionalSalutation": "Dr",
         "salutation": "Mr",
         "titles": "Md, PhD"
-      }
+      }],
+      "guardian": [{
+        "feedItemId": "00000000-0000-0000-0000-000000000000",
+        "lastUpdated": "2021-01-14T23:41:21.050Z",
+        "identityValidatedBy" : "some feed item id",
+        "identityValidatedOn" : "2021-06-02T20:20:19.865Z",
+        "identifiedBy": [
+          {
+            "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
+            "issuerKind": "healthCare",
+            "issuerAlias": "CA_QC_RAMQ",
+            "number": "ZZZZ12345678",
+            "version": "1",
+            "expiresOn": "2029-01-28"
+          }
+        ],
+        "contact": {
+          "feedItemId": "1ef9bda5-e67f-11ea-a057-fdaac99f1410",
+          "lastName": "Joe",
+          "firstName": "Jane Mother",
+          "middleName": "",
+          "preferredGender": "F",
+          "email": "jane.doe.mother@mailinator.com",
+          "mobilePhone": "15552221112",
+          "professionalSalutation": "Dr",
+          "salutation": "Ms",
+          "titles": "Md, PhD"
+        }
+      }]
     }
   }
 }

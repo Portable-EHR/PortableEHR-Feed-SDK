@@ -19,9 +19,6 @@ public class Contact {
     @JsonProperty("backendItemId")
     private UUID backendItemId = null;
 
-    @JsonProperty("type")
-    private ContactTypeEnum type = null;
-
     @JsonProperty("lastName")
     private String lastName = null;
 
@@ -67,12 +64,11 @@ public class Contact {
     public Contact() {
     }
 
-    public Contact(UUID feedItemId, UUID backendItemId, ContactTypeEnum type, String lastName, String firstName, String middleName, GenderEnum preferredGender,
+    public Contact(UUID feedItemId, UUID backendItemId, String lastName, String firstName, String middleName, GenderEnum preferredGender,
                    LanguageEnum preferredLanguage, String email, String alternateEmail, String mobilePhone, String landPhone, String fax, String professionalSalutation,
                    String salutation, String titles, String description) {
         this.feedItemId = feedItemId;
         this.backendItemId = backendItemId;
-        this.type = type;
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -103,14 +99,6 @@ public class Contact {
 
     public void setBackendItemId(UUID backendItemId) {
         this.backendItemId = backendItemId;
-    }
-
-    public ContactTypeEnum getType() {
-        return type;
-    }
-
-    public void setType(ContactTypeEnum type) {
-        this.type = type;
     }
 
     public String getLastName() {

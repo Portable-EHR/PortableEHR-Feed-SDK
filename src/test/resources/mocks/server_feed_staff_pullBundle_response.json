@@ -17,7 +17,6 @@
         "roles": ["staff", "someVerySpecificRoleOfYourOrganization"],
         "contact": {
           "feedItemId": "28b2c2a2-3e60-11ed-b878-0242ac120002",
-          "type" : "self",
           "lastName": "Zoidberg",
           "firstName": "John",
           "middleName": "A.",
@@ -41,7 +40,6 @@
         "roles": ["admin"],
         "contact": {
           "feedItemId": "28b2c572-3e60-11ed-b878-0242ac120002",
-          "type" : "self",
           "lastName": "Evil",
           "firstName": "Douglas",
           "middleName": "",
@@ -65,7 +63,6 @@
         "roles": ["staff", "admin", "someVerySpecificRoleOfYourOrganization"],
         "contact": {
           "feedItemId": "2ab32c12-ded4-44b4-916d-8ef312f49277",
-          "type" : "self",
           "lastName": "Quinn",
           "firstName": "Michaela",
           "middleName": "Anne",

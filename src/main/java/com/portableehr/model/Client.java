@@ -23,6 +23,8 @@ import java.util.UUID;
  *     "lastUpdated": "2021-01-14T23:41:21.050Z",
  *     "feedItemVersion": 1,
  *     "profileNumber": "H008",
+ *     "identityValidatedBy": "00000000-0000-0000-0000-000000000000",
+ *     "identityValidatedOn": "2021-01-14T23:41:21.050Z",
  *     "demographics": {@link Demographics},
  *     "identifiedBy": [
  *       {@link ClientLegitId}1,
@@ -30,7 +32,7 @@ import java.util.UUID;
  *       ...
  *       {@link ClientLegitId}N,
  *     ],
- *     "locatedWith": {@link ClientLocatedWith}
+ *     "locatedWith": {@link LocatedWith}
  * }
  * </code></pre>
  */
@@ -69,13 +71,13 @@ public class Client {
   private List<ClientLegitId> identifiedBy = new ArrayList<>();
 
   @JsonProperty("locatedWith")
-  private ClientLocatedWith locatedWith = null;
+  private LocatedWith locatedWith = null;
 
   public Client() {
   }
 
   public Client(String feedAlias, UUID feedItemId, UUID backendItemId, Date lastUpdated, Integer feedItemVersion, String profileNumber, String identityValidatedBy,
-                Date identityValidatedOn, Demographics demographics, List<ClientLegitId> identifiedBy, ClientLocatedWith locatedWith) {
+                Date identityValidatedOn, Demographics demographics, List<ClientLegitId> identifiedBy, LocatedWith locatedWith) {
     this.feedAlias = feedAlias;
     this.feedItemId = feedItemId;
     this.backendItemId = backendItemId;
@@ -169,11 +171,11 @@ public class Client {
     this.identifiedBy = identifiedBy;
   }
 
-  public ClientLocatedWith getLocatedWith() {
+  public LocatedWith getLocatedWith() {
     return locatedWith;
   }
 
-  public void setLocatedWith(ClientLocatedWith locatedWith) {
+  public void setLocatedWith(LocatedWith locatedWith) {
     this.locatedWith = locatedWith;
   }
 }

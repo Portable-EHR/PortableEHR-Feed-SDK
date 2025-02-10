@@ -7,33 +7,40 @@ package com.portableehr.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
+
 /**
  * PatientLocatedWith
  * <pre><code>
  * {
  *    "contact": {@link Contact},
  *    "address": {@link CivicAddress},
- *    "emergencyContact": {@link Contact}
+ *    "emergency": [{@link Contact}]
+ *    "guardian": [{@link Contact}]
  * }
  * </code></pre>
  */
-public class ClientLocatedWith {
+public class LocatedWith {
   @JsonProperty("contact")
   private Contact contact = null;
 
   @JsonProperty("address")
   private CivicAddress address = null;
 
-  @JsonProperty("emergencyContact")
-  private EmergencyContact emergencyContact = null;
+  @JsonProperty("emergency")
+  private List<Contact> emergency = null;
 
-  public ClientLocatedWith() {
+  @JsonProperty("guardian")
+  private List<Guardian> guardian = null;
+
+  public LocatedWith() {
   }
 
-  public ClientLocatedWith(Contact contact, CivicAddress address, EmergencyContact emergencyContact) {
+  public LocatedWith(Contact contact, CivicAddress address, List<Contact> emergency, List<Guardian> guardian) {
     this.contact = contact;
     this.address = address;
-    this.emergencyContact = emergencyContact;
+    this.emergency = emergency;
+    this.guardian = guardian;
   }
 
   public Contact getContact() {
@@ -52,11 +59,19 @@ public class ClientLocatedWith {
     this.address = address;
   }
 
-  public EmergencyContact getEmergencyContact() {
-    return emergencyContact;
+  public List<Contact> getEmergency() {
+    return emergency;
   }
 
-  public void setEmergencyContact(EmergencyContact emergencyContact) {
-    this.emergencyContact = emergencyContact;
+  public void setEmergency(List<Contact> emergency) {
+    this.emergency = emergency;
+  }
+
+  public List<Guardian> getGuardian() {
+    return guardian;
+  }
+
+  public void setGuardian(List<Guardian> guardian) {
+    this.guardian = guardian;
   }
 }
