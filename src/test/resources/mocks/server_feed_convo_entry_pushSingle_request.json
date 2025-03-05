@@ -5,6 +5,7 @@
     "conversationId": "00000000-0000-0000-0000-000000000000",
     "entry": {
       "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+      "representedBy": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
       "type": "message",
       "audience": "all",
       "attachmentCount" : 1,

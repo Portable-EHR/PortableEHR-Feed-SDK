@@ -15,10 +15,10 @@ public class Entry extends EntryEnvelop {
         super();
     }
 
-    public Entry(UUID id, UUID from, List<EntryParticipantStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn,
+    public Entry(UUID id, UUID from, UUID representedBy, List<EntryParticipantStatus> statusList, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn,
                  List<MentionedParticipant> mentionedParticipants, EntryPayload payload, Boolean requiresAcknowledge, List<ReplyTypeEnum> possibleRepliesTypes, Entry repliesTo,
                  List<ChoiceOption> choiceReplyOptions) {
-        super(id, from, statusList, type, audience, attachmentCount, createdOn, mentionedParticipants);
+        super(id, from, representedBy, statusList, type, audience, attachmentCount, createdOn, mentionedParticipants);
         this.payload = payload;
         this.requiresAcknowledge = requiresAcknowledge;
         this.possibleRepliesTypes = possibleRepliesTypes;

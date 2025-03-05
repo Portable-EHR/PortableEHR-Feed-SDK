@@ -17,6 +17,7 @@ public class EntryEnvelop {
 
     private UUID id;
     private UUID from;
+    private UUID representedBy;
     private List<EntryParticipantStatus> status = null;
     private EntryTypeEnum type;
     private EntryAudienceEnum audience;
@@ -30,10 +31,11 @@ public class EntryEnvelop {
     public EntryEnvelop() {
     }
 
-    public EntryEnvelop(UUID id, UUID from, List<EntryParticipantStatus> status, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount, Date createdOn,
-                        List<MentionedParticipant> mentionedParticipants) {
+    public EntryEnvelop(UUID id, UUID from, UUID representedBy, List<EntryParticipantStatus> status, EntryTypeEnum type, EntryAudienceEnum audience, int attachmentCount,
+                        Date createdOn, List<MentionedParticipant> mentionedParticipants) {
         this.id = id;
         this.from = from;
+        this.representedBy = representedBy;
         this.status = status;
         this.type = type;
         this.audience = audience;
@@ -56,6 +58,14 @@ public class EntryEnvelop {
 
     public void setFrom(UUID from) {
         this.from = from;
+    }
+
+    public UUID getRepresentedBy() {
+        return representedBy;
+    }
+
+    public void setRepresentedBy(UUID representedBy) {
+        this.representedBy = representedBy;
     }
 
     public List<EntryParticipantStatus> getStatus() {

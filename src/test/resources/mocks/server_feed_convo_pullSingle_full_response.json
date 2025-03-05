@@ -34,6 +34,7 @@
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "from": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
+        "representedBy": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
         "type": "announcement",
         "audience": "all",
         "attachmentCount" : 0,
@@ -80,6 +81,7 @@
       {
         "id": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
         "from": "1ef9bda0-e67f-11ea-a057-fdaac99f1111",
+        "representedBy": "1ef9bda0-e67f-11ea-a057-fdaac99f2222",
         "type": "message",
         "audience": "all",
         "attachmentCount" : 1,
