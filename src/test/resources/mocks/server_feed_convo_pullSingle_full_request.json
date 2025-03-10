@@ -4,8 +4,9 @@
   "parameters": {
     "conversationId": "00000000-0000-0000-0000-000000000000",
     "includeEntries": true,
-    "participantType" : "client",
+    "participantType": "client",
     "participantId": "00000000-0000-0000-0000-000000000000",
+    "representedBy": "00000000-0000-0000-0000-000000000000",
     "offset": 0,
     "maxEntries": 50
   }

@@ -4,6 +4,7 @@
   "parameters": {
     "locationEntryPointId": "48e899ce-c791-42a6-a10a-27bb65d6b6fd",
     "entry": {
+      "representedBy": "00000000-0000-0000-0000-000000000000",
       "type": "status-change",
       "audience": "all",
       "payload": {}

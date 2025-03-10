@@ -15,7 +15,9 @@ import java.util.UUID;
  * <pre><code>
  * {
  *     "entry": {@link Entry}, // The first entry in the conversation
- *     "locationEntryPointId": true, // Where the new conversation is starting
+ *     "locationEntryPointId": "0000-00...", // Where the new conversation is starting
+ *     "clientId": "the id of the client creating the convo",
+ *     "clientTitle": "Optional. The title the client gave to the conversation"
  * }
  * </code></pre>
  */
