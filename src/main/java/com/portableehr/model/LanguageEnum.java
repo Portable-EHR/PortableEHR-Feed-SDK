@@ -10,13 +10,15 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
  * A ISO 639-1 two-letter language code, in all lower case, of the preferred language of the contact.
- * For the moment, Portable EHR supports <i>en</i> and <i>fr</i>, as languages of communication.<br><br>
+ * For the moment, Portable EHR supports <i>en</i>, <i>fr</i> and <i>es</i>, as languages of communication.<br><br>
  * <b>en</b><br>
  * <b>fr</b><br>
+ * <b>es</b><br>
  */
 public enum LanguageEnum {
     EN("en"),
-    FR("fr");
+    FR("fr"),
+    ES("es");
 
     private String value;
 
