@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * The responseContent field for the {@link IdIssuersResponse}
  * <pre><code>
- * [
+ * "results" : [
  *      {@link JurisdictionIdIssuer}1,
  *      {@link JurisdictionIdIssuer}2,
  *      ...
