@@ -6,6 +6,7 @@
 package com.portableehr.network.client.response.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.portableehr.model.BackendClient;
 import com.portableehr.model.Client;
 import com.portableehr.network.ApiStatus;
 import com.portableehr.network.client.response.FeedHubApiResponse;
@@ -20,7 +21,7 @@ import java.util.UUID;
  * <pre><code>
  * {
  *   "backendItemId": "00000000-0000-0000-0000-000000000000",
- *   "backendItem": TODO
+ *   "backendItem": {@link BackendClient}
  * }
  * </code></pre>
  */
@@ -30,12 +31,12 @@ public class ClientPushSingleResponseContent extends FeedItemStatusUpdateRespons
     private UUID backendItemId = null;
 
     @JsonProperty("backendItem")
-    private Object backendItem = null;
+    private BackendClient backendItem = null;
 
     public ClientPushSingleResponseContent() {
     }
 
-    public ClientPushSingleResponseContent(List<FeedItemError> errors, UUID backendItemId, Object backendItem) {
+    public ClientPushSingleResponseContent(List<FeedItemError> errors, UUID backendItemId, BackendClient backendItem) {
         super(errors);
         this.backendItemId = backendItemId;
         this.backendItem = backendItem;
@@ -49,11 +50,11 @@ public class ClientPushSingleResponseContent extends FeedItemStatusUpdateRespons
         this.backendItemId = backendItemId;
     }
 
-    public Object getBackendItem() {
+    public BackendClient getBackendItem() {
         return backendItem;
     }
 
-    public void setBackendItem(Object backendItem) {
+    public void setBackendItem(BackendClient backendItem) {
         this.backendItem = backendItem;
     }
 }
