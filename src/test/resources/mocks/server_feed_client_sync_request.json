@@ -2,6 +2,7 @@
   "feedAlias": "fiktivDP",
   "command": "pushSingle",
   "parameters": {
+    "backendClientId": "3eac3c2c-e546-46d9-b282-6821e3268c53",
     "lastUpdated": "2025-04-22T13:41:30.000Z",
     "identifiedBy": [
       {
@@ -13,7 +14,6 @@
         "expiresOn": "2026-07-17"
       }
     ],
-    "backendClientId": "3eac3c2c-e546-46d9-b282-6821e3268c53",
     "locatedWith": {
       "contact": {
         "preferredLanguage": "en",
