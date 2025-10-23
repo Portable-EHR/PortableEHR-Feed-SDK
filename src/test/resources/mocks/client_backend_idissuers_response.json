@@ -1,648 +1,964 @@
 {
-  "requestStatus" : {
-    "status" : "OK",
-    "message" : "[69] Cached IdIssuers"
+  "requestStatus": {
+    "status": "OK",
+    "message": "[72] Cached IdIssuers"
   },
-  "responseContent" : {
-    "results" : [ {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "RAMQ",
-      "issuerAlias" : "CA_QC_RAMQ",
-      "description" : "Régie de l'assurance maladie du Québec",
-      "guid" : "47371b17-82a2-4f57-9b57-c7d35b09a6ab",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "ON",
-      "issuer" : "OHIP",
-      "issuerAlias" : "CA_ON_OHIP",
-      "description" : "Ontario health insurance plan",
-      "guid" : "2b29dcc5-38d0-4d56-bf32-a4684a466523",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "issuer" : "GENERIC",
-      "issuerAlias" : "CA_GENERIC",
-      "description" : "RANQ style, based on DOB, Gender, Name",
-      "guid" : "29a9fe4b-aaba-4141-ba76-fc40ab29dc6c",
-      "isTechnical" : true
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "AB",
-      "issuer" : "AHCIP",
-      "issuerAlias" : "CA_AB_AHCIP",
-      "description" : "Alberta Health Care Insurance Plan",
-      "guid" : "87bcc8f6-6b8b-4fe1-babc-163b2060eab2",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "BC",
-      "issuer" : "BCMSP",
-      "issuerAlias" : "CA_BC_BCMSP",
-      "description" : "British Columbia Medical Services Plan",
-      "guid" : "01deca6d-8f0d-44b7-b5a8-90e55344b591",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "NB",
-      "issuer" : "NBM",
-      "issuerAlias" : "CA_NB_NBM",
-      "description" : "New Brunswick Medicare",
-      "guid" : "c6670778-3bc5-4091-91b5-201e2d621ce5",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "MA",
-      "issuer" : "MHSIP",
-      "issuerAlias" : "CA_MA_MHSIP",
-      "description" : "Manitoba Health Services Insurance Plan",
-      "guid" : "d2309c42-b9c0-4e77-a1d4-b8a54b0420aa",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "NS",
-      "issuer" : "NSMSI",
-      "issuerAlias" : "CA_NS_NSMSI",
-      "description" : "Nova Scotia Medical Services Insurance",
-      "guid" : "cc4a4d91-6663-4a43-8241-a62fdcd08e8d",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "NU",
-      "issuer" : "NHCP",
-      "issuerAlias" : "CA_NU_NHCP",
-      "description" : "Nunavut Health Care Plan",
-      "guid" : "f824d47f-f36c-4e90-8cb0-d98207b63bb1",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "NL",
-      "issuer" : "NMCP",
-      "issuerAlias" : "CA_NL_NMCP",
-      "description" : "Newfoundland Medical Care Plan",
-      "guid" : "f4644cab-ddf6-4576-9bb6-32dd085899d1",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "NT",
-      "issuer" : "NWTHCP",
-      "issuerAlias" : "CA_NT_NWTHCP",
-      "description" : "Northwest Territories Health Care Plan",
-      "guid" : "0e037ec2-6f47-4b85-a488-8611a5693fcc",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "PE",
-      "issuer" : "PEIHC",
-      "issuerAlias" : "CA_PE_PEIHC",
-      "description" : "Prince Edward Island Health Care",
-      "guid" : "373612ca-b5fe-47a5-9e47-a510a9c3d203",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "SK",
-      "issuer" : "SKHSC",
-      "issuerAlias" : "CA_SK_SKHSC",
-      "description" : "Saskatchewan Health Services Card",
-      "guid" : "a8f003cd-b410-491a-8f1a-deccf2b44082",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "YT",
-      "issuer" : "YHCIP",
-      "issuerAlias" : "CA_YT_YHCIP",
-      "description" : "Yukon Health Care Insurance Plan",
-      "guid" : "b94210ad-7f27-485d-a002-2f02089c7b2b",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "other",
-      "country" : "CA",
-      "issuer" : "PEHI",
-      "issuerAlias" : "PEHR",
-      "description" : "Portable EHR Human Identity",
-      "guid" : "8309bf68-c091-45b7-8b06-5c809cc7cd8d",
-      "isTechnical" : true,
-      "officialWWWurl" : "https://www.portableehr.com"
-    }, {
-      "issuerKind" : "socialSecurity",
-      "country" : "CA",
-      "issuer" : "SIN",
-      "issuerAlias" : "CA_SIN",
-      "description" : "Canada Social Insurance Number",
-      "guid" : "8a810ef0-489d-4c1f-af51-425f898ad847",
-      "isTechnical" : true
-    }, {
-      "issuerKind" : "socialSecurity",
-      "country" : "US",
-      "issuer" : "SSN",
-      "issuerAlias" : "US_SSN",
-      "description" : "US Social Security Number",
-      "guid" : "d710e27c-cd5d-43bb-b480-5cbb6eb04388",
-      "isTechnical" : true
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "CMQ",
-      "issuerAlias" : "CA_QC_CMQ",
-      "description" : "Collège des médecins du Québec",
-      "guid" : "ebbb5fb9-b744-421c-8d66-07ed4b441771",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.cmq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "ON",
-      "issuer" : "CPSON",
-      "issuerAlias" : "CA_ON_CPSON",
-      "description" : "College of Physicians and Surgeons of Ontario",
-      "guid" : "74ea623a-bdc4-420c-b5c1-aacdcbba7d09",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "CPSAB",
-      "issuerAlias" : "CA_QC_CPSAB",
-      "description" : "College of Physicians and Surgeons of Alberta",
-      "guid" : "7306c654-d861-4df1-ab22-1a3cb819ec0a",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "BC",
-      "issuer" : "CPSBC",
-      "issuerAlias" : "CA_BC_CPSBC",
-      "description" : "College of Physicians and Surgeons of British Columbia",
-      "guid" : "96465423-1559-474f-a9c2-eed0bc555513",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NB",
-      "issuer" : "CPSNB",
-      "issuerAlias" : "CA_NB_CPSNB",
-      "description" : "College of Physicians and Surgeons of New Brunswick",
-      "guid" : "d9ef5954-b6a2-448d-a8d9-254d6451aa6d",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "CPSMB",
-      "issuerAlias" : "CA_QC_CPSMB",
-      "description" : "College of Physicians and Surgeons of Manitoba",
-      "guid" : "8545bfa6-bc0c-4dff-8399-c503ce7c26a2",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NS",
-      "issuer" : "CPSNS",
-      "issuerAlias" : "CA_NS_CPSNS",
-      "description" : "College of Physicians and Surgeons of Nova Scotia",
-      "guid" : "cf779184-1b2f-4b7a-b4c2-ad96e93ff386",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "SK",
-      "issuer" : "CPSSK",
-      "issuerAlias" : "CA_SK_CPSSK",
-      "description" : "College of Physicians and Surgeons of Saskatchewan",
-      "guid" : "b6c998bf-fac2-4b17-9ee7-7ec33cf532be",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "PE",
-      "issuer" : "CPSPEI",
-      "issuerAlias" : "CA_PE_CPSPEI",
-      "description" : "College of Physicians and Surgeons of Prince Edward Island",
-      "guid" : "b3ff9d05-8c73-4cb8-8452-a27997601a60",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NL",
-      "issuer" : "CPSNFL",
-      "issuerAlias" : "CA_NL_CPSNFL",
-      "description" : "College of Physicians and Surgeons of Newfoundland and Labrador",
-      "guid" : "26bda209-1c41-4758-97f0-8d3e67ea0c01",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OIIQ",
-      "issuerAlias" : "CA_QC_OIIQ",
-      "description" : "Ordre des infirmiers et infirmières du Québec",
-      "guid" : "f707d224-f834-421a-a25a-7cf0673a7691",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.oiiq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "ON",
-      "issuer" : "CNON",
-      "issuerAlias" : "CA_ON_CNON",
-      "description" : "College of nurses of Ontario",
-      "guid" : "9b8b29f6-4cd7-4b99-9425-2471064b32a2",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "AB",
-      "issuer" : "CARNAB",
-      "issuerAlias" : "CA_AB_CARNAB",
-      "description" : "College and association of registered nurses of Alberta",
-      "guid" : "caa8fd39-2a99-4beb-b494-8e475af788b3",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "BC",
-      "issuer" : "CRNBC",
-      "issuerAlias" : "CA_BC_CRNBC",
-      "description" : "College of registered nurses of British Columbia",
-      "guid" : "c5e74733-729c-4f47-9e39-d1fa5ca94d6a",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "MA",
-      "issuer" : "CRNMB",
-      "issuerAlias" : "CA_MA_CRNMB",
-      "description" : "College of registered nurses of Manitoba",
-      "guid" : "14280078-c036-4df3-8957-fd2b0a94fb76",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NB",
-      "issuer" : "NANB",
-      "issuerAlias" : "CA_NB_NANB",
-      "description" : "The nurse's association of New Brunswick",
-      "guid" : "4237a741-53f0-4520-a232-aab4ba1110e1",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NS",
-      "issuer" : "CRNNS",
-      "issuerAlias" : "CA_NS_CRNNS",
-      "description" : "College of registered nurses of Nova Scotia",
-      "guid" : "4c4377fb-0902-4a12-aba8-5537f3acaa13",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "PE",
-      "issuer" : "ARNPEI",
-      "issuerAlias" : "CA_PE_ARNPEI",
-      "description" : "Association of registered nurses of Prince Edward Island",
-      "guid" : "7c3309e8-6bd3-476a-9c75-ab9b6086cc8f",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "SK",
-      "issuer" : "SKRNA",
-      "issuerAlias" : "CA_SK_SKRNA",
-      "description" : "Saskatchewan Registered Nurse's Association",
-      "guid" : "e20312be-8d09-4cbe-9073-c929d1cce203",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NL",
-      "issuer" : "NFLARN",
-      "issuerAlias" : "CA_NL_NFLARN",
-      "description" : "The association of Registered Nurses of Newfoundland and Labrador",
-      "guid" : "364d4a36-d301-47f1-92e8-18306ebe44e9",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPQ",
-      "issuerAlias" : "CA_QC_OPQ",
-      "description" : "Ordre des pharmaciens Québec",
-      "guid" : "4adeccb7-1309-4801-841d-72d05335c4b1",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.opq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "ON",
-      "issuer" : "ONCP",
-      "issuerAlias" : "CA_ON_ONCP",
-      "description" : "Ontario college of pharmacists",
-      "guid" : "8b064c28-7629-428c-a71e-57994e3a10ed",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "AB",
-      "issuer" : "ABCP",
-      "issuerAlias" : "CA_AB_ABCP",
-      "description" : "Alberta college of pharmacists",
-      "guid" : "581bf3a2-3f76-4143-9a70-632c8d55c8a9",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "BC",
-      "issuer" : "BCCP",
-      "issuerAlias" : "CA_BC_BCCP",
-      "description" : "British Columbia college of pharmacists",
-      "guid" : "f8337868-ed17-4791-a40f-585cb65475aa",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "MB",
-      "issuer" : "MBCP",
-      "issuerAlias" : "CA_MB_MBCP",
-      "description" : "College of pharmacists of Manitoba",
-      "guid" : "360d6e58-a836-44e8-9ccc-35ce66cb9e3f",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NB",
-      "issuer" : "NBCP",
-      "issuerAlias" : "CA_NB_NBCP",
-      "description" : "New Brunswick college of pharmacists",
-      "guid" : "9aaa5ad3-6b1f-48e3-9dbb-4f868c2ab87a",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NS",
-      "issuer" : "NSCP",
-      "issuerAlias" : "CA_NS_NSCP",
-      "description" : "Nova Scotia college of pharmacists",
-      "guid" : "bf2c719a-2dc6-4dd1-9944-4ab9a33a8def",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "PE",
-      "issuer" : "PEICP",
-      "issuerAlias" : "CA_PE_PEICP",
-      "description" : "Prince Edward Island college of pharmacists",
-      "guid" : "5eadd594-8288-47b8-a5a5-aa320be50243",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "SK",
-      "issuer" : "SKCP",
-      "issuerAlias" : "CA_SK_SKCP",
-      "description" : "Saskatchewan college of Pharmacy Professionals",
-      "guid" : "5f1ea9a1-660e-465a-8eb6-c00dc8dc0d3d",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "NL",
-      "issuer" : "NFLPB",
-      "issuerAlias" : "CA_NL_NFLPB",
-      "description" : "The Newfoundland and Labrador Pharmacy Board",
-      "guid" : "52493888-2142-45cf-86fd-bd273e836e41",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OIIAQ",
-      "issuerAlias" : "CA_QC_OIIAQ",
-      "description" : "Ordre des infirmières et infirmiers auxiliaires du Québec",
-      "guid" : "121f5b08-8d96-48a8-a851-8546ac57e5f0",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.oiiaq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPIQ",
-      "issuerAlias" : "CA_QC_OPIQ",
-      "description" : "Ordre professionel des inhalothérapeutes du Québec",
-      "guid" : "a6e9725c-6ed9-4eba-9411-623f5db9a9c9",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.opiq.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OAQ",
-      "issuerAlias" : "CA_QC_OAQ",
-      "description" : "Ordre des acupuncteurs du Québec",
-      "guid" : "3d298002-8757-47c6-953f-dc1d8d79faa1",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.o-a-q.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OAQ",
-      "issuerAlias" : "CA_QC_OApQ",
-      "description" : "Ordre des Audioprothésistes du Québec",
-      "guid" : "6897fd69-1724-4f43-9f29-6fc0326a9ff4",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ordreaudio.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OCQ",
-      "issuerAlias" : "CA_QC_OCpQ",
-      "description" : "Ordre des Chiropraticiens du Québec",
-      "guid" : "526c311c-d98f-4d5f-ae68-34abdf72d3c0",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ordredeschiropraticiens.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "ODQ",
-      "issuerAlias" : "CA_QC_ODoQ",
-      "description" : "Ordre des Dentisturologistes du Québec",
-      "guid" : "cff596cd-9331-490f-819d-8a39a8183215",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.odq.com"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPDQ",
-      "issuerAlias" : "CA_QC_OPDQ",
-      "description" : "Ordre professionel des diététistes du Québec",
-      "guid" : "2e0eb940-728f-4206-9d77-21c9f41c5111",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.opdq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OEQ",
-      "issuerAlias" : "CA_QC_OEQ",
-      "description" : "Ordre des ergothérapeutes Québec",
-      "guid" : "6a1d7e9f-63e1-4a2f-9f57-3e124f7fb80a",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.oeq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OHDQ",
-      "issuerAlias" : "CA_QC_OHDQ",
-      "description" : "Ordre des hygiénistes dentaires du Québec",
-      "guid" : "1be5a55d-0fee-4813-a3da-dca33aa73ddb",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ohdq.com"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OOOQ",
-      "issuerAlias" : "CA_QC_OOOQ",
-      "description" : "Ordre des opticiens d'ordonnances du Québec",
-      "guid" : "c071f1ba-4653-4234-af57-c8e50b697a35",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.opticien.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OOAQ",
-      "issuerAlias" : "CA_QC_OOAQ",
-      "description" : "Ordre des orthophonistes et audiologistes du  Québec",
-      "guid" : "d67ffbf6-fe05-44e2-9fcf-61cb8c91bbef",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ooaq.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OOQ",
-      "issuerAlias" : "CA_QC_OOQ",
-      "description" : "Ordre des optométristes dd  Québec",
-      "guid" : "810d9545-65d9-4113-8a19-d5c7d83bfd6d",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ooq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPPQ",
-      "issuerAlias" : "CA_QC_OPPQ",
-      "description" : "Ordre professionel de la physiothérapie du Québec",
-      "guid" : "ae44ca5d-e7be-4e9e-85c0-b2eef0d9c4e7",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.oppq.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPQ",
-      "issuerAlias" : "CA_QC_OPoQ",
-      "description" : "Ordre des podiatres du Québec",
-      "guid" : "863fb244-44bd-4ed4-aa0f-6dfacf5320b0",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ordredespodiatres.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPSEDQ",
-      "issuerAlias" : "CA_QC_OPSEDQ",
-      "description" : "Ordre des psychoéducateurs et psychoéducatrices du Québec",
-      "guid" : "1c1c6dcb-a9d7-418e-8db6-597e6708d46c",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ordrepsed.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPSQ",
-      "issuerAlias" : "CA_QC_OPSQ",
-      "description" : "Ordre des psychologues du Québec",
-      "guid" : "33dedc27-4db4-4073-81b2-adf546d0c507",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.ordrepsy.qc.ca"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OSFQ",
-      "issuerAlias" : "CA_QC_OSFQ",
-      "description" : "Ordre des sage-femmes du Québec",
-      "guid" : "df36b1d1-f45a-464b-aafa-7e7b12eef114",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.osfq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OPTMQ",
-      "issuerAlias" : "CA_QC_OPTMQ",
-      "description" : "Ordre professionel des technologistes médicaux du Québec",
-      "guid" : "a4f07962-4902-4b4d-90dc-8565c45224db",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.optmq.org"
-    }, {
-      "issuerKind" : "practiceLicense",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "OTSTCFQ",
-      "issuerAlias" : "CA_QC_OTSTCFQ",
-      "description" : "Ordre des travailleurs sociaux et des thérapeutes conjugaux et familiaux du Québec",
-      "guid" : "9927a005-8257-4939-aa7f-1c1ba11f94d5",
-      "isTechnical" : false,
-      "officialWWWurl" : "www.otstcfq.org"
-    }, {
-      "issuerKind" : "healthCare",
-      "country" : "CA",
-      "state" : "QC",
-      "issuer" : "PEHRNAM",
-      "issuerAlias" : "CA_QC_PEHRNAM",
-      "description" : "Portable health care identifier",
-      "guid" : "0ec98a8e-f53f-4759-a372-b2fa56bac99e",
-      "isTechnical" : true,
-      "officialWWWurl" : "https://www.portableehr.com"
-    }, {
-      "issuerKind" : "passport",
-      "country" : "CA",
-      "issuer" : "Canada",
-      "issuerAlias" : "CA_PASS",
-      "description" : "Passport (CA)",
-      "guid" : "3248e22f-856e-406f-be2b-bf9f930d100d",
-      "isTechnical" : false
-    }, {
-      "issuerKind" : "passport",
-      "country" : "US",
-      "issuer" : "USA",
-      "issuerAlias" : "US_PASS",
-      "description" : "Passport (US)",
-      "guid" : "ce6cc8ef-4d8d-418f-9066-e90282b9f28b",
-      "isTechnical" : false
-    } ]
+  "responseContent": {
+    "results": [
+      {
+        "issuerAlias": "CA_QC_RAMQ",
+        "issuer": "RAMQ",
+        "description": {
+          "en": "Quebec Health Insurance Board",
+          "fr": "Régie de l'assurance maladie du Québec",
+          "es": "Junta de Seguro de Salud de Quebec"
+        },
+        "isTechnical": false,
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_ON_OHIP",
+        "issuer": "OHIP",
+        "description": {
+          "en": "Ontario health insurance plan",
+          "fr": "Régime d'assurance maladie de l'Ontario",
+          "es": "Plan de seguro médico de Ontario"
+        },
+        "isTechnical": false,
+        "state": "ON",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_GENERIC",
+        "issuer": "GENERIC",
+        "description": {
+          "en": "RANQ style, based on DOB, Gender, Name",
+          "fr": "Style RANQ, basé sur la date de naissance, le sexe et le nom",
+          "es": "Estilo RANQ, basado en fecha de nacimiento, género y nombre"
+        },
+        "isTechnical": true,
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_AB_AHCIP",
+        "issuer": "AHCIP",
+        "description": {
+          "en": "Alberta Health Care Insurance Plan",
+          "fr": "Régime d'assurance-maladie de l'Alberta",
+          "es": "Plan de seguro médico de Alberta"
+        },
+        "isTechnical": false,
+        "state": "AB",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_BC_BCMSP",
+        "issuer": "BCMSP",
+        "description": {
+          "en": "British Columbia Medical Services Plan",
+          "fr": "Régime de services médicaux de la Colombie-Britannique",
+          "es": "Plan de Servicios Médicos de Columbia Británica"
+        },
+        "isTechnical": false,
+        "state": "BC",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_NB_NBM",
+        "issuer": "NBM",
+        "description": {
+          "en": "New Brunswick Medicare",
+          "fr": "Assurance-maladie du Nouveau-Brunswick",
+          "es": "Seguro médico de Nuevo Brunswick"
+        },
+        "isTechnical": false,
+        "state": "NB",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_MA_MHSIP",
+        "issuer": "MHSIP",
+        "description": {
+          "en": "Manitoba Health Services Insurance Plan",
+          "fr": "Régime d'assurance-maladie du Manitoba",
+          "es": "Plan de seguro médico de Manitoba"
+        },
+        "isTechnical": false,
+        "state": "MA",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_NS_NSMSI",
+        "issuer": "NSMSI",
+        "description": {
+          "en": "Nova Scotia Medical Services Insurance",
+          "fr": "Assurance des services médicaux de la Nouvelle-Écosse",
+          "es": "Seguro de servicios médicos de Nueva Escocia"
+        },
+        "isTechnical": false,
+        "state": "NS",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_NU_NHCP",
+        "issuer": "NHCP",
+        "description": {
+          "en": "Nunavut Health Care Plan",
+          "fr": "Régime de soins de santé du Nunavut",
+          "es": "Plan de atención médica de Nunavut"
+        },
+        "isTechnical": false,
+        "state": "NU",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_NL_NMCP",
+        "issuer": "NMCP",
+        "description": {
+          "en": "Newfoundland Medical Care Plan",
+          "fr": "Régime d'assurance-maladie de Terre-Neuve",
+          "es": "Plan de seguro médico de Terranova"
+        },
+        "isTechnical": false,
+        "state": "NL",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_NT_NWTHCP",
+        "issuer": "NWTHCP",
+        "description": {
+          "en": "Northwest Territories Health Care Plan",
+          "fr": "Régime de soins de santé des Territoires du Nord-Ouest",
+          "es": "Plan de atención médica de los Territorios del Noroeste"
+        },
+        "isTechnical": false,
+        "state": "NT",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_PE_PEIHC",
+        "issuer": "PEIHC",
+        "description": {
+          "en": "Prince Edward Island Health Care",
+          "fr": "Soins de santé à l'Île-du-Prince-Édouard",
+          "es": "Atención sanitaria en la Isla del Príncipe Eduardo"
+        },
+        "isTechnical": false,
+        "state": "PE",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_SK_SKHSC",
+        "issuer": "SKHSC",
+        "description": {
+          "en": "Saskatchewan Health Services Card",
+          "fr": "Carte des services de santé de la Saskatchewan",
+          "es": "Mapa de los servicios de salud de Saskatchewan"
+        },
+        "isTechnical": false,
+        "state": "SK",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_YT_YHCIP",
+        "issuer": "YHCIP",
+        "description": {
+          "en": "Yukon Health Care Insurance Plan",
+          "fr": "Régime d'assurance-maladie du Yukon",
+          "es": "Plan de seguro médico de Yukon"
+        },
+        "isTechnical": false,
+        "state": "YT",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "PEHR",
+        "issuer": "PEHI",
+        "description": {
+          "en": "Portable EHR Human Identity",
+          "fr": "DSE portable Identité humaine",
+          "es": "Identidad humana DSE portátil"
+        },
+        "isTechnical": true,
+        "officialWWWurl": "https://www.portableehr.com",
+        "country": "CA",
+        "issuerKind": "other"
+      },
+      {
+        "issuerAlias": "CA_SIN",
+        "issuer": "SIN",
+        "description": {
+          "en": "Canada Social Insurance Number",
+          "fr": "Numéro d'assurance sociale du Canada",
+          "es": "Número de Seguro Social Canadiense"
+        },
+        "isTechnical": true,
+        "country": "CA",
+        "issuerKind": "socialSecurity"
+      },
+      {
+        "issuerAlias": "US_SSN",
+        "issuer": "SSN",
+        "description": {
+          "en": "US Social Security Number",
+          "fr": "Numéro de sécurité sociale aux États-Unis",
+          "es": "Número de Seguro Social en los Estados Unidos"
+        },
+        "isTechnical": true,
+        "country": "US",
+        "issuerKind": "socialSecurity"
+      },
+      {
+        "issuerAlias": "CA_QC_CMQ",
+        "issuer": "CMQ",
+        "description": {
+          "en": "College of Physicians of Quebec",
+          "fr": "Collège des médecins du Québec",
+          "es": "Colegio de Médicos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.cmq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_ON_CPSON",
+        "issuer": "CPSON",
+        "description": {
+          "en": "College of Physicians and Surgeons of Ontario",
+          "fr": "Ordre des médecins et chirurgiens de l'Ontario",
+          "es": "Colegio de Médicos y Cirujanos de Ontario"
+        },
+        "isTechnical": false,
+        "state": "ON",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_CPSAB",
+        "issuer": "CPSAB",
+        "description": {
+          "en": "College of Physicians and Surgeons of Alberta",
+          "fr": "Collège des médecins et chirurgiens de l'Alberta",
+          "es": "Colegio de Médicos y Cirujanos de Alberta"
+        },
+        "isTechnical": false,
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_BC_CPSBC",
+        "issuer": "CPSBC",
+        "description": {
+          "en": "College of Physicians and Surgeons of British Columbia",
+          "fr": "Collège des médecins et chirurgiens de la Colombie-Britannique",
+          "es": "Colegio de Médicos y Cirujanos de Columbia Británica"
+        },
+        "isTechnical": false,
+        "state": "BC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NB_CPSNB",
+        "issuer": "CPSNB",
+        "description": {
+          "en": "College of Physicians and Surgeons of New Brunswick",
+          "fr": "Collège des médecins et chirurgiens du Nouveau-Brunswick",
+          "es": "Colegio de Médicos y Cirujanos de Nuevo Brunswick"
+        },
+        "isTechnical": false,
+        "state": "NB",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_CPSMB",
+        "issuer": "CPSMB",
+        "description": {
+          "en": "College of Physicians and Surgeons of Manitoba",
+          "fr": "Collège des médecins et chirurgiens du Manitoba",
+          "es": "Colegio de Médicos y Cirujanos de Manitoba"
+        },
+        "isTechnical": false,
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NS_CPSNS",
+        "issuer": "CPSNS",
+        "description": {
+          "en": "College of Physicians and Surgeons of Nova Scotia",
+          "fr": "Collège des médecins et chirurgiens de la Nouvelle-Écosse",
+          "es": "Colegio de Médicos y Cirujanos de Nueva Escocia"
+        },
+        "isTechnical": false,
+        "state": "NS",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_SK_CPSSK",
+        "issuer": "CPSSK",
+        "description": {
+          "en": "College of Physicians and Surgeons of Saskatchewan",
+          "fr": "Collège des médecins et chirurgiens de la Saskatchewan",
+          "es": "Colegio de Médicos y Cirujanos de Saskatchewan"
+        },
+        "isTechnical": false,
+        "state": "SK",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_PE_CPSPEI",
+        "issuer": "CPSPEI",
+        "description": {
+          "en": "College of Physicians and Surgeons of Prince Edward Island",
+          "fr": "Collège des médecins et chirurgiens de l'Île-du-Prince-Édouard",
+          "es": "Colegio de Médicos y Cirujanos de la Isla del Príncipe Eduardo"
+        },
+        "isTechnical": false,
+        "state": "PE",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NL_CPSNFL",
+        "issuer": "CPSNFL",
+        "description": {
+          "en": "College of Physicians and Surgeons of Newfoundland and Labrador",
+          "fr": "Collège des médecins et chirurgiens de Terre-Neuve-et-Labrador",
+          "es": "Colegio de Médicos y Cirujanos de Terranova y Labrador"
+        },
+        "isTechnical": false,
+        "state": "NL",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OIIQ",
+        "issuer": "OIIQ",
+        "description": {
+          "en": "Order of Nurses of Quebec",
+          "fr": "Ordre des infirmiers et infirmières du Québec",
+          "es": "Orden de Enfermeras de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.oiiq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_ON_CNON",
+        "issuer": "CNON",
+        "description": {
+          "en": "College of nurses of Ontario",
+          "fr": "Ordre des infirmières et infirmiers de l'Ontario",
+          "es": "Colegio de Enfermeras de Ontario"
+        },
+        "isTechnical": false,
+        "state": "ON",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_AB_CARNAB",
+        "issuer": "CARNAB",
+        "description": {
+          "en": "College and association of registered nurses of Alberta",
+          "fr": "Ordre et association des infirmières et infirmiers autorisés de l'Alberta",
+          "es": "Colegio y Asociación de Enfermeras Registradas de Alberta"
+        },
+        "isTechnical": false,
+        "state": "AB",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_BC_CRNBC",
+        "issuer": "CRNBC",
+        "description": {
+          "en": "College of registered nurses of British Columbia",
+          "fr": "Ordre des infirmières et infirmiers autorisés de la Colombie-Britannique",
+          "es": "Colegio de Enfermeras Registradas de Columbia Británica"
+        },
+        "isTechnical": false,
+        "state": "BC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_MA_CRNMB",
+        "issuer": "CRNMB",
+        "description": {
+          "en": "College of registered nurses of Manitoba",
+          "fr": "Ordre des infirmières et infirmiers autorisés du Manitoba",
+          "es": "Colegio de Enfermeras Registradas de Manitoba"
+        },
+        "isTechnical": false,
+        "state": "MA",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NB_NANB",
+        "issuer": "NANB",
+        "description": {
+          "en": "The nurse's association of New Brunswick",
+          "fr": "L'association des infirmières et infirmiers du Nouveau-Brunswick",
+          "es": "Asociación de Enfermeras de Nuevo Brunswick"
+        },
+        "isTechnical": false,
+        "state": "NB",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NS_CRNNS",
+        "issuer": "CRNNS",
+        "description": {
+          "en": "College of registered nurses of Nova Scotia",
+          "fr": "Ordre des infirmières et infirmiers autorisés de la Nouvelle-Écosse",
+          "es": "Colegio de Enfermeras Registradas de Nueva Escocia"
+        },
+        "isTechnical": false,
+        "state": "NS",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_PE_ARNPEI",
+        "issuer": "ARNPEI",
+        "description": {
+          "en": "Association of registered nurses of Prince Edward Island",
+          "fr": "Association des infirmières autorisées de l'Île-du-Prince-Édouard",
+          "es": "Asociación de Enfermeras Registradas de la Isla del Príncipe Eduardo"
+        },
+        "isTechnical": false,
+        "state": "PE",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_SK_SKRNA",
+        "issuer": "SKRNA",
+        "description": {
+          "en": "Saskatchewan Registered Nurse's Association",
+          "fr": "Association des infirmières autorisées de la Saskatchewan",
+          "es": "Asociación de Enfermeras Registradas de Saskatchewan"
+        },
+        "isTechnical": false,
+        "state": "SK",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NL_NFLARN",
+        "issuer": "NFLARN",
+        "description": {
+          "en": "The association of Registered Nurses of Newfoundland and Labrador",
+          "fr": "L'Association des infirmières autorisées de Terre-Neuve-et-Labrador",
+          "es": "Asociación de Enfermeras Registradas de Terranova y Labrador"
+        },
+        "isTechnical": false,
+        "state": "NL",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPQ",
+        "issuer": "OPQ",
+        "description": {
+          "en": "Quebec Order of Pharmacists",
+          "fr": "Ordre des pharmaciens Québec",
+          "es": "Orden de Farmacéuticos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.opq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_ON_ONCP",
+        "issuer": "ONCP",
+        "description": {
+          "en": "Ontario college of pharmacists",
+          "fr": "Ordre des pharmaciens de l'Ontario",
+          "es": "Colegio de Farmacéuticos de Ontario"
+        },
+        "isTechnical": false,
+        "state": "ON",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_AB_ABCP",
+        "issuer": "ABCP",
+        "description": {
+          "en": "Alberta college of pharmacists",
+          "fr": "Collège des pharmaciens de l'Alberta",
+          "es": "Colegio de Farmacéuticos de Alberta"
+        },
+        "isTechnical": false,
+        "state": "AB",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_BC_BCCP",
+        "issuer": "BCCP",
+        "description": {
+          "en": "British Columbia college of pharmacists",
+          "fr": "Ordre des pharmaciens de la Colombie-Britannique",
+          "es": "Colegio de Farmacéuticos de Columbia Británica"
+        },
+        "isTechnical": false,
+        "state": "BC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_MB_MBCP",
+        "issuer": "MBCP",
+        "description": {
+          "en": "College of pharmacists of Manitoba",
+          "fr": "Ordre des pharmaciens du Manitoba",
+          "es": "Colegio de Farmacéuticos de Manitoba"
+        },
+        "isTechnical": false,
+        "state": "MB",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NB_NBCP",
+        "issuer": "NBCP",
+        "description": {
+          "en": "New Brunswick college of pharmacists",
+          "fr": "Ordre des pharmaciens du Nouveau-Brunswick",
+          "es": "Colegio de Farmacéuticos de Nuevo Brunswick"
+        },
+        "isTechnical": false,
+        "state": "NB",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NS_NSCP",
+        "issuer": "NSCP",
+        "description": {
+          "en": "Nova Scotia college of pharmacists",
+          "fr": "Ordre des pharmaciens de la Nouvelle-Écosse",
+          "es": "Colegio de Farmacéuticos de Nueva Escocia"
+        },
+        "isTechnical": false,
+        "state": "NS",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_PE_PEICP",
+        "issuer": "PEICP",
+        "description": {
+          "en": "Prince Edward Island college of pharmacists",
+          "fr": "Collège des pharmaciens de l'Île-du-Prince-Édouard",
+          "es": "Colegio de Farmacéuticos de la Isla del Príncipe Eduardo"
+        },
+        "isTechnical": false,
+        "state": "PE",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_SK_SKCP",
+        "issuer": "SKCP",
+        "description": {
+          "en": "Saskatchewan college of Pharmacy Professionals",
+          "fr": "Ordre des professionnels de la pharmacie de la Saskatchewan",
+          "es": "Colegio de Profesionales de Farmacia de Saskatchewan"
+        },
+        "isTechnical": false,
+        "state": "SK",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_NL_NFLPB",
+        "issuer": "NFLPB",
+        "description": {
+          "en": "The Newfoundland and Labrador Pharmacy Board",
+          "fr": "Le Conseil des pharmacies de Terre-Neuve-et-Labrador",
+          "es": "El Consejo de Farmacia de Terranova y Labrador"
+        },
+        "isTechnical": false,
+        "state": "NL",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OIIAQ",
+        "issuer": "OIIAQ",
+        "description": {
+          "en": "Order of Nursing Assistants of Quebec",
+          "fr": "Ordre des infirmières et infirmiers auxiliaires du Québec",
+          "es": "Orden de Auxiliares de Enfermería de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.oiiaq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPIQ",
+        "issuer": "OPIQ",
+        "description": {
+          "en": "Professional Order of Respiratory Therapists of Quebec",
+          "fr": "Ordre professionel des inhalothérapeutes du Québec",
+          "es": "Orden Profesional de Terapeutas Respiratorios de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.opiq.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OAQ",
+        "issuer": "OAQ",
+        "description": {
+          "en": "Order of Acupuncturists of Quebec",
+          "fr": "Ordre des acupuncteurs du Québec",
+          "es": "Orden de Acupunturistas de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.o-a-q.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OApQ",
+        "issuer": "OAQ",
+        "description": {
+          "en": "Order of Hearing Aid Acousticians of Quebec",
+          "fr": "Ordre des Audioprothésistes du Québec",
+          "es": "Orden de Acústicos Auditivos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ordreaudio.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OCpQ",
+        "issuer": "OCQ",
+        "description": {
+          "en": "Order of Chiropractors of Quebec",
+          "fr": "Ordre des Chiropraticiens du Québec",
+          "es": "Orden de Quiroprácticos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ordredeschiropraticiens.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_ODoQ",
+        "issuer": "ODQ",
+        "description": {
+          "en": "Order of Dentisturologists of Quebec",
+          "fr": "Ordre des Dentisturologistes du Québec",
+          "es": "Orden de Odontólogos-urólogos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.odq.com",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPDQ",
+        "issuer": "OPDQ",
+        "description": {
+          "en": "Professional Order of Dietitians of Quebec",
+          "fr": "Ordre professionel des diététistes du Québec",
+          "es": "Orden Profesional de Dietistas de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.opdq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OEQ",
+        "issuer": "OEQ",
+        "description": {
+          "en": "Order of Occupational Therapists of Quebec",
+          "fr": "Ordre des ergothérapeutes Québec",
+          "es": "Orden de Terapeutas Ocupacionales de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.oeq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OHDQ",
+        "issuer": "OHDQ",
+        "description": {
+          "en": "Order of Dental Hygienists of Quebec",
+          "fr": "Ordre des hygiénistes dentaires du Québec",
+          "es": "Orden de Higienistas Dentales de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ohdq.com",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OOOQ",
+        "issuer": "OOOQ",
+        "description": {
+          "en": "Order of Dispensing Opticians of Quebec",
+          "fr": "Ordre des opticiens d'ordonnances du Québec",
+          "es": "Orden de Ópticos Dispensadores de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.opticien.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OOAQ",
+        "issuer": "OOAQ",
+        "description": {
+          "en": "Order of Speech-Language Therapists and Audiologists of Quebec",
+          "fr": "Ordre des orthophonistes et audiologistes duQuébec",
+          "es": "Orden de Logopedas y Audiólogos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ooaq.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OOQ",
+        "issuer": "OOQ",
+        "description": {
+          "en": "Order of Optometrists of Quebec",
+          "fr": "Ordre des optométristes ddQuébec",
+          "es": "Orden de Optometristas de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ooq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPPQ",
+        "issuer": "OPPQ",
+        "description": {
+          "en": "Professional Order of Physiotherapy of Quebec",
+          "fr": "Ordre professionel de la physiothérapie du Québec",
+          "es": "Orden Profesional de Fisioterapia de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.oppq.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPoQ",
+        "issuer": "OPQ",
+        "description": {
+          "en": "Order of Podiatrists of Quebec",
+          "fr": "Ordre des podiatres du Québec",
+          "es": "Orden de Podólogos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ordredespodiatres.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPSEDQ",
+        "issuer": "OPSEDQ",
+        "description": {
+          "en": "Order of Psychoeducators of Quebec",
+          "fr": "Ordre des psychoéducateurs et psychoéducatrices du Québec",
+          "es": "Orden de Psicoeducadores de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ordrepsed.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPSQ",
+        "issuer": "OPSQ",
+        "description": {
+          "en": "Order of Psychologists of Quebec",
+          "fr": "Ordre des psychologues du Québec",
+          "es": "Orden de Psicólogos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.ordrepsy.qc.ca",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OSFQ",
+        "issuer": "OSFQ",
+        "description": {
+          "en": "Order of Midwives of Quebec",
+          "fr": "Ordre des sage-femmes du Québec",
+          "es": "Orden de Matronas de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.osfq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OPTMQ",
+        "issuer": "OPTMQ",
+        "description": {
+          "en": "Professional Order of Medical Technologists of Quebec",
+          "fr": "Ordre professionel des technologistes médicaux du Québec",
+          "es": "Orden Profesional de Tecnólogos Médicos de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.optmq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_OTSTCFQ",
+        "issuer": "OTSTCFQ",
+        "description": {
+          "en": "Order of Social Workers and Marriage and Family Therapists of Quebec",
+          "fr": "Ordre des travailleurs sociaux et des thérapeutes conjugaux et familiaux du Québec",
+          "es": "Orden de Trabajadores Sociales y Terapeutas Matrimoniales y Familiares de Quebec"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "www.otstcfq.org",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "practiceLicense"
+      },
+      {
+        "issuerAlias": "CA_QC_PEHRNAM",
+        "issuer": "PEHRNAM",
+        "description": {
+          "en": "Portable health care identifier",
+          "fr": "Identifiant portable des soins de santé",
+          "es": "Identificador portátil de atención médica"
+        },
+        "isTechnical": true,
+        "officialWWWurl": "https://www.portableehr.com",
+        "state": "QC",
+        "country": "CA",
+        "issuerKind": "healthCare"
+      },
+      {
+        "issuerAlias": "CA_PASS",
+        "issuer": "Canada",
+        "description": {
+          "en": "Passport (CA)",
+          "fr": "Passeport (CA)",
+          "es": "Pasaporte (CA)"
+        },
+        "isTechnical": false,
+        "country": "CA",
+        "issuerKind": "passport"
+      },
+      {
+        "issuerAlias": "US_PASS",
+        "issuer": "USA",
+        "description": {
+          "en": "Passport (US)",
+          "fr": "Passeport (États-Unis)",
+          "es": "Pasaporte (Estados Unidos)"
+        },
+        "isTechnical": false,
+        "country": "US",
+        "issuerKind": "passport"
+      },
+      {
+        "issuerAlias": "MX_CURP",
+        "issuer": "MX_RENAPO",
+        "description": {
+          "en": "Unique key to the Mexican population registry",
+          "fr": "Clé unique du registre de la population mexicaine",
+          "es": "Clave Única de Registro de Población Mexicana"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "https://www.gob.mx/",
+        "country": "MX",
+        "issuerKind": "stateID"
+      },
+      {
+        "issuerAlias": "GT_DPI",
+        "issuer": "GT_RENAP",
+        "description": {
+          "en": "Personal identification document",
+          "fr": "Document d'identification personnelle",
+          "es": "Documento Personal de Identificación"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "https://www.renap.gob.gt",
+        "country": "GT",
+        "issuerKind": "stateID"
+      },
+      {
+        "issuerAlias": "GT_BIRTH_CERTIFICATE",
+        "issuer": "GT_RENAP",
+        "description": {
+          "en": "Birth certificate",
+          "fr": "Acte de naissance",
+          "es": "Certificado de nacimiento"
+        },
+        "isTechnical": false,
+        "officialWWWurl": "https://www.renap.gob.gt",
+        "country": "GT",
+        "issuerKind": "stateID"
+      }
+    ]
   }
 }

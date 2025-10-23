@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portableehr.model.CountryEnum;
 import com.portableehr.model.IdIssuerKindEnum;
 
+import java.util.HashMap;
 import java.util.UUID;
 
 /**
@@ -20,8 +21,7 @@ import java.util.UUID;
  *    "state": "QC",
  *    "issuer": "CMQ",
  *    "issuerAlias": "CA_QC_CMQ",
- *    "description": "Collège des médecins du Québec",
- *    "guid": "00000000-0000-0000-0000-000000000000",
+ *    "description": {"fr": "Collège des médecins du Québec"...},
  *    "isTechnical": false,
  *    "officialWWWurl": "http://www.cmq.org/"
  * }
@@ -45,10 +45,7 @@ public class JurisdictionIdIssuer {
   private String issuerAlias = null;
 
   @JsonProperty("description")
-  private String description = null;
-
-  @JsonProperty("guid")
-  private UUID guid = null;
+  private HashMap<LanguageEnum, String> description = null;
 
   @JsonProperty("isTechnical")
   private Boolean isTechnical = null;
@@ -60,14 +57,13 @@ public class JurisdictionIdIssuer {
 
   }
 
-  public JurisdictionIdIssuer(IdIssuerKindEnum issuerKind, CountryEnum country, String state, String issuer, String issuerAlias, String description, UUID guid, Boolean isTechnical, String officialWWWurl) {
+  public JurisdictionIdIssuer(IdIssuerKindEnum issuerKind, CountryEnum country, String state, String issuer, String issuerAlias, HashMap<LanguageEnum, String> description, Boolean isTechnical, String officialWWWurl) {
     this.issuerKind = issuerKind;
     this.country = country;
     this.state = state;
     this.issuer = issuer;
     this.issuerAlias = issuerAlias;
     this.description = description;
-    this.guid = guid;
     this.isTechnical = isTechnical;
     this.officialWWWurl = officialWWWurl;
   }
@@ -112,20 +108,12 @@ public class JurisdictionIdIssuer {
     this.issuerAlias = issuerAlias;
   }
 
-  public String getDescription() {
+  public HashMap<LanguageEnum, String> getDescription() {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(HashMap<LanguageEnum, String> description) {
     this.description = description;
-  }
-
-  public UUID getGuid() {
-    return guid;
-  }
-
-  public void setGuid(UUID guid) {
-    this.guid = guid;
   }
 
   public Boolean getIsTechnical() {
