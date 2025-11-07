@@ -1,0 +1,25 @@
+{
+  "feedAlias": "fiktivDP",
+  "command": "pushSingle",
+  "parameters": {
+    "backendClientId": "4354c4cc-0656-6a6f-8eeb-ba00a47f7615",
+    "feedItemId": "70e973dc-1c46-4a02-97c7-6b2f21d4703a",
+    "reachable": false,
+    "identityVerified": false,
+    "emailVerified": false,
+    "mobileVerified": false,
+    "lastSeen": "2025-11-07T12:36:26.000Z",
+    "admission": {
+      "statusCode": "ERROR_INVALID_EMAIL",
+      "message": {
+        "renderer": "text",
+        "en": "The received email [kennedy.peckray.5739@mailinator.com] for patient named [Kennedy SIM.UHagk5Fh.Trisha Peck-Ray] is not a valid email address.",
+        "fr": "L'addresse courriel reçue [kennedy.peckray.5739@mailinator.com] pour le patient [Kennedy SIM.UHagk5Fh.Trisha Peck-Ray] est invalide.",
+        "es": "El correo electrónico recibido [kennedy.peckray.5739@mailinator.com] para el paciente llamado [Kennedy SIM.UHagk5Fh.Trisha Peck-Ray] no es una dirección de correo electrónico válida."
+      },
+      "createdOn": "2025-11-07T12:36:26.000Z"
+    },
+    "createdOn": "2025-11-07T12:36:26.000Z",
+    "lastUpdated": "2025-11-07T12:36:26.000Z"
+  }
+}
