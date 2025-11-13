@@ -12,12 +12,14 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * Any of the following invitation methods :<br><br>
  * <b>email</b> : The invitation will be sent via email.<br>
  * <b>sms</b> : The invitation will be sent via sms.<br>
+ * <b>qrcode</b> : A QR Code will be generated and returned to the feed, that the client can scan to activate<br>
  */
 public enum ClientInviteMethodEnum {
   EMAIL("email"),
-  SMS("sms");
+  SMS("sms"),
+  QRCODE("qrcode");
 
-  private String value;
+  private final String value;
 
   ClientInviteMethodEnum(String value) {
     this.value = value;

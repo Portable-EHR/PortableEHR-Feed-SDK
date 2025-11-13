@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * The response to the /backend/client [pushSingle] call
+ * The response content to the /backend/client [pushSingle] call
  * <pre><code>
  * {
  *   "backendItemId": "00000000-0000-0000-0000-000000000000",
