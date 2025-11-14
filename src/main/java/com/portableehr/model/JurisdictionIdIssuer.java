@@ -45,7 +45,7 @@ public class JurisdictionIdIssuer {
   private String issuerAlias = null;
 
   @JsonProperty("description")
-  private HashMap<LanguageEnum, String> description = null;
+  private i18nText description = null;
 
   @JsonProperty("isTechnical")
   private Boolean isTechnical = null;
@@ -57,7 +57,7 @@ public class JurisdictionIdIssuer {
 
   }
 
-  public JurisdictionIdIssuer(IdIssuerKindEnum issuerKind, CountryEnum country, String state, String issuer, String issuerAlias, HashMap<LanguageEnum, String> description, Boolean isTechnical, String officialWWWurl) {
+  public JurisdictionIdIssuer(IdIssuerKindEnum issuerKind, CountryEnum country, String state, String issuer, String issuerAlias, i18nText description, Boolean isTechnical, String officialWWWurl) {
     this.issuerKind = issuerKind;
     this.country = country;
     this.state = state;
@@ -108,11 +108,11 @@ public class JurisdictionIdIssuer {
     this.issuerAlias = issuerAlias;
   }
 
-  public HashMap<LanguageEnum, String> getDescription() {
+  public i18nText getDescription() {
     return description;
   }
 
-  public void setDescription(HashMap<LanguageEnum, String> description) {
+  public void setDescription(i18nText description) {
     this.description = description;
   }
 

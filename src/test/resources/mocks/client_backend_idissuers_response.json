@@ -1,7 +1,7 @@
 {
   "requestStatus": {
     "status": "OK",
-    "message": "[72] Cached IdIssuers"
+    "message": "Returning [72] identifiers to [U:49532]"
   },
   "responseContent": {
     "results": [
@@ -9,6 +9,7 @@
         "issuerAlias": "CA_QC_RAMQ",
         "issuer": "RAMQ",
         "description": {
+          "renderer": "text",
           "en": "Quebec Health Insurance Board",
           "fr": "Régie de l'assurance maladie du Québec",
           "es": "Junta de Seguro de Salud de Quebec"
@@ -22,6 +23,7 @@
         "issuerAlias": "CA_ON_OHIP",
         "issuer": "OHIP",
         "description": {
+          "renderer": "text",
           "en": "Ontario health insurance plan",
           "fr": "Régime d'assurance maladie de l'Ontario",
           "es": "Plan de seguro médico de Ontario"
@@ -35,6 +37,7 @@
         "issuerAlias": "CA_GENERIC",
         "issuer": "GENERIC",
         "description": {
+          "renderer": "text",
           "en": "RANQ style, based on DOB, Gender, Name",
           "fr": "Style RANQ, basé sur la date de naissance, le sexe et le nom",
           "es": "Estilo RANQ, basado en fecha de nacimiento, género y nombre"
@@ -47,6 +50,7 @@
         "issuerAlias": "CA_AB_AHCIP",
         "issuer": "AHCIP",
         "description": {
+          "renderer": "text",
           "en": "Alberta Health Care Insurance Plan",
           "fr": "Régime d'assurance-maladie de l'Alberta",
           "es": "Plan de seguro médico de Alberta"
@@ -60,6 +64,7 @@
         "issuerAlias": "CA_BC_BCMSP",
         "issuer": "BCMSP",
         "description": {
+          "renderer": "text",
           "en": "British Columbia Medical Services Plan",
           "fr": "Régime de services médicaux de la Colombie-Britannique",
           "es": "Plan de Servicios Médicos de Columbia Británica"
@@ -73,6 +78,7 @@
         "issuerAlias": "CA_NB_NBM",
         "issuer": "NBM",
         "description": {
+          "renderer": "text",
           "en": "New Brunswick Medicare",
           "fr": "Assurance-maladie du Nouveau-Brunswick",
           "es": "Seguro médico de Nuevo Brunswick"
@@ -86,6 +92,7 @@
         "issuerAlias": "CA_MA_MHSIP",
         "issuer": "MHSIP",
         "description": {
+          "renderer": "text",
           "en": "Manitoba Health Services Insurance Plan",
           "fr": "Régime d'assurance-maladie du Manitoba",
           "es": "Plan de seguro médico de Manitoba"
@@ -99,6 +106,7 @@
         "issuerAlias": "CA_NS_NSMSI",
         "issuer": "NSMSI",
         "description": {
+          "renderer": "text",
           "en": "Nova Scotia Medical Services Insurance",
           "fr": "Assurance des services médicaux de la Nouvelle-Écosse",
           "es": "Seguro de servicios médicos de Nueva Escocia"
@@ -112,6 +120,7 @@
         "issuerAlias": "CA_NU_NHCP",
         "issuer": "NHCP",
         "description": {
+          "renderer": "text",
           "en": "Nunavut Health Care Plan",
           "fr": "Régime de soins de santé du Nunavut",
           "es": "Plan de atención médica de Nunavut"
@@ -125,6 +134,7 @@
         "issuerAlias": "CA_NL_NMCP",
         "issuer": "NMCP",
         "description": {
+          "renderer": "text",
           "en": "Newfoundland Medical Care Plan",
           "fr": "Régime d'assurance-maladie de Terre-Neuve",
           "es": "Plan de seguro médico de Terranova"
@@ -138,6 +148,7 @@
         "issuerAlias": "CA_NT_NWTHCP",
         "issuer": "NWTHCP",
         "description": {
+          "renderer": "text",
           "en": "Northwest Territories Health Care Plan",
           "fr": "Régime de soins de santé des Territoires du Nord-Ouest",
           "es": "Plan de atención médica de los Territorios del Noroeste"
@@ -151,6 +162,7 @@
         "issuerAlias": "CA_PE_PEIHC",
         "issuer": "PEIHC",
         "description": {
+          "renderer": "text",
           "en": "Prince Edward Island Health Care",
           "fr": "Soins de santé à l'Île-du-Prince-Édouard",
           "es": "Atención sanitaria en la Isla del Príncipe Eduardo"
@@ -164,6 +176,7 @@
         "issuerAlias": "CA_SK_SKHSC",
         "issuer": "SKHSC",
         "description": {
+          "renderer": "text",
           "en": "Saskatchewan Health Services Card",
           "fr": "Carte des services de santé de la Saskatchewan",
           "es": "Mapa de los servicios de salud de Saskatchewan"
@@ -177,6 +190,7 @@
         "issuerAlias": "CA_YT_YHCIP",
         "issuer": "YHCIP",
         "description": {
+          "renderer": "text",
           "en": "Yukon Health Care Insurance Plan",
           "fr": "Régime d'assurance-maladie du Yukon",
           "es": "Plan de seguro médico de Yukon"
@@ -190,6 +204,7 @@
         "issuerAlias": "PEHR",
         "issuer": "PEHI",
         "description": {
+          "renderer": "text",
           "en": "Portable EHR Human Identity",
           "fr": "DSE portable Identité humaine",
           "es": "Identidad humana DSE portátil"
@@ -203,6 +218,7 @@
         "issuerAlias": "CA_SIN",
         "issuer": "SIN",
         "description": {
+          "renderer": "text",
           "en": "Canada Social Insurance Number",
           "fr": "Numéro d'assurance sociale du Canada",
           "es": "Número de Seguro Social Canadiense"
@@ -215,6 +231,7 @@
         "issuerAlias": "US_SSN",
         "issuer": "SSN",
         "description": {
+          "renderer": "text",
           "en": "US Social Security Number",
           "fr": "Numéro de sécurité sociale aux États-Unis",
           "es": "Número de Seguro Social en los Estados Unidos"
@@ -227,6 +244,7 @@
         "issuerAlias": "CA_QC_CMQ",
         "issuer": "CMQ",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians of Quebec",
           "fr": "Collège des médecins du Québec",
           "es": "Colegio de Médicos de Quebec"
@@ -241,6 +259,7 @@
         "issuerAlias": "CA_ON_CPSON",
         "issuer": "CPSON",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Ontario",
           "fr": "Ordre des médecins et chirurgiens de l'Ontario",
           "es": "Colegio de Médicos y Cirujanos de Ontario"
@@ -254,6 +273,7 @@
         "issuerAlias": "CA_QC_CPSAB",
         "issuer": "CPSAB",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Alberta",
           "fr": "Collège des médecins et chirurgiens de l'Alberta",
           "es": "Colegio de Médicos y Cirujanos de Alberta"
@@ -267,6 +287,7 @@
         "issuerAlias": "CA_BC_CPSBC",
         "issuer": "CPSBC",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of British Columbia",
           "fr": "Collège des médecins et chirurgiens de la Colombie-Britannique",
           "es": "Colegio de Médicos y Cirujanos de Columbia Británica"
@@ -280,6 +301,7 @@
         "issuerAlias": "CA_NB_CPSNB",
         "issuer": "CPSNB",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of New Brunswick",
           "fr": "Collège des médecins et chirurgiens du Nouveau-Brunswick",
           "es": "Colegio de Médicos y Cirujanos de Nuevo Brunswick"
@@ -293,6 +315,7 @@
         "issuerAlias": "CA_QC_CPSMB",
         "issuer": "CPSMB",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Manitoba",
           "fr": "Collège des médecins et chirurgiens du Manitoba",
           "es": "Colegio de Médicos y Cirujanos de Manitoba"
@@ -306,6 +329,7 @@
         "issuerAlias": "CA_NS_CPSNS",
         "issuer": "CPSNS",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Nova Scotia",
           "fr": "Collège des médecins et chirurgiens de la Nouvelle-Écosse",
           "es": "Colegio de Médicos y Cirujanos de Nueva Escocia"
@@ -319,6 +343,7 @@
         "issuerAlias": "CA_SK_CPSSK",
         "issuer": "CPSSK",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Saskatchewan",
           "fr": "Collège des médecins et chirurgiens de la Saskatchewan",
           "es": "Colegio de Médicos y Cirujanos de Saskatchewan"
@@ -332,6 +357,7 @@
         "issuerAlias": "CA_PE_CPSPEI",
         "issuer": "CPSPEI",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Prince Edward Island",
           "fr": "Collège des médecins et chirurgiens de l'Île-du-Prince-Édouard",
           "es": "Colegio de Médicos y Cirujanos de la Isla del Príncipe Eduardo"
@@ -345,6 +371,7 @@
         "issuerAlias": "CA_NL_CPSNFL",
         "issuer": "CPSNFL",
         "description": {
+          "renderer": "text",
           "en": "College of Physicians and Surgeons of Newfoundland and Labrador",
           "fr": "Collège des médecins et chirurgiens de Terre-Neuve-et-Labrador",
           "es": "Colegio de Médicos y Cirujanos de Terranova y Labrador"
@@ -358,6 +385,7 @@
         "issuerAlias": "CA_QC_OIIQ",
         "issuer": "OIIQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Nurses of Quebec",
           "fr": "Ordre des infirmiers et infirmières du Québec",
           "es": "Orden de Enfermeras de Quebec"
@@ -372,6 +400,7 @@
         "issuerAlias": "CA_ON_CNON",
         "issuer": "CNON",
         "description": {
+          "renderer": "text",
           "en": "College of nurses of Ontario",
           "fr": "Ordre des infirmières et infirmiers de l'Ontario",
           "es": "Colegio de Enfermeras de Ontario"
@@ -385,6 +414,7 @@
         "issuerAlias": "CA_AB_CARNAB",
         "issuer": "CARNAB",
         "description": {
+          "renderer": "text",
           "en": "College and association of registered nurses of Alberta",
           "fr": "Ordre et association des infirmières et infirmiers autorisés de l'Alberta",
           "es": "Colegio y Asociación de Enfermeras Registradas de Alberta"
@@ -398,6 +428,7 @@
         "issuerAlias": "CA_BC_CRNBC",
         "issuer": "CRNBC",
         "description": {
+          "renderer": "text",
           "en": "College of registered nurses of British Columbia",
           "fr": "Ordre des infirmières et infirmiers autorisés de la Colombie-Britannique",
           "es": "Colegio de Enfermeras Registradas de Columbia Británica"
@@ -411,6 +442,7 @@
         "issuerAlias": "CA_MA_CRNMB",
         "issuer": "CRNMB",
         "description": {
+          "renderer": "text",
           "en": "College of registered nurses of Manitoba",
           "fr": "Ordre des infirmières et infirmiers autorisés du Manitoba",
           "es": "Colegio de Enfermeras Registradas de Manitoba"
@@ -424,6 +456,7 @@
         "issuerAlias": "CA_NB_NANB",
         "issuer": "NANB",
         "description": {
+          "renderer": "text",
           "en": "The nurse's association of New Brunswick",
           "fr": "L'association des infirmières et infirmiers du Nouveau-Brunswick",
           "es": "Asociación de Enfermeras de Nuevo Brunswick"
@@ -437,6 +470,7 @@
         "issuerAlias": "CA_NS_CRNNS",
         "issuer": "CRNNS",
         "description": {
+          "renderer": "text",
           "en": "College of registered nurses of Nova Scotia",
           "fr": "Ordre des infirmières et infirmiers autorisés de la Nouvelle-Écosse",
           "es": "Colegio de Enfermeras Registradas de Nueva Escocia"
@@ -450,6 +484,7 @@
         "issuerAlias": "CA_PE_ARNPEI",
         "issuer": "ARNPEI",
         "description": {
+          "renderer": "text",
           "en": "Association of registered nurses of Prince Edward Island",
           "fr": "Association des infirmières autorisées de l'Île-du-Prince-Édouard",
           "es": "Asociación de Enfermeras Registradas de la Isla del Príncipe Eduardo"
@@ -463,6 +498,7 @@
         "issuerAlias": "CA_SK_SKRNA",
         "issuer": "SKRNA",
         "description": {
+          "renderer": "text",
           "en": "Saskatchewan Registered Nurse's Association",
           "fr": "Association des infirmières autorisées de la Saskatchewan",
           "es": "Asociación de Enfermeras Registradas de Saskatchewan"
@@ -476,6 +512,7 @@
         "issuerAlias": "CA_NL_NFLARN",
         "issuer": "NFLARN",
         "description": {
+          "renderer": "text",
           "en": "The association of Registered Nurses of Newfoundland and Labrador",
           "fr": "L'Association des infirmières autorisées de Terre-Neuve-et-Labrador",
           "es": "Asociación de Enfermeras Registradas de Terranova y Labrador"
@@ -489,6 +526,7 @@
         "issuerAlias": "CA_QC_OPQ",
         "issuer": "OPQ",
         "description": {
+          "renderer": "text",
           "en": "Quebec Order of Pharmacists",
           "fr": "Ordre des pharmaciens Québec",
           "es": "Orden de Farmacéuticos de Quebec"
@@ -503,6 +541,7 @@
         "issuerAlias": "CA_ON_ONCP",
         "issuer": "ONCP",
         "description": {
+          "renderer": "text",
           "en": "Ontario college of pharmacists",
           "fr": "Ordre des pharmaciens de l'Ontario",
           "es": "Colegio de Farmacéuticos de Ontario"
@@ -516,6 +555,7 @@
         "issuerAlias": "CA_AB_ABCP",
         "issuer": "ABCP",
         "description": {
+          "renderer": "text",
           "en": "Alberta college of pharmacists",
           "fr": "Collège des pharmaciens de l'Alberta",
           "es": "Colegio de Farmacéuticos de Alberta"
@@ -529,6 +569,7 @@
         "issuerAlias": "CA_BC_BCCP",
         "issuer": "BCCP",
         "description": {
+          "renderer": "text",
           "en": "British Columbia college of pharmacists",
           "fr": "Ordre des pharmaciens de la Colombie-Britannique",
           "es": "Colegio de Farmacéuticos de Columbia Británica"
@@ -542,6 +583,7 @@
         "issuerAlias": "CA_MB_MBCP",
         "issuer": "MBCP",
         "description": {
+          "renderer": "text",
           "en": "College of pharmacists of Manitoba",
           "fr": "Ordre des pharmaciens du Manitoba",
           "es": "Colegio de Farmacéuticos de Manitoba"
@@ -555,6 +597,7 @@
         "issuerAlias": "CA_NB_NBCP",
         "issuer": "NBCP",
         "description": {
+          "renderer": "text",
           "en": "New Brunswick college of pharmacists",
           "fr": "Ordre des pharmaciens du Nouveau-Brunswick",
           "es": "Colegio de Farmacéuticos de Nuevo Brunswick"
@@ -568,6 +611,7 @@
         "issuerAlias": "CA_NS_NSCP",
         "issuer": "NSCP",
         "description": {
+          "renderer": "text",
           "en": "Nova Scotia college of pharmacists",
           "fr": "Ordre des pharmaciens de la Nouvelle-Écosse",
           "es": "Colegio de Farmacéuticos de Nueva Escocia"
@@ -581,6 +625,7 @@
         "issuerAlias": "CA_PE_PEICP",
         "issuer": "PEICP",
         "description": {
+          "renderer": "text",
           "en": "Prince Edward Island college of pharmacists",
           "fr": "Collège des pharmaciens de l'Île-du-Prince-Édouard",
           "es": "Colegio de Farmacéuticos de la Isla del Príncipe Eduardo"
@@ -594,6 +639,7 @@
         "issuerAlias": "CA_SK_SKCP",
         "issuer": "SKCP",
         "description": {
+          "renderer": "text",
           "en": "Saskatchewan college of Pharmacy Professionals",
           "fr": "Ordre des professionnels de la pharmacie de la Saskatchewan",
           "es": "Colegio de Profesionales de Farmacia de Saskatchewan"
@@ -607,6 +653,7 @@
         "issuerAlias": "CA_NL_NFLPB",
         "issuer": "NFLPB",
         "description": {
+          "renderer": "text",
           "en": "The Newfoundland and Labrador Pharmacy Board",
           "fr": "Le Conseil des pharmacies de Terre-Neuve-et-Labrador",
           "es": "El Consejo de Farmacia de Terranova y Labrador"
@@ -620,6 +667,7 @@
         "issuerAlias": "CA_QC_OIIAQ",
         "issuer": "OIIAQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Nursing Assistants of Quebec",
           "fr": "Ordre des infirmières et infirmiers auxiliaires du Québec",
           "es": "Orden de Auxiliares de Enfermería de Quebec"
@@ -634,6 +682,7 @@
         "issuerAlias": "CA_QC_OPIQ",
         "issuer": "OPIQ",
         "description": {
+          "renderer": "text",
           "en": "Professional Order of Respiratory Therapists of Quebec",
           "fr": "Ordre professionel des inhalothérapeutes du Québec",
           "es": "Orden Profesional de Terapeutas Respiratorios de Quebec"
@@ -648,6 +697,7 @@
         "issuerAlias": "CA_QC_OAQ",
         "issuer": "OAQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Acupuncturists of Quebec",
           "fr": "Ordre des acupuncteurs du Québec",
           "es": "Orden de Acupunturistas de Quebec"
@@ -662,6 +712,7 @@
         "issuerAlias": "CA_QC_OApQ",
         "issuer": "OAQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Hearing Aid Acousticians of Quebec",
           "fr": "Ordre des Audioprothésistes du Québec",
           "es": "Orden de Acústicos Auditivos de Quebec"
@@ -676,6 +727,7 @@
         "issuerAlias": "CA_QC_OCpQ",
         "issuer": "OCQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Chiropractors of Quebec",
           "fr": "Ordre des Chiropraticiens du Québec",
           "es": "Orden de Quiroprácticos de Quebec"
@@ -690,6 +742,7 @@
         "issuerAlias": "CA_QC_ODoQ",
         "issuer": "ODQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Dentisturologists of Quebec",
           "fr": "Ordre des Dentisturologistes du Québec",
           "es": "Orden de Odontólogos-urólogos de Quebec"
@@ -704,6 +757,7 @@
         "issuerAlias": "CA_QC_OPDQ",
         "issuer": "OPDQ",
         "description": {
+          "renderer": "text",
           "en": "Professional Order of Dietitians of Quebec",
           "fr": "Ordre professionel des diététistes du Québec",
           "es": "Orden Profesional de Dietistas de Quebec"
@@ -718,6 +772,7 @@
         "issuerAlias": "CA_QC_OEQ",
         "issuer": "OEQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Occupational Therapists of Quebec",
           "fr": "Ordre des ergothérapeutes Québec",
           "es": "Orden de Terapeutas Ocupacionales de Quebec"
@@ -732,6 +787,7 @@
         "issuerAlias": "CA_QC_OHDQ",
         "issuer": "OHDQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Dental Hygienists of Quebec",
           "fr": "Ordre des hygiénistes dentaires du Québec",
           "es": "Orden de Higienistas Dentales de Quebec"
@@ -746,6 +802,7 @@
         "issuerAlias": "CA_QC_OOOQ",
         "issuer": "OOOQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Dispensing Opticians of Quebec",
           "fr": "Ordre des opticiens d'ordonnances du Québec",
           "es": "Orden de Ópticos Dispensadores de Quebec"
@@ -760,6 +817,7 @@
         "issuerAlias": "CA_QC_OOAQ",
         "issuer": "OOAQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Speech-Language Therapists and Audiologists of Quebec",
           "fr": "Ordre des orthophonistes et audiologistes duQuébec",
           "es": "Orden de Logopedas y Audiólogos de Quebec"
@@ -774,6 +832,7 @@
         "issuerAlias": "CA_QC_OOQ",
         "issuer": "OOQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Optometrists of Quebec",
           "fr": "Ordre des optométristes ddQuébec",
           "es": "Orden de Optometristas de Quebec"
@@ -788,6 +847,7 @@
         "issuerAlias": "CA_QC_OPPQ",
         "issuer": "OPPQ",
         "description": {
+          "renderer": "text",
           "en": "Professional Order of Physiotherapy of Quebec",
           "fr": "Ordre professionel de la physiothérapie du Québec",
           "es": "Orden Profesional de Fisioterapia de Quebec"
@@ -802,6 +862,7 @@
         "issuerAlias": "CA_QC_OPoQ",
         "issuer": "OPQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Podiatrists of Quebec",
           "fr": "Ordre des podiatres du Québec",
           "es": "Orden de Podólogos de Quebec"
@@ -816,6 +877,7 @@
         "issuerAlias": "CA_QC_OPSEDQ",
         "issuer": "OPSEDQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Psychoeducators of Quebec",
           "fr": "Ordre des psychoéducateurs et psychoéducatrices du Québec",
           "es": "Orden de Psicoeducadores de Quebec"
@@ -830,6 +892,7 @@
         "issuerAlias": "CA_QC_OPSQ",
         "issuer": "OPSQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Psychologists of Quebec",
           "fr": "Ordre des psychologues du Québec",
           "es": "Orden de Psicólogos de Quebec"
@@ -844,6 +907,7 @@
         "issuerAlias": "CA_QC_OSFQ",
         "issuer": "OSFQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Midwives of Quebec",
           "fr": "Ordre des sage-femmes du Québec",
           "es": "Orden de Matronas de Quebec"
@@ -858,6 +922,7 @@
         "issuerAlias": "CA_QC_OPTMQ",
         "issuer": "OPTMQ",
         "description": {
+          "renderer": "text",
           "en": "Professional Order of Medical Technologists of Quebec",
           "fr": "Ordre professionel des technologistes médicaux du Québec",
           "es": "Orden Profesional de Tecnólogos Médicos de Quebec"
@@ -872,6 +937,7 @@
         "issuerAlias": "CA_QC_OTSTCFQ",
         "issuer": "OTSTCFQ",
         "description": {
+          "renderer": "text",
           "en": "Order of Social Workers and Marriage and Family Therapists of Quebec",
           "fr": "Ordre des travailleurs sociaux et des thérapeutes conjugaux et familiaux du Québec",
           "es": "Orden de Trabajadores Sociales y Terapeutas Matrimoniales y Familiares de Quebec"
@@ -886,6 +952,7 @@
         "issuerAlias": "CA_QC_PEHRNAM",
         "issuer": "PEHRNAM",
         "description": {
+          "renderer": "text",
           "en": "Portable health care identifier",
           "fr": "Identifiant portable des soins de santé",
           "es": "Identificador portátil de atención médica"
@@ -900,6 +967,7 @@
         "issuerAlias": "CA_PASS",
         "issuer": "Canada",
         "description": {
+          "renderer": "text",
           "en": "Passport (CA)",
           "fr": "Passeport (CA)",
           "es": "Pasaporte (CA)"
@@ -912,6 +980,7 @@
         "issuerAlias": "US_PASS",
         "issuer": "USA",
         "description": {
+          "renderer": "text",
           "en": "Passport (US)",
           "fr": "Passeport (États-Unis)",
           "es": "Pasaporte (Estados Unidos)"
@@ -924,6 +993,7 @@
         "issuerAlias": "MX_CURP",
         "issuer": "MX_RENAPO",
         "description": {
+          "renderer": "text",
           "en": "Unique key to the Mexican population registry",
           "fr": "Clé unique du registre de la population mexicaine",
           "es": "Clave Única de Registro de Población Mexicana"
@@ -937,6 +1007,7 @@
         "issuerAlias": "GT_DPI",
         "issuer": "GT_RENAP",
         "description": {
+          "renderer": "text",
           "en": "Personal identification document",
           "fr": "Document d'identification personnelle",
           "es": "Documento Personal de Identificación"
@@ -950,6 +1021,7 @@
         "issuerAlias": "GT_BIRTH_CERTIFICATE",
         "issuer": "GT_RENAP",
         "description": {
+          "renderer": "text",
           "en": "Birth certificate",
           "fr": "Acte de naissance",
           "es": "Certificado de nacimiento"
